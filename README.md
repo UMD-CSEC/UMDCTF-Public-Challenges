@@ -1,30 +1,13 @@
 # UMDCTF Public Challenges
 Public challenges from past UMDCTF competitions
 
-## UMDCTF2021
-[CTFTime Link](https://ctftime.org/event/1040)
 
-Rating weight: 24.02
+|      Competition Name      |               CTFTime Link              | Rating Weight  |   # of teams   |
+|:--------------------------:|:---------------------------------------:|:--------------:|:--------------:
+| UMDCTF2021                 | [Link](https://ctftime.org/event/1288)  | 24.02          |   484 teams    |
+| UMDCTF2020                 | [Link](https://ctftime.org/event/1040)  | 24.02          |   320 teams    |
+| UMDCTF2019                 | In-person Event                         | N/A            |                |
+| UMDCTF2018                 | In-person Event                         | N/A            |                |
+| UMDCTF2017                 | In-person Event                         | N/A            |                |
 
-484 Teams Competed
-
-
-## UMDCTF2020
-[CTFTime Link](https://ctftime.org/event/1288)
-
-Rating weight: 24.02
-
-320 Teams Competed
-
-
-## UMDCTF2019
-This was an in-person event
-
-
-## UMDCTF2018
-This was an in-person event
-
-
-## UMDCTF2017
-This was an in-person event
 
