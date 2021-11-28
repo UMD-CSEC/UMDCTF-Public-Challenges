@@ -1,0 +1,6 @@
+----- BEGIN INTERCEPT -----
+FLORENCIA --> GISBORNE          (2 nights)
+MARACAIBO --> LANGARA           (1 night)
+NADOR --> SULE                  (4 nights)
+SAN ANTONIO --> COATEPEQUE      (1 night)
+----- END INTERCEPT -----

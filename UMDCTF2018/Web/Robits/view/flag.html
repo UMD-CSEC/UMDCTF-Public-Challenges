@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+            @import 'https://fonts.googleapis.com/css?family=Inconsolata';
+
+html {
+  min-height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  height: 100%;
+  background-color: #000000;
+  background-image: radial-gradient(#11581E, #041607);
+  font-family: 'Inconsolata', Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: rgba(128, 255, 128, 0.8);
+  text-shadow:
+      0 0 1ex rgba(51, 255, 51, 1),
+      0 0 2px rgba(255, 255, 255, 0.8);
+}
+
+.overlay {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:
+      repeating-linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0,
+      rgba(0, 0, 0, 0.3) 50%,
+      rgba(0, 0, 0, 0) 100%);
+  background-size: auto 4px;
+  z-index: 99;
+}
+
+.overlay::before {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+      0deg,
+      transparent 0%,
+      rgba(32, 128, 32, 0.2) 2%,
+      rgba(32, 128, 32, 0.8) 3%,
+      rgba(32, 128, 32, 0.2) 3%,
+      transparent 100%);
+  background-repeat: no-repeat;
+  animation: scan 7.5s linear 0s infinite;
+}
+
+@keyframes scan {
+  0%        { background-position: 0 -100vh; }
+  35%, 100% { background-position: 0 100vh; }
+}
+
+.terminal {
+  box-sizing: inherit;
+  position: absolute;
+  height: 100%;
+  width: 1000px;
+  max-width: 100%;
+  padding: 4rem;
+  text-transform: uppercase;
+}
+
+.output {
+  color: rgba(128, 255, 128, 0.8);
+  text-shadow:
+      0 0 1px rgba(51, 255, 51, 0.4),
+      0 0 2px rgba(255, 255, 255, 0.8);
+}
+
+.output::before {
+  content: "> ";
+}
+
+/*
+.input {
+  color: rgba(192, 255, 192, 0.8);
+  text-shadow:
+      0 0 1px rgba(51, 255, 51, 0.4),
+      0 0 2px rgba(255, 255, 255, 0.8);
+}
+
+.input::before {
+  content: "$ ";
+}
+*/
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a::before {
+  content: "[";
+}
+
+a::after {
+  content: "]";
+}
+
+.errorcode {
+  color: white;
+}
+        </style>
+    </head>
+    <body>
+        <div class="overlay"></div>
+        <div class="terminal">
+            <h1>Error <span class="errorcode">40̛͑4̀</span></h1>
+            <p id="theflag" class="output"></p>
+            <p class="output">Good luck</p>
+        </div>
+    </body>
+    <script>
+        var _0x6676=['\x55\x4d\x44\x43\x54\x46\x2d\x7b\x74\x48\x33\x5f\x72\x30\x62\x31\x74\x35\x5f\x40\x72\x33\x5f\x68\x33\x72\x33\x7d'];var _0x6667=function(_0x306a0b,_0x39cb9e){_0x306a0b=_0x306a0b-0x0;var _0x656ee8=_0x6676[_0x306a0b];return _0x656ee8;};var _0x47ef2f=function(){var _0x7b8421=!![];return function(_0x3f8044,_0x3522b4){var _0x34f422=_0x7b8421?function(){if(_0x3522b4){var _0x1a2276=_0x3522b4['\x61\x70\x70\x6c\x79'](_0x3f8044,arguments);_0x3522b4=null;return _0x1a2276;}}:function(){};_0x7b8421=![];return _0x34f422;};}();var _0x3ef140=_0x47ef2f(this,function(){var _0x41897c=function(){return'\x64\x65\x76';},_0x34b9d8=function(){return'\x77\x69\x6e\x64\x6f\x77';};var _0x175194=function(){var _0x41c86a=new RegExp('\x5c\x77\x2b\x20\x2a\x5c\x28\x5c\x29\x20\x2a\x7b\x5c\x77\x2b\x20\x2a\x5b\x27\x7c\x22\x5d\x2e\x2b\x5b\x27\x7c\x22\x5d\x3b\x3f\x20\x2a\x7d');return!_0x41c86a['\x74\x65\x73\x74'](_0x41897c['\x74\x6f\x53\x74\x72\x69\x6e\x67']());};var _0x829de2=function(){var _0x210cd9=new RegExp('\x28\x5c\x5c\x5b\x78\x7c\x75\x5d\x28\x5c\x77\x29\x7b\x32\x2c\x34\x7d\x29\x2b');return _0x210cd9['\x74\x65\x73\x74'](_0x34b9d8['\x74\x6f\x53\x74\x72\x69\x6e\x67']());};var _0x388966=function(_0x2cc6c7){var _0x1f7099=~-0x1>>0x1+0xff%0x0;if(_0x2cc6c7['\x69\x6e\x64\x65\x78\x4f\x66']('\x69'===_0x1f7099)){_0xb8c4a8(_0x2cc6c7);}};var _0xb8c4a8=function(_0x473ee3){var _0x45d87e=~-0x4>>0x1+0xff%0x0;if(_0x473ee3['\x69\x6e\x64\x65\x78\x4f\x66']((!![]+'')[0x3])!==_0x45d87e){_0x388966(_0x473ee3);}};if(!_0x175194()){if(!_0x829de2()){_0x388966('\x69\x6e\x64\u0435\x78\x4f\x66');}else{_0x388966('\x69\x6e\x64\x65\x78\x4f\x66');}}else{_0x388966('\x69\x6e\x64\u0435\x78\x4f\x66');}});_0x3ef140();_0x6667('0x0');// App
+        document.getElementById("theflag").innerHTML = _0x6676
+    </script>
+</html>
+
+

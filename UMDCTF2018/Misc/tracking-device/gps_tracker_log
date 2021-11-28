@@ -1,0 +1,46 @@
+<?xml version="1.0" ?><kml xmlns="http://www.opengis.net/kml/2.2"><Document>
+<name><![CDATA[UMDCTF-{]]></name>
+<description></description>
+<Style id="red"><IconStyle><scale>1</scale> <Icon> <href>http://images.easymapmaker.com/marker_images/red_Marker.png</href></Icon> <hotSpot x="0.5"  y="0.5"  xunits="fraction" yunits="fraction"/> </IconStyle><BalloonStyle><text></text></BalloonStyle></Style>
+<Placemark><address><![CDATA[]]></address>
+<styleUrl>#red</styleUrl>
+<Point> <coordinates>-78.467838,-0.180653,0</coordinates>
+</Point>
+</Placemark>
+<Placemark><address><![CDATA[]]></address>
+<styleUrl>#red</styleUrl>
+<Point> <coordinates>77.972648,45.241544,0</coordinates>
+</Point>
+</Placemark>
+<Placemark><address><![CDATA[]]></address>
+<styleUrl>#red</styleUrl>
+<Point> <coordinates>-99.539734,18.344848,0</coordinates>
+</Point>
+</Placemark>
+<Placemark><address><![CDATA[]]></address>
+<styleUrl>#red</styleUrl>
+<Point> <coordinates>13.191338,32.887209,0</coordinates>
+</Point>
+</Placemark>
+<Placemark><address><![CDATA[]]></address>
+<styleUrl>#red</styleUrl>
+<Point> <coordinates>-3.188267,55.953252,0</coordinates>
+</Point>
+</Placemark>
+<Placemark><address><![CDATA[]]></address>
+<styleUrl>#red</styleUrl>
+<Point> <coordinates>-119.772587,36.746842,0</coordinates>
+</Point>
+</Placemark>
+<Placemark><address><![CDATA[]]></address>
+<styleUrl>#red</styleUrl>
+<Point> <coordinates>-48.275380,-18.914608,0</coordinates>
+</Point>
+</Placemark>
+<Placemark><address><![CDATA[]]></address>
+<styleUrl>#red</styleUrl>
+<Point> <coordinates>129.877667,32.750286,0</coordinates>
+</Point>
+</Placemark>
+</Document>
+</kml>

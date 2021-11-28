@@ -1,0 +1,14 @@
+{
+    "name": "robits",
+    "version": "1.0.0",
+    "description": "Find the robits!",
+    "author": "abefleming",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "dependencies": {
+      "express": "^4.16.1",
+      "path": "^0.12.7"
+    }
+  }

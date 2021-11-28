@@ -1,0 +1,15 @@
+{
+    "name": "authorizedagent",
+    "version": "1.0.0",
+    "description": "Only authorized users can access this.",
+    "author": "abefleming",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "dependencies": {
+      "express": "^4.16.1",
+      "path": "^0.12.7",
+      "express-useragent": "^1.0.12"
+    }
+  }

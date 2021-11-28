@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+message get_flag {
+}
+
+message send_flag {
+	required string flag = 1;
+}

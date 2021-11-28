@@ -1,0 +1,42 @@
+version: '3'
+services:
+  mysql:
+    image: mysql
+    ports:
+      - "3306:3306"
+    links:
+      - dbdata
+    environment:
+      - MYSQL_USER=root
+      - MYSQL_ROOT_PASSWORD=hj4PEsDDCf3ZhSb4WT2V2TN5gSHxxEq775kCFAx
+      - MYSQL_DATABASE=dev
+
+  dbdata:
+    image: tianon/true
+    volumes:
+      - /var/lib/mysql
+
+  web1:
+    build: './web1'
+    volumes:
+      - ./web1/src:/usr/local/src
+    ports:
+      - "4567:4567"
+    links:
+      - "mysql"
+
+  web2:
+    build: './web2'
+    volumes:
+      - ./web2/src:/var/www/html
+    ports:
+      - "7654:80"
+    links:
+      - "mysql"
+
+  web4:
+    build: './web4'
+    volumes:
+      - ./web4/src:/var/www/html
+    ports:
+      - "1337:80"

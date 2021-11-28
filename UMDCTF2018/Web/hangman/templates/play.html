@@ -1,0 +1,58 @@
+{% extends 'index.html' %} {% block content %}
+<svg width="250" height="230" id="drawing">
+  <!-- Structure -->
+  <line y1="220" y2="220" x1="10" x2="120" />
+  <line y1="10" y2="220" x1="65" x2="65" />
+  <line y1="10" y2="10" x1="65" x2="175" />
+  <line y1="10" y2="40" x1="175" x2="175" />
+
+  <!-- Hangman -->
+  <g id="hangman-drawing">
+    <circle cx="175" cy="55" r="15" />
+    <ellipse cx="175" cy="115" rx="20" ry="45" />
+    <line y1="150" y2="190" x1="162" x2="140" />
+    <line y1="150" y2="190" x1="188" x2="210" />
+    <line y1="80" y2="40" x1="162" x2="140" />
+    <line y1="80" y2="40" x1="188" x2="210" />
+  </g>
+</svg>
+
+{% if game.finished %}
+<h1>
+  {% for letter in game.word %}
+  <span class="
+          text-{% if letter in game.tried and letter != ',' %}success{% else %}danger{% endif %}">
+    {{ letter }}
+  </span>
+  {% endfor %}
+</h1>
+<h3>
+  {% if game.won %} You won! {% else %} You lost :-( {% endif %}
+</h3>
+<p>
+  <a class="btn btn-default" href="{{ url_for('home') }}">Home</a>
+  <a class="btn btn-primary" href="{{ url_for('new_game') }}?player={{ game.player }}">
+    Play again
+  </a>
+</p>
+{% else %}
+<h1 id="current" class="spaced">{{ game.current }}</h1>
+{% endif %}
+
+<h2 class="vspace" id="errors">
+  Errors:
+  <span class="text-danger">{{ game.errors }}</span>
+</h2>
+
+{% if not game.finished %}
+<form method="post" id="letter-form" class="form-inline vspace">
+  <div class="form-group">
+    <input class="input-lg" size="1" name="letter" autocomplete="off" autofocus>
+  </div>
+  <button type="submit" class="btn btn-default btn-lg">Try letter</button>
+</form>
+{% endif %} {% endblock %} {% block bottom %}
+<script src="{{ url_for('static', filename='main.js') }}"></script>
+<script>
+  updateDrawing('{{ game.errors }}');
+</script> {% endblock %}

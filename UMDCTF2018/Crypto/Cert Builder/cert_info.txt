@@ -1,0 +1,49 @@
+Certificate:
+    Data:
+        Version: 1 (0x0)
+        Serial Number: 13062737156104707249 (0xb5482a3befeadcb1)
+    Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=US, CN=*.ctf.science
+        Validity
+            Not Before: Apr 11 22:41:45 2018 GMT
+            Not After : Dec  8 22:41:45 2021 GMT
+        Subject: C=US, CN=*.ctf.science
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:8e:c3:fb:d9:c3:aa:d9:65:ab:92:5c:0a:f4:82:
+                    b0:22:c8:aa:2a:fd:dc:61:fc:73:36:23:d8:dd:ae:
+                    2a:45:66:df:bd:6f:f9:fe:96:ac:b5:e6:e2:9f:f7:
+                    28:9b:fa:da:c3:f8:98:42:e2:ad:33:7f:ff:51:60:
+                    b3:b1:55:b4:cb:7b:fc:a7:2b:4f:5e:dc:51:2f:e3:
+                    17:20:72:76:1a:b5:8e:bb:6f:c9:12:fe:4e:37:c2:
+                    0d:db:6d:14:8f:e2:df:09:e2:74:64:c5:90:bf:e0:
+                    28:e9:ae:03:bd:fc:14:45:b7:cc:04:45:95:57:14:
+                    b6:05:25:44:90:97:60:e2:97:b8:cb:2d:c6:94:1e:
+                    ac:83:a2:dd:90:bf:57:1f:8c:9a:e3:4e:6f:4b:06:
+                    fd:3e:31:77:42:8d:fa:c7:25:67:61:2b:3b:1a:4d:
+                    b5:b7:be:34:05:46:ff:74:5d:4e:8d:01:e8:89:07:
+                    10:c0:43:6a:80:a3:f0:01:57:e4:5d:f7:1c:e7:4d:
+                    d4:ed:10:c3:4a:3d:29:16:4d:2e:5d:5f:70:7d:60:
+                    bd:b7:60:a1:0a:37:b4:5b:9a:7d:95:83:7a:7f:52:
+                    f9:85:53:d1:1a:cf:75:e4:ff:66:84:d8:b7:b9:9e:
+                    3b:c4:a3:d4:13:84:5e:ac:63:1c:9f:8a:3a:83:12:
+                    7b:a9
+                Exponent: 65537 (0x10001)
+    Signature Algorithm: sha256WithRSAEncryption
+         3a:a4:bb:52:2a:d0:59:0d:12:19:55:53:c9:fc:29:34:b6:52:
+         12:60:b2:e6:00:6c:93:e4:17:f1:ed:18:f6:a4:54:98:89:58:
+         d0:e5:b6:c3:81:58:97:64:6c:f5:0d:b9:f7:33:0d:67:4c:e3:
+         36:14:96:19:c4:44:90:01:dc:cd:b7:39:74:32:67:e3:eb:7b:
+         95:c2:3c:fd:f6:e6:11:b6:67:2f:b2:86:55:82:1d:95:c9:b5:
+         79:1d:03:70:14:89:49:74:fc:e2:46:ef:d1:cc:c3:f1:1e:f2:
+         77:17:9f:85:4f:dc:85:10:67:ad:fe:0c:26:d0:1b:e0:c1:11:
+         bb:61:12:9c:e5:c7:8a:08:5c:ec:f0:ba:50:f3:52:d9:33:28:
+         53:fe:f0:b2:28:eb:3a:91:bb:d8:bf:75:62:a4:73:f3:d7:40:
+         73:86:a6:a3:06:95:04:5c:e0:13:7a:9c:2a:b3:cd:67:aa:18:
+         1b:e9:2e:70:7e:10:61:ed:18:46:e9:f3:49:5d:5d:fe:42:43:
+         bc:7d:5b:1f:f1:2f:45:fd:c6:b0:c1:4b:1d:f9:d2:b2:b2:ec:
+         37:78:88:7e:0f:08:5b:bc:7b:ad:18:6e:f6:b3:db:e4:ed:bd:
+         6a:d1:ef:a8:dd:cf:a3:7c:b8:e9:d9:70:a1:38:ec:82:3c:fa:
+         a0:bc:05:d4

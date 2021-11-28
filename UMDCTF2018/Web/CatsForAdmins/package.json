@@ -1,0 +1,16 @@
+{
+  "name": "CatsForAdmins",
+  "version": "1.0.0",
+  "description": "My local Admin made a site so only he could access his precious cat pictures.",
+  "author": "abefleming",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1",
+    "path": "^0.12.7",
+    "cookie-parser": "^1.4.3",
+    "body-parser": "^1.9.2"
+  }
+}

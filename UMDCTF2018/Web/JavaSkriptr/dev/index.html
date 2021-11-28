@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<script language=javascript>
+		    var rev = "fwd";
+		    function titlebar(val){
+		        var msg  = "JavaSkriptr";
+		        var res = " ";
+		        var speed = 100;
+		        var pos = val;
+		        msg = "   ~~~ "+msg+" ~~~";
+		        var le = msg.length;
+		        if(rev == "fwd"){
+		            if(pos < le){
+		                pos = pos+1;
+		                scroll = msg.substr(0,pos);
+		                document.title = scroll;
+		                timer = window.setTimeout("titlebar("+pos+")",speed);
+		            }
+		            else {
+		                rev = "bwd";
+		                timer = window.setTimeout("titlebar("+pos+")",speed);
+		            }
+		        }
+		        else {
+		            if(pos > 0) {
+		                pos = pos-1;
+		                var ale = le-pos;
+		                scrol = msg.substr(ale,le);
+		                document.title = scrol;
+		                timer = window.setTimeout("titlebar("+pos+")",speed);
+		            }
+		            else {
+		                rev = "fwd";
+		                timer = window.setTimeout("titlebar("+pos+")",speed);
+		            }
+		        }
+		    }
+		    titlebar(0);
+		</script>
+	</head>
+
+	<body background="bg.png">
+
+
+		<script>
+			setTimeout(redir, 3000)
+
+			function redir() {
+				window.location = "https://www.youtube.com/watch?v=X09oxyIeGuY";
+			}
+
+			var le_flag = ['U','M','D','C','T','F','-','{',51,31,43,45,32,25,30,21,49,18,55,112,55,51,95,74,33,52,57];
+			
+			var s = 0;
+			decrypt(le_flag, s); 
+
+			function decrypt(a, s) {
+				var c = a.join(',');
+				var u = c[8];
+				
+				var flag = "";
+
+				for (var i=8;i<27;i++) {
+					var f = le_flag[(i-8) % 8].charCodeAt(0) ^ le_flag[i];
+					s -= le_flag[i];
+				}
+				
+				if (s == 0) {
+					console.log("Flag: UMDCTF-{" + flag);
+				} else {
+					console.log("Wrong!");
+				}
+			}
+			
+		</script>
+
+
+
+		<div style="position:absolute; top:50%; left:50%;margin-left: -(X/2)px;margin-top: -(Y/2)px;">
+			<marquee><h2 style="color:white;">JavaSkriptr</h2></marquee>
+			<img src="earth.gif">
+		</div>
+	</body>
+</html>

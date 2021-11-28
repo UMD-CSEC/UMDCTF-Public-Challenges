@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hangman game</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='main.css') }}">
+  </head>
+  <body>
+    <div class="container text-center">
+      <h1>Hangman game</h1>
+      <div class="row vspace">
+        <div class="col-md-6 col-md-offset-3">
+          {% block content %}{% endblock %}
+        </div>
+      </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
+
+    {% block bottom %}{% endblock %}
+  </body>
+</html>

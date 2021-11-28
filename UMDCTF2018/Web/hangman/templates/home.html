@@ -1,0 +1,33 @@
+{% extends 'index.html' %}
+
+{% block content %}
+  <form action="{{ url_for('new_game') }}" class="form-inline">
+    <div class="form-group vspace">
+      <input name="player" class="input-lg" required="required"
+             placeholder="Your name">
+      <button class="btn btn-primary btn-lg" type="submit">Play!</button>
+    </div>
+  </form>
+
+  <div class="panel panel-default vspace">
+    <div class="panel-heading">Top 10</div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Player</th>
+          <th>Word</th>
+          <th>Errors</th>
+          <th>Points</th>
+      <tbody>
+        {% for game in games %}
+          <tr>
+            <td>{{ loop.index }}</td>
+            <td>{{ game.player }}</td>
+            <td class="text-success">{{ game.current }}</td>
+            <td class="text-danger spaced">{{ game.errors }}</td>
+            <td>{{ game.points }}</td>
+        {% endfor %}
+    </table>
+  </div>
+{% endblock %}

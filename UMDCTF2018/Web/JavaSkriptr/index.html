@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<script language=javascript>
+		    var rev = "fwd";
+		    function titlebar(val){
+		        var msg  = "JavaSkriptr";
+		        var res = " ";
+		        var speed = 100;
+		        var pos = val;
+		        msg = "   ~~~ "+msg+" ~~~";
+		        var le = msg.length;
+		        if(rev == "fwd"){
+		            if(pos < le){
+		                pos = pos+1;
+		                scroll = msg.substr(0,pos);
+		                document.title = scroll;
+		                timer = window.setTimeout("titlebar("+pos+")",speed);
+		            }
+		            else {
+		                rev = "bwd";
+		                timer = window.setTimeout("titlebar("+pos+")",speed);
+		            }
+		        }
+		        else {
+		            if(pos > 0) {
+		                pos = pos-1;
+		                var ale = le-pos;
+		                scrol = msg.substr(ale,le);
+		                document.title = scrol;
+		                timer = window.setTimeout("titlebar("+pos+")",speed);
+		            }
+		            else {
+		                rev = "fwd";
+		                timer = window.setTimeout("titlebar("+pos+")",speed);
+		            }
+		        }
+		    }
+		    titlebar(0);
+		</script>
+	</head>
+
+	<body background="bg.png">
+
+
+		<script>
+	setTimeout(o,3e3);function o(){window.location="https://www.youtube.com/watch?v=X09oxyIeGuY"}var a=["U","M","D","C","T","F","-","{",51,31,43,45,32,25,30,21,49,18,55,112,55,51,95,74,33,52,57];var e=0;r(a,e);function r(o,e){var r=o.join(",");var n=r[8];var t="";for(var v=8;v<27;v++){var c=a[(v-8)%8].charCodeAt(0)^a[v];e-=a[v]}if(e==0){console.log("Flag: UMDCTF-{"+t)}else{console.log("Wrong!")}}
+
+		</script>
+		<div style="position:absolute; top:50%; left:50%;margin-left: -(X/2)px;margin-top: -(Y/2)px;">
+			<marquee><h2 style="color:white;">JavaSkriptr</h2></marquee>
+			<img src="earth.gif">
+		</div>
+	</body>
+</html>
