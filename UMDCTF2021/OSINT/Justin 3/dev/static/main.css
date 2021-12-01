@@ -1,0 +1,24 @@
+#nav, * {
+    background-color: gray !important;
+    color: black !important;
+}
+
+a {
+    padding: 10px;
+    border: 1px solid black !important;
+    padding-left: 20%;
+}
+
+h1 {
+    padding-left: 20%;
+}
+
+.centered {
+    margin: auto;
+    padding-left: 20%;
+}
+
+.centered-wrapper {
+    display: flex;
+    padding-left: 20%;
+}

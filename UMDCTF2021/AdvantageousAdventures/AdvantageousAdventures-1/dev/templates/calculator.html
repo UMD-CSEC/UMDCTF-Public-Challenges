@@ -1,0 +1,11 @@
+{% include 'base.html' %}
+
+<h1>{{ calculate_type }}</h1>
+
+<form action='/{{calculate_type}}' method="POST">
+    <label for="val1">Value 1:</label>
+    <input id='val1' name='val1' type='text' placeholder='1'>
+    <label for="val2">Value 2:</label>
+    <input id='val2' name='val2' type='text' placeholder='2'>
+    <input type='submit'>
+</form>

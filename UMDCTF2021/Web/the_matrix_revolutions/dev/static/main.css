@@ -1,0 +1,17 @@
+#nav, * {
+    background-color: pink !important;
+    color: green !important;
+}
+
+a {
+    padding: 10px;
+    border: 1px solid limegreen !important;
+}
+
+.centered {
+    margin: auto;
+}
+
+.centered-wrapper {
+    display: flex;
+}

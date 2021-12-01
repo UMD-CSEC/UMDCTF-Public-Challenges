@@ -1,0 +1,11 @@
+#login-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#login-form > * {
+  margin: 20px;
+  max-width: 250px;
+}

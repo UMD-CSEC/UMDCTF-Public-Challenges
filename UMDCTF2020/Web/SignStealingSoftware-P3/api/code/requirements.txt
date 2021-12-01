@@ -1,0 +1,4 @@
+pymongo
+flask
+flask-cors
+dnspython

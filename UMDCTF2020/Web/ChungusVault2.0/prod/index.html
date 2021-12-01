@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel = "stylesheet" href="main.css" />
+  </head>
+
+<body>
+  <div class="home container">
+    <div class = "row">
+      <div class = "col-12">
+        <marquee behavior="scroll" direction="left"><img src="images/wordart.png" width="100%"></marquee>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 text-center">
+        <img style="max-height:300px;"
+          src="./images/chungus.png">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <label style="color: white; font-weight:bold;" class ="text-center">Username: </label>
+        <input type="text" placeholder="Enter Username: " class="form-control" value="admin" />
+      </div>
+      <div class="col-6">
+        <label style="color: white; font-weight:bold;" class ="text-center">Password: </label>
+        <input type="password" placeholder="Enter Password: " class="form-control" value="SuperSecretPassword123" />
+      </div>
+    </div>
+    <div class='row text-center' style='margin-top: 15px'>
+      <div class="col-12">
+        <button id="submitButton" class="btn btn-danger">Submit</button>
+      </div>
+    </div>
+    <input type="hidden" id="check" value="e9b7a334826ff2ff28b066a92ba8734cb1134720fc5879592247f47b8d2a17d7">
+    <div class="row" v-else>
+      <div class="col-12">
+        <h1 id="message"></h1>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

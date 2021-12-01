@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+    web1:
+        restart: always
+        build: ./public_html
+        ports: ["8080:80"]
+        environment:
+            - LC_ALL=C.UTF-8

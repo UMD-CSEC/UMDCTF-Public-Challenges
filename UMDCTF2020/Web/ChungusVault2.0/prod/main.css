@@ -1,0 +1,8 @@
+body {
+    background-image: url('./images/background.png');
+    cursor:url(images/chungus.png), auto;
+}
+
+h1 {
+    color: white;
+}

@@ -1,0 +1,9 @@
+Click
+Flask
+itsdangerous
+Jinja2
+MarkupSafe
+Werkzeug
+Flask-Session
+Flask-Cors
+mysql-connector-python

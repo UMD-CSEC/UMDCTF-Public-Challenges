@@ -1,0 +1,45 @@
+version: '3'
+
+services:
+    frontend:
+        restart: always
+        build: ./frontend
+        ports: ["8080:8080"]
+        environment:
+            - LC_ALL=C.UTF-8
+        links:
+            - web1
+    web1:
+        restart: always
+        build: ./api/code
+        ports: ["5000:5000"]
+        environment:
+            - LC_ALL=C.UTF-8
+        links:
+            - mongodb
+            
+    mongodb:
+        image: mongo
+        restart: always
+        ports:
+            - 27017:27017
+        expose:
+            - '27017'
+        # volumes: 
+        #     - ./mongo-data/json:/docker-entrypoint-initdb.d
+    mongo-seed: 
+        build: ./mongo-data/json
+        links:
+            - mongodb
+    # mongo-seed:
+    #     image: stefanwalther/mongo-seed
+    #     container_name: mongo-seed
+    #     environment:
+    #         - MONGODB_HOST=mongodb
+    #         - MONGODB_PORT=27017
+
+    #     depends_on:
+    #         - mongodb
+    #     command: [
+    #         mongoimport --db houston_astros --mode upsert --collection player_database --type json --file /data/Batting.json --jsonArray
+    #     ]

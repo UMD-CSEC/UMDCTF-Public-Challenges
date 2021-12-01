@@ -1,0 +1,17 @@
+.logoDiv{
+    position: absolute; 
+    left:0;
+    top: 0;
+}
+
+.logoDim{
+    height: 10%;
+    width: 10%;
+}
+
+.firstRow {
+    margin-top:50px;
+}
+.secondRow {
+    margin-top: 25px;
+}

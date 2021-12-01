@@ -1,0 +1,20 @@
+version: "3"
+services:
+  web1:
+    restart: always
+    build: ./web1/code
+    ports: ["5000:5000"]
+    volumes: ["./web1/code:/code"]
+    environment:
+      - LC_ALL=C.UTF-8
+    links:
+      - db
+
+
+  db:
+    image: mysql
+    ports: ["32000:32000"]
+    environment:
+      MYSQL_ROOT_PASSWORD: UMD_CTF_DB_PW
+    volumes:
+      - ./db:/docker-entrypoint-initdb.d/:ro
