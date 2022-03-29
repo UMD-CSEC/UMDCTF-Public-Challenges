@@ -4,6 +4,8 @@
 
 `Points` -- 1000
 
+`Solves` -- 3
+
 Nice job on finding k32! The hard part is done. Eveything in part 1 is relevant here. Your task now
 is to recover the original plaintexts. To help with this task, we've provide additional faulted
 ciphers from injections to the second to last round inputs. 

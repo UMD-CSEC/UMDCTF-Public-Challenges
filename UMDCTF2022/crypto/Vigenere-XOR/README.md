@@ -4,6 +4,8 @@
 
 `Points` -- 687
 
+`Solves` -- 60
+
 I encrypted a big message using some kind of Vigenère Cipher. Can you figure out what it says?
 
 https://en.wikipedia.org/wiki/Kasiski_examination

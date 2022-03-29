@@ -4,6 +4,8 @@
 
 `Points` -- 149
 
+`Solves` -- 110
+
 One-time pad? More like multiple-time pad ;)
 
 NOTE: You can assume that the plaintexts are grammatically-correct English sentences

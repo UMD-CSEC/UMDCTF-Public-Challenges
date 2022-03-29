@@ -4,6 +4,8 @@
 
 `Points` -- 990
 
+`Solves` -- 12
+
 We've managed to inject faults into a device executing AES. We arent sure what
 its encrypting, but its only a single block. Here are all the faulted cipher
 texts, can you get the original plain text block? Assume ECB.

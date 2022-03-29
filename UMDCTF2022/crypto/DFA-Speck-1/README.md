@@ -4,6 +4,8 @@
 
 `Points` -- 1000
 
+`Solves` -- 8
+
 We managed to percisely inject bit faults on a piece of hardware running Speck 128/128. The faults
 are injected right before the last round of the pt/ct side. Can you figure out what k32 (last round
 key schedule) is from the faulted cipher texts? 
