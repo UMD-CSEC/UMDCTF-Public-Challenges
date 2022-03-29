@@ -1,0 +1,17 @@
+This challenge depends on the use of a facial recognition site and a reverse
+image searcher. images.google.com is not strong enough for either task.
+
+1) Use pimeyes.com to find facial matches on the web. tineyes.com does not work
+for this image, but can often be used in similar scenarios.
+
+2) After matches are returned, inspect the source code of the webpage to get
+the source image of the first match.
+https://pimeyes.com/04bb654f-e2f9-427c-a409-2f2c490dc5ab
+
+3) Save the image from the link above, and reverse image search with it.
+images.google.com does not work, so a better alternative is needed. I used
+https://yandex.com/images/ and got a successful match.
+
+4) View the first match to find the person's name.
+
+UMDCTF{heinz_paus}

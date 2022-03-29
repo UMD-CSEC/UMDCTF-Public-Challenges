@@ -1,0 +1,1 @@
+this may be unsolvable at this point. The account that Jason was streaming on was Twitch (son_of_hey). The flag is the value of the hex of a "random person" watching the stream, which decoded to UMDCTF{yeet}
