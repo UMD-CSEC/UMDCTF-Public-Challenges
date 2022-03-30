@@ -1,7 +1,10 @@
 # Fork n' Knife
 
+`Author` -- Triacontakai
+
+`Points` -- 1000
+
+`Solves` -- 0
+
 Don't look behind the curtain!
 
-- `Author` -- Triacontakai
-- `Difficulty` --  8/10
-- `Flag` -- UMDCTF{pipity_pipety_get_this_fd_exposure_off_my_property}
