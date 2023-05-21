@@ -1,7 +1,7 @@
 # Crypto challenges
 
 |                   Challenge Name                     | Author | Points | Solves |
-|:----------------------------------------------------:|:------:|:------:
+|:----------------------------------------------------:|:------:|:------:|:------:
 | [Adi Shamir's Spontaneously Setec Astronomy Sharing System Security Assessment](./adi-shamirs-spontaneously-setec-astronomy-sharing-system-security-assessment) | [clam](https://github.com/obafgkmdh) | ??? | ??? |
 | [AES-TR](./aes-tr) | [itsecgary](https://github.com/itsecgary) | ??? | ??? |
 | [Bulbeuler](./bulbeuler) | [itsecgary](https://github.com/itsecgary) | ??? | ??? |
