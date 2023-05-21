@@ -1,0 +1,5 @@
+{
+	"chall1": {"panoType": 0, "pano": "AF1QipP4A2_kA_WIzNj8dxRwPg1TLCDVqPYCQCiGPuGC", "lat": 59.9168622, "lng": 10.7297468, "maxZ": 5, "flag": "UMDCTF{I_b3t_rainbolt_c0uld_g3t_th1s_!n_thr33_s3c0nd5}"},
+	"chall2": {"panoType": 0, "pano": "AF1QipOW2aOVluKl1bR5pAZ0djxZZL1ttH6XTf6G5zEx", "lat": 39.3780095, "lng": -104.8555643, "maxZ": 5, "flag": "UMDCTF{why_d0es_th1s_r0ck_h4ve_a_st4r??}"},
+        "chall3": {"panoType": 1, "pano": "Ou6RwPyJ6NaoQ9tRS2Lhqg", "lat": 23.6444599, "lng": 120.5169568, "maxZ": 5, "flag": "UMDCTF{c0mpass3s_and_p0wer_l!n3s_FTW!}"}
+}

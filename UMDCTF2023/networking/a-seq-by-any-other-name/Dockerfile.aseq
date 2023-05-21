@@ -1,0 +1,15 @@
+FROM python:3.6
+
+RUN apt-get update -y
+RUN apt-get install -y python3-pip libnetfilter-queue-dev iptables tcpdump netcat net-tools git graphviz openssh-server vim
+RUN update-alternatives --set iptables /usr/sbin/iptables-legacy
+
+ADD ./challenge/ /opt/challenge
+
+RUN pip3 install -r /opt/challenge/requirements.txt
+RUN pip3 install -r /opt/challenge/geneva/requirements.txt
+ADD ./solve.py /opt/challenge
+
+EXPOSE 80
+ENTRYPOINT ["python3", "/opt/challenge/aseq.py"]
+#ENTRYPOINT ["/bin/bash"]

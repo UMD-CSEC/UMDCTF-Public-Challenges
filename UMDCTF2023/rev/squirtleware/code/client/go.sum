@@ -1,0 +1,4 @@
+golang.org/x/net v0.9.0 h1:aWJ/m6xSmxWBx+V0XRHTlrYrPG56jKsLdTFmsSsCzOM=
+golang.org/x/net v0.9.0/go.mod h1:d48xBJpPfHeWQsugry2m+kC02ZBRGRgulfHnEXEuWns=
+gopkg.in/h2non/gentleman.v2 v2.0.5 h1:ckmb6cLxL2DDk7WN7LSdxXDq7jNkOicFg4JZ4ZnDNuE=
+gopkg.in/h2non/gentleman.v2 v2.0.5/go.mod h1:A1c7zwrTgAyyf6AbpvVksYtBayTB4STBUGmdkEtlHeA=

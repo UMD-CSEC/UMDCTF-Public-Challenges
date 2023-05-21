@@ -1,0 +1,11 @@
+scapy==2.4.3
+requests
+netifaces
+netfilterqueue
+cryptography==2.8
+requests
+anytree
+flask
+Flask
+Flask-WTF
+lorem

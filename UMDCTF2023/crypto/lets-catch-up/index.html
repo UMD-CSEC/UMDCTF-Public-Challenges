@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+    <script src="a.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="email_container">
+            <div>
+                <label for="recipient">Recipient:</label>
+                <input readonly type="text" id="recipient" name="recipient" value="4l1c3@hacker.mail">
+            </div>
+            <div>
+                <label for="flag">Key:</label>
+                <input type="text" id="flag" name="flag" placeholder="ENTER_KEY_HERE">
+            </div>
+            <textarea readonly id="content" name="content">Hey Alice,
+
+Long time no hack!!!! It feels like ages since we last caught up. Hope you're doing well and staying out of trouble. As usual, the digital world has been keeping me on my toes, but I've been missing our hacker-in-crime duo!
+
+We definitely need to catch up on some important matters. There's been some interesting developments that I'm dying to discuss with you. Remember that project we were working on last month? I've made some major breakthroughs since then and I can't wait to share the details with you.
+
+But here's the catch - I seem to have misplaced my encryption key. Yep, classic me! I've turned my entire virtual world upside down trying to find it, but no luck so far. You know me, always trying to encrypt my messages to keep things top secret.
+
+Once you've received this email it means I've found it. I know it's around here somewhere.......
+            </textarea>
+            <div id="success">
+                <h1>Email sent successfully...</h1>
+            </div>
+            <button id="send">Send</button>
+        </div>
+        <div id="progress_container">
+            <div id="progress_bar"></div>
+        </div>
+    </div>
+    <script>
+        const btn = document.getElementById('send');
+        const progressBar = document.getElementById('progress_bar');
+        btn.onclick = () => {
+            progressBar.style.width = '100%';
+            setTimeout(() => {
+                const content = document.getElementById("content").value;
+                const bytes = a.utils.utf8.toBytes(content);
+                // some garbage key, do i even need this?
+                const k = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32];
+                const i = [21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36];
+                var ac = new a.M.cb(k, i);
+                var eB = ac.e(bytes);
+                var eH = a.utils.hex.fromBytes(eB);
+                var eB = a.utils.hex.toBytes(eH);
+                try {
+                    var ac = new a.M.cb([...document.getElementById('flag').value].map(c => parseInt(c.charCodeAt(0))), i);
+                    var dB = ac.d(eB);
+                    var dT = a.utils.utf8.fromBytes(dB);
+                    if(dT === document.getElementById("content").value) {
+                        document.documentElement.style.setProperty('--main-color', 'greenyellow');
+                        document.getElementById("content").style.display = "none";
+                        document.getElementById("send").style.display = "none";
+                        document.getElementById("success").style.display = "flex";
+                    } else {
+                        document.documentElement.style.setProperty('--main-color', 'red');
+                    }
+                } catch(e) {
+                    console.log(e);
+                    document.documentElement.style.setProperty('--main-color', 'red');
+                }
+            }, 2500);
+
+            setTimeout(() => {
+                progressBar.style.width = '0%';
+                if (document.documentElement.style.getPropertyValue("--main-color") === "red") {
+                    document.documentElement.style.setProperty('--main-color', 'white');
+                }
+            }, 3500);
+        }
+    </script>
+</body>
+
+</html>

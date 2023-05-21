@@ -1,0 +1,111 @@
+:root {
+    --main-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#main {
+    background-color: #000;
+    color: var(--main-color);
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#email_container {
+    border: 1px solid var(--main-color);
+    width: 800px;
+    height: 500px;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    background-color: #000;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+}
+
+textarea {
+    resize: none;
+    font-size: large;
+    height: 100%;
+    background-color: #000;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    padding: 0.5em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+    background-color: var(--main-color);
+    padding: 0.5em;
+}
+
+#progress_container {
+    width: 820px;
+    height: 20px;
+}
+
+#progress_bar {
+    width: 0px;
+    height: 100%;
+    animation-name: backgroundColorPalette;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: width 2s;
+}
+
+::selection {
+    background: var(--main-color);
+    color: #000;
+}
+
+::-moz-selection {
+    background: var(--main-color);
+    color: #000;
+}
+
+#success {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+@keyframes backgroundColorPalette {
+    0% {
+        background: #ffffff;
+    }
+
+    25% {
+        background: #000000;
+    }
+
+    50% {
+        background: #adadad;
+    }
+
+    75% {
+        background: #ffffff;
+    }
+
+    100% {
+        background: #000000;
+    }
+}

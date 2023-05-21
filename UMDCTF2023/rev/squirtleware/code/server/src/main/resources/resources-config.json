@@ -1,0 +1,10 @@
+{
+  "resources": [
+    {
+      "pattern": ".*\\.png"
+    },
+    {
+      "pattern": ".*bandera*"
+    }
+  ]
+}

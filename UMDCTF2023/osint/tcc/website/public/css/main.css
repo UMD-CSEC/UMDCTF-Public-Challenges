@@ -1,0 +1,127 @@
+html, body {
+  width: 100%;
+  background-color: #222 !important;
+  color: #EEEEEE !important;
+  font-family: "8-bit", sans-serif;
+}
+
+#answer {
+    font-size: 13px;
+    width: 40%;
+}
+
+.member-card {
+    background-color: #111;
+    border-radius: 10px;
+    max-width: 200px;
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.member-img {
+    width: 100%;
+    height: 50%;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+.member-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: orange;
+    margin-bottom: 0;
+}
+
+.member-desc {
+    font-size: 12px;
+    padding: 10px;
+    min-width: 80%;
+}
+
+.member-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px !important;
+  padding: 20px;
+}
+
+.nav a {
+  display: block;
+  margin-right: 20px;
+  font-size: 18px;
+  color: orange;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: #eeeeee;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social {
+  display: flex;
+}
+
+.social a {
+  display: block;
+  margin-right: 20px;
+  color: orange;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.social a:hover {
+  color: #eeeeee;
+}
+
+@font-face {
+    font-family: "Goblin";
+    src: url("/fonts/AGoblinAppears-o2aV.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "8-bit";
+    src: url("/fonts/DiaryOfAn8BitMage-lYDD.ttf") format("truetype");
+}
+

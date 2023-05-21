@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "birch_team_rocket_hackers_ddc90c22-dc94-484a-9ec3-fa12ec55b190.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

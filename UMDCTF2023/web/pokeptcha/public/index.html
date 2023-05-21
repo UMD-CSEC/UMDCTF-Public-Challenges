@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>POKéPTCHA</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="application/javascript">
+      function checkAnswer(answer) {
+        alert(
+          `${
+            run(answer)
+              ? "Congratulations! No Team Rocket detected!"
+              : "Team Rocket detected!"
+          }`
+        );
+      }
+    </script>
+  </head>
+  <body>
+    <h1>PoKéPTCHA</h1>
+    <h2>Prove you're not a member of Team Rocket! Identify this Pokémon!</h2>
+    <img src="image.png" alt="CAPTCHA Image" />
+    <script src="captcha.js"></script>
+    <form id="da-form">
+      <div class="answers">
+        <button type="button" onclick="checkAnswer('voltorb')">
+          A Voltorb!
+        </button>
+        <button type="button" onclick="checkAnswer('pokeball')">
+          A Pokéball, without a doubt!
+        </button>
+        <button type="button" onclick="checkAnswer('electrode')">
+          Obviously, it's an Electrode!
+        </button>
+      </div>
+      <div class="answers">
+        <input type="text" placeholder="Other" id="answer" />
+        <div class="answer-text">
+          <button
+            type="button"
+            onclick="checkAnswer(document.getElementById('answer').value || 'a'); event.preventDefault();"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </form>
+    <script>
+      var form = document.getElementById("da-form");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+      });
+    </script>
+  </body>
+</html>

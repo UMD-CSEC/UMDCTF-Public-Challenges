@@ -1,0 +1,26 @@
+1.
+-> sinnoh dossier is locked with a password deep in rockyou
+	- Here is the password we are using:
+			DNALOCS=NEVER
+-> you will see one jpg, crime_scene.jpg, and
+	one wav, case_logs
+-> extract files from jpg and wav using steghide
+-> wav has:
+ - case_files.zip (passwd protected):
+ 	- the password for the ZIP will be one of the pokemon: Klawf (deep in the user-constructed wordlist) BLAKE2'd 500 times, so they will have to loop through, BLAKE2 every name 500 times and check against.
+ 		- Here is "Klawf-#0950" BLAKE2'd 500 times: a714a5860c272b74adae64489d92855ef88b6c1610975480018d30a34a9b10c00ca8e09ae088623002bc8eaa58b0aefe596ffe120bb3a6111999b7f862da4ca0
+ 	- vm image embedded
+ 	- flag1.txt
+ 		- Has flag: UMDCTF{d373c71v3_p1k4chu_h07_0n_7h3_c453}
+-> jpg has: 
+	 - lol.txt
+	 		- would have been town lists containing scattered pokemon names from 1-4th gen
+	 		- instead, there is lol.txt file that says that those files destroyed!
+	 		- up to you to eventually reconstruct a wordlist of all pokemon in national dex from gen 1 - newest that will be used to try and crack ZIP
+	 - sticky_note.txt
+	 	- XOR'd "Secret Stuff" section with 19 as the hexadecimal key [25, pikachu's national dex number, in hex] (did not include the bullet points in the encryption)
+	 		- This section has info/hints on how to construct wordlist for case_files.zip
+-> upon successful crack and unzip of case_files.zip get:
+	- flag1.txt
+	- vm image
+Flag is: UMDCTF{d373c71v3_p1k4chu_h07_0n_7h3_c453}

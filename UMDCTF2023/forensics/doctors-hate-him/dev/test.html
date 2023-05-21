@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Doctors Hate Him!</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+      button {
+        background-color: red;
+        color: white;
+        padding: 20px 40px;
+        font-size: 24px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        animation: blink 1s infinite;
+      }
+      @keyframes blink {
+        50% {
+          opacity: 0;
+        }
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        max-width: 800px;
+        margin-top: 50px;
+      }
+      .text {
+        flex: 1;
+        text-align: center;
+      }
+      .text h1 {
+        font-size: 48px;
+        margin-top: 0;
+        margin-bottom: 20px;
+        color: red;
+      }
+      .text p {
+        font-size: 24px;
+        line-height: 1.5;
+      }
+      .image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .image img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text">
+        <strong><h1>DOCTORS HATE HIM!!</h1></strong>
+        <p>Do you suffer from low energy, fatigue, and a general lack of motivation? Did your Pokemon leave you for a better trainer? Rocket Corp's Master Ball Serum can help! Our all-natural formula boosts your energy levels and helps you feel like a young trainer ready to take on the world again!</p>
+        <button>Find out now!</button>
+      </div>
+      <div class="image">
+        <img src="depressed_pokemon_trainer.png" alt="Pikachu">
+      </div>
+    </div>
+  </body>
+</html>
+

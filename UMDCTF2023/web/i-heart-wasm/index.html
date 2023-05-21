@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+  <script defer type="module" src="index.js"></script>
+    <style>
+        *  {
+            font-family: 'Courier New', Courier, monospace;
+        }
+        input {
+            mix-blend-mode: difference;
+        }
+        p {
+            color: black !important;
+        }
+    </style>
+</head>
+  <body>
+    <input id="play" type="button" value="⏯"/>
+    <p>(headphone users, please make sure your volume is not too loud!)</p>
+
+    <div>
+        <input type="range" min="30" max="80" value="50" style="width: 400px" id="primary_input"/>
+    </div>
+
+    <div>
+        <input type="range" min="0" max="3" value="0" step="0.05"  style="width: 400px" id="fm_freq"/>
+    </div>
+
+    <div>
+        <input type="range" min="0" max="3" value="0" step="0.05"  style="width: 400px" id="fm_amount"/>
+    </div>
+
+    <script>
+        let r = 0;
+        let g = 0;
+        let b = 0;
+
+        function mapRange (value, a, b, c, d) {
+            // first map value from (a..b) to (0..1)
+            value = (value - a) / (b - a);
+            // then map it from (0..1) to (c..d) and return it
+            return c + value * (d - c);
+        }
+
+        const primary_input = document.getElementById('primary_input');
+        primary_input.addEventListener('input', function() {
+            r = mapRange(primary_input.value, 30, 80, 0, 255);
+            document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+        })
+
+        const fm_freq = document.getElementById('fm_freq');
+        fm_freq.addEventListener('input', function() {
+            g = mapRange(fm_freq.value, 0, 3, 0, 255);
+            document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+        })
+
+        const fm_amount = document.getElementById('fm_amount');
+        fm_amount.addEventListener('input', function() {
+            b = mapRange(fm_amount.value, 0, 3, 0, 255);
+            document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+        })
+
+        function step() {
+            window.document.body.style.backgroundColor
+        }
+
+        window.requestAnimationFrame(step);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "pokeptcha",
+  "version": "1.0.0",
+  "description": "Team Rocket keeps taking down my website! I'm testing out this new type of captcha, but it doesn't seem to be working as expected. None of the choices are valid! Can you solve it for me?",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

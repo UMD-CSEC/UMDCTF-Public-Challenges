@@ -1,0 +1,20 @@
+[run]
+branch = True
+source = ./
+
+[report]
+exclude_lines =
+    if self.debug:
+    pragma: no cover
+    raise NotImplementedError
+    if __name__ == .__main__.:
+    def get_args
+    except KeyboardInterrupt:
+ignore_errors = True
+omit =
+    experimental/*
+    experimental/smtp/*
+    tests/*
+    censors/*
+    censor_driver.py
+    graph.py

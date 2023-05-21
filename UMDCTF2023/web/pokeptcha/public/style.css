@@ -1,0 +1,69 @@
+h1 {
+  text-align: center;
+  margin-top: 30px;
+}
+h2 {
+  text-align: center;
+  /* margin-top: 30px; */
+}
+
+.answers {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.answers button {
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid black;
+  background-color: white;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.answer-text button {
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid black;
+  background-color: lightblue;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.answers button:last-child {
+  margin-right: 0;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid black;
+  background-color: white;
+  cursor: pointer;
+  width: 200px;
+  margin-right: 10px;
+}
+
+input[type="submit"] {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: lightblue;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  margin: 50px auto;
+  max-width: 700px;
+  height: auto;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+body {
+  background-color: #a1d9ef; /* Replace #FFFFFF with the hex code of your desired color */
+}

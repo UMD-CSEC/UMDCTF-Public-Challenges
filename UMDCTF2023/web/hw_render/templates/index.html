@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        body {
+            background-color: #EFF1C5;
+            color: #035E7B;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        textarea {
+            margin: 3%;
+            border-radius: 10px;
+            border: solid 5px #035E7B;
+        }
+
+        #submit {
+            margin-bottom: 2%;
+            background-color: #035E7B;
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 10px;
+        }
+
+        #submit:hover {
+            background-color: white;
+            color: #035E7B;
+        }
+
+
+        hr {
+            background-color: #035E7B;
+            height: 7px;
+        }
+
+    </style>
+    <title>Math Homework Submission Generator</title>
+</head>
+<body>
+    <h1>Turn in your homework:</h1>
+    <hr>
+    <form action="/render">
+        <textarea id="latex" name="latex" rows="20" cols="100"></textarea>
+        <br>
+        <input id="submit" type="button" value="Submit" onclick="render()">
+    </form>
+    <hr>
+    <!-- TODO: 1. Fix render function. 2. Remove robots.txt (no longer needed)! -->
+    <script>
+        function render() {
+            var text = document.getElementById("latex").value;
+            var encoded = btoa(text);
+            var url = window.location.protocol + '//' + window.location.host + "/render?latex=" + encoded;
+            window.location.href = url;
+        }
+    </script>    
+</body>
+</html>

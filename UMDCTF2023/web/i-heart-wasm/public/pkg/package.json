@@ -1,0 +1,14 @@
+{
+  "name": "wasm-test",
+  "version": "0.1.0",
+  "files": [
+    "wasm_test_bg.wasm",
+    "wasm_test.js",
+    "wasm_test.d.ts"
+  ],
+  "module": "wasm_test.js",
+  "types": "wasm_test.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}

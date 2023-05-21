@@ -1,0 +1,23 @@
+RockTunnelPokecenter_Script:
+	call Serial_TryEstablishingExternallyClockedConnection
+	jp EnableAutoTextBoxDrawing
+
+RockTunnelPokecenter_TextPointers:
+	dw RockTunnelHealNurseText
+	dw RockTunnelPokecenterText2
+	dw RockTunnelPokecenterText3
+	dw RockTunnelTradeNurseText
+
+RockTunnelHealNurseText:
+	script_pokecenter_nurse
+
+RockTunnelPokecenterText2:
+	text_far _RockTunnelPokecenterText2
+	text_end
+
+RockTunnelPokecenterText3:
+	text_far _RockTunnelPokecenterText3
+	text_end
+
+RockTunnelTradeNurseText:
+	script_cable_club_receptionist

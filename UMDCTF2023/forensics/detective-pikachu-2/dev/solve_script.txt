@@ -1,0 +1,10 @@
+-> we now will focus on VM image,
+	-> in vm image, 
+	-> there is a binary in /boot that the user needs to run for the flag,
+	-> user you log in as is not in sudoers
+-> find has its SUID bit set, so they will need to do a gtfobin to get root shell acccess
+-> they will use hint in pwned.txt on desktop to hopefully check out /boot and find ./kexec_brick, which when run (can only be run as root), will print the ROT47'd flag
+	-> use the SUID find gtfobins
+-> run the binary, you get the ROT47'd flag
+-> decode it
+-> Flag: UMDCTF{7h3_3v1d3nc3_5u663575_17_w45_r070m!!!}

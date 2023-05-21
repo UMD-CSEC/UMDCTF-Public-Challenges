@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BFCEF58129F700FD00504355 /* Rocket_LauncherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCEF58029F700FD00504355 /* Rocket_LauncherApp.swift */; };
+		BFCEF58329F700FD00504355 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCEF58229F700FD00504355 /* ContentView.swift */; };
+		BFCEF58529F700FE00504355 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFCEF58429F700FE00504355 /* Assets.xcassets */; };
+		BFCEF58829F700FE00504355 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFCEF58729F700FE00504355 /* Preview Assets.xcassets */; };
+		BFCEF59329F700FE00504355 /* Rocket_LauncherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCEF59229F700FE00504355 /* Rocket_LauncherTests.swift */; };
+		BFCEF59D29F700FE00504355 /* Rocket_LauncherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCEF59C29F700FE00504355 /* Rocket_LauncherUITests.swift */; };
+		BFCEF59F29F700FE00504355 /* Rocket_LauncherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCEF59E29F700FE00504355 /* Rocket_LauncherUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BFCEF58F29F700FE00504355 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFCEF57529F700FD00504355 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFCEF57C29F700FD00504355;
+			remoteInfo = "Rocket Launcher";
+		};
+		BFCEF59929F700FE00504355 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFCEF57529F700FD00504355 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFCEF57C29F700FD00504355;
+			remoteInfo = "Rocket Launcher";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BFCEF57D29F700FD00504355 /* Rocket Launcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rocket Launcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFCEF58029F700FD00504355 /* Rocket_LauncherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rocket_LauncherApp.swift; sourceTree = "<group>"; };
+		BFCEF58229F700FD00504355 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BFCEF58429F700FE00504355 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BFCEF58729F700FE00504355 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BFCEF58929F700FE00504355 /* Rocket_Launcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Rocket_Launcher.entitlements; sourceTree = "<group>"; };
+		BFCEF58E29F700FE00504355 /* Rocket LauncherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rocket LauncherTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFCEF59229F700FE00504355 /* Rocket_LauncherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rocket_LauncherTests.swift; sourceTree = "<group>"; };
+		BFCEF59829F700FE00504355 /* Rocket LauncherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rocket LauncherUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFCEF59C29F700FE00504355 /* Rocket_LauncherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rocket_LauncherUITests.swift; sourceTree = "<group>"; };
+		BFCEF59E29F700FE00504355 /* Rocket_LauncherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rocket_LauncherUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFCEF57A29F700FD00504355 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFCEF58B29F700FE00504355 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFCEF59529F700FE00504355 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BFCEF57429F700FD00504355 = {
+			isa = PBXGroup;
+			children = (
+				BFCEF57F29F700FD00504355 /* Rocket Launcher */,
+				BFCEF59129F700FE00504355 /* Rocket LauncherTests */,
+				BFCEF59B29F700FE00504355 /* Rocket LauncherUITests */,
+				BFCEF57E29F700FD00504355 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BFCEF57E29F700FD00504355 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFCEF57D29F700FD00504355 /* Rocket Launcher.app */,
+				BFCEF58E29F700FE00504355 /* Rocket LauncherTests.xctest */,
+				BFCEF59829F700FE00504355 /* Rocket LauncherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFCEF57F29F700FD00504355 /* Rocket Launcher */ = {
+			isa = PBXGroup;
+			children = (
+				BFCEF58029F700FD00504355 /* Rocket_LauncherApp.swift */,
+				BFCEF58229F700FD00504355 /* ContentView.swift */,
+				BFCEF58429F700FE00504355 /* Assets.xcassets */,
+				BFCEF58929F700FE00504355 /* Rocket_Launcher.entitlements */,
+				BFCEF58629F700FE00504355 /* Preview Content */,
+			);
+			path = "Rocket Launcher";
+			sourceTree = "<group>";
+		};
+		BFCEF58629F700FE00504355 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BFCEF58729F700FE00504355 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BFCEF59129F700FE00504355 /* Rocket LauncherTests */ = {
+			isa = PBXGroup;
+			children = (
+				BFCEF59229F700FE00504355 /* Rocket_LauncherTests.swift */,
+			);
+			path = "Rocket LauncherTests";
+			sourceTree = "<group>";
+		};
+		BFCEF59B29F700FE00504355 /* Rocket LauncherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BFCEF59C29F700FE00504355 /* Rocket_LauncherUITests.swift */,
+				BFCEF59E29F700FE00504355 /* Rocket_LauncherUITestsLaunchTests.swift */,
+			);
+			path = "Rocket LauncherUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFCEF57C29F700FD00504355 /* Rocket Launcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFCEF5A229F700FE00504355 /* Build configuration list for PBXNativeTarget "Rocket Launcher" */;
+			buildPhases = (
+				BFCEF57929F700FD00504355 /* Sources */,
+				BFCEF57A29F700FD00504355 /* Frameworks */,
+				BFCEF57B29F700FD00504355 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rocket Launcher";
+			productName = "Rocket Launcher";
+			productReference = BFCEF57D29F700FD00504355 /* Rocket Launcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BFCEF58D29F700FE00504355 /* Rocket LauncherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFCEF5A529F700FE00504355 /* Build configuration list for PBXNativeTarget "Rocket LauncherTests" */;
+			buildPhases = (
+				BFCEF58A29F700FE00504355 /* Sources */,
+				BFCEF58B29F700FE00504355 /* Frameworks */,
+				BFCEF58C29F700FE00504355 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFCEF59029F700FE00504355 /* PBXTargetDependency */,
+			);
+			name = "Rocket LauncherTests";
+			productName = "Rocket LauncherTests";
+			productReference = BFCEF58E29F700FE00504355 /* Rocket LauncherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BFCEF59729F700FE00504355 /* Rocket LauncherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFCEF5A829F700FE00504355 /* Build configuration list for PBXNativeTarget "Rocket LauncherUITests" */;
+			buildPhases = (
+				BFCEF59429F700FE00504355 /* Sources */,
+				BFCEF59529F700FE00504355 /* Frameworks */,
+				BFCEF59629F700FE00504355 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFCEF59A29F700FE00504355 /* PBXTargetDependency */,
+			);
+			name = "Rocket LauncherUITests";
+			productName = "Rocket LauncherUITests";
+			productReference = BFCEF59829F700FE00504355 /* Rocket LauncherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFCEF57529F700FD00504355 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					BFCEF57C29F700FD00504355 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					BFCEF58D29F700FE00504355 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = BFCEF57C29F700FD00504355;
+					};
+					BFCEF59729F700FE00504355 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = BFCEF57C29F700FD00504355;
+					};
+				};
+			};
+			buildConfigurationList = BFCEF57829F700FD00504355 /* Build configuration list for PBXProject "Rocket Launcher" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BFCEF57429F700FD00504355;
+			productRefGroup = BFCEF57E29F700FD00504355 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFCEF57C29F700FD00504355 /* Rocket Launcher */,
+				BFCEF58D29F700FE00504355 /* Rocket LauncherTests */,
+				BFCEF59729F700FE00504355 /* Rocket LauncherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFCEF57B29F700FD00504355 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFCEF58829F700FE00504355 /* Preview Assets.xcassets in Resources */,
+				BFCEF58529F700FE00504355 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFCEF58C29F700FE00504355 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFCEF59629F700FE00504355 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFCEF57929F700FD00504355 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFCEF58329F700FD00504355 /* ContentView.swift in Sources */,
+				BFCEF58129F700FD00504355 /* Rocket_LauncherApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFCEF58A29F700FE00504355 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFCEF59329F700FE00504355 /* Rocket_LauncherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFCEF59429F700FE00504355 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFCEF59F29F700FE00504355 /* Rocket_LauncherUITestsLaunchTests.swift in Sources */,
+				BFCEF59D29F700FE00504355 /* Rocket_LauncherUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BFCEF59029F700FE00504355 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFCEF57C29F700FD00504355 /* Rocket Launcher */;
+			targetProxy = BFCEF58F29F700FE00504355 /* PBXContainerItemProxy */;
+		};
+		BFCEF59A29F700FE00504355 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFCEF57C29F700FD00504355 /* Rocket Launcher */;
+			targetProxy = BFCEF59929F700FE00504355 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BFCEF5A029F700FE00504355 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BFCEF5A129F700FE00504355 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		BFCEF5A329F700FE00504355 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Rocket Launcher/Rocket_Launcher.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Rocket Launcher/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sh.villain.RocketLauncher.Rocket-Launcher";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BFCEF5A429F700FE00504355 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Rocket Launcher/Rocket_Launcher.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Rocket Launcher/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sh.villain.RocketLauncher.Rocket-Launcher";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		BFCEF5A629F700FE00504355 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sh.villain.RocketLauncher.Rocket-LauncherTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rocket Launcher.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Rocket Launcher";
+			};
+			name = Debug;
+		};
+		BFCEF5A729F700FE00504355 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sh.villain.RocketLauncher.Rocket-LauncherTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rocket Launcher.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Rocket Launcher";
+			};
+			name = Release;
+		};
+		BFCEF5A929F700FE00504355 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sh.villain.RocketLauncher.Rocket-LauncherUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Rocket Launcher";
+			};
+			name = Debug;
+		};
+		BFCEF5AA29F700FE00504355 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sh.villain.RocketLauncher.Rocket-LauncherUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Rocket Launcher";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFCEF57829F700FD00504355 /* Build configuration list for PBXProject "Rocket Launcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFCEF5A029F700FE00504355 /* Debug */,
+				BFCEF5A129F700FE00504355 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFCEF5A229F700FE00504355 /* Build configuration list for PBXNativeTarget "Rocket Launcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFCEF5A329F700FE00504355 /* Debug */,
+				BFCEF5A429F700FE00504355 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFCEF5A529F700FE00504355 /* Build configuration list for PBXNativeTarget "Rocket LauncherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFCEF5A629F700FE00504355 /* Debug */,
+				BFCEF5A729F700FE00504355 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFCEF5A829F700FE00504355 /* Build configuration list for PBXNativeTarget "Rocket LauncherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFCEF5A929F700FE00504355 /* Debug */,
+				BFCEF5AA29F700FE00504355 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFCEF57529F700FD00504355 /* Project object */;
+}

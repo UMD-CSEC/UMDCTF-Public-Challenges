@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>YARA GYM</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css"
+    integrity="sha512-...[omitted for brevity]...-ZdW8SHOMg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    .card {
+      border-radius: 15px;
+    }
+
+    .img {
+      border-radius: 15px;
+    }
+
+    .overlay {
+      border-radius: 15px
+    }
+
+    .card-img-top {
+      border-radius: 15px;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="jumbotron justify-content-center mt-5">
+      <h1 class="display-4" style="font-weight: 900;">YARA Trainer Gym</h1>
+      <p class="lead">Build your moves up to defeat all 8 gym leaders!</p>
+      <hr class="my-4">
+      <form method="post" enctype="multipart/form-data">
+        <label for="file" style="font-weight: 700;">Choose your fighter!</label>
+        <input type="file" id="file" name="file"><br><br>
+        <input type="submit" class="btn btn-danger btn-lg" value="FIGHT!">
+      </form>
+    </div>
+    <div class="row justify-content-center mt-5">
+
+      <h1 class="flag"></h1>
+      {% for _ in range(8) %}
+      <div class="col-md-4 mb-4 col-lg-3">
+        <div class="card">
+          <div class="overlay">
+            <img class="card-img-top" src="/static/locked.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title" style="font-weight: 700;">Gym {{loop.index}}</h5>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+
+    </div>
+
+    <script>
+      const form = document.querySelector('form');
+      const matches = document.querySelectorAll('.card');
+      const audio = new Audio("/static/pokemon_battle.mp3");
+
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const formData = new FormData(form);
+        audio.play();
+        fetch('/', {
+          method: 'POST',
+          body: formData
+        })
+          .then(response => response.json())
+          .then(data => {
+            // display the matches in the spaces
+            data.matches.forEach((match, index) => {
+              //matches[index].textContent = match;
+              matches[index].querySelector(".card-title").innerHTML = match["name"];
+              matches[index].querySelector(".card-img-top").src = match["image"];
+              matches[index].querySelector(".card-text").innerHTML = match["description"];
+              matches[index].querySelector(".overlay").style.backgroundColor = match["background"];
+            });
+
+            // display the flag
+            document.querySelector('.flag').textContent = data.flag;
+          })
+          .catch(error => console.error(error));
+      });
+    </script>
+</body>

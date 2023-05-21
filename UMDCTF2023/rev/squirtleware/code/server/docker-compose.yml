@@ -1,0 +1,21 @@
+version: "3.8"
+services:
+  server:
+    environment:
+      QUARKUS_PROFILE: dev
+    build:
+      context: .
+      dockerfile: src/main/docker/Dockerfile.jvm
+    depends_on:
+      - postgres
+    ports:
+      - "8080:8080"
+      - "5005:5005"
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"

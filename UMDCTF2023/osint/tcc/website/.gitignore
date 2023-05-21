@@ -1,0 +1,5 @@
+node_modules/
+server.cert
+server.key
+package.json
+package-lock.json

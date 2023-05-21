@@ -1,0 +1,29 @@
+#include <pokemon.h>
+#include <stdio.h>
+
+struct pokemon* create_pokemon(char* name, unsigned char index) {
+  struct pokemon* p = (struct pokemon*)malloc(sizeof(struct pokemon));
+  p->name = name;
+  p->id = index;
+  p->difficulty = (rand() % 100) + 1;  // random between 1-100
+  return p;
+}
+
+int is_pokemon_squirtle(struct pokemon* pokemon) {
+  return pokemon->id == SQUIRTLE_ID;
+}
+
+struct pokemon* find_pokemon(void) {
+  int index = (rand() % POKEMON_REGISTERED) + 1;
+  return pokemons[index];
+}
+
+void init_pokemon(void) {
+  pokemons =
+      (struct pokemon**)calloc(POKEMON_REGISTERED, sizeof(struct pokemon*));
+  [[INSERT POKEMON]]
+}
+
+void deinit_pokemon(void) {
+  free(pokemons);
+}
