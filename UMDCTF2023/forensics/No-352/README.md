@@ -16,9 +16,6 @@ hide-n-seek.png
 1. download hide-n-seek.png
 2. steghide extract -sf hide-n-seek.png
     a) password to enter is "kecleon"
-3. open stegosuite and input output file from previous step
+3. steghide extract -sf <insert output file from previous step>
     a) password to enter is "timetogofindwhatkecleonishiding"
 4. get output flag
-
-## Flag
-`UMDCTF{KECLE0NNNNN}`
