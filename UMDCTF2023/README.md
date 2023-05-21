@@ -6,8 +6,8 @@ Public repository for UMDCTF2023 challenges. Exact date and time for UMDCTF2023 
 [Discord](https://discord.gg/n65kg6KuYH)
 
 ## About
-We had a total of 65 challenges (excluding sanity check & surveys) this year ~XXXX users registered and ~XXX teams registered by the end of the competition.
-Our challenges existed in the following categories: crypto, web, pwn, rev, misc, hardware/rf, OSINT, and forensics.
+We had a total of 65 challenges (excluding sanity check & surveys) this year ~2033 users registered and ~1064 teams registered by the end of the competition.
+Our challenges existed in the following categories: crypto, web, pwn, rev, misc, hardware/rf, OSINT, forensics, and mobile.
 Each challenge is the respective work of the listed author(s). The flag for each challenge will be in its respective `flag.txt` file.
 
 ## Challenge Developers
