@@ -1,6 +1,6 @@
 # Forensics challenges
 
-|                   Challenge Name                     | Points | Solves |
+|                   Challenge Name                     | Author | Points | Solves |
 |:----------------------------------------------------:|:------:|:------:
 | [Doctors Hate Him!!](/doctors-hate-him) | ??? | ??? |
 | [Fire Type Pokemon Only ](/fire-type-pokemon-only) | ??? | ??? |

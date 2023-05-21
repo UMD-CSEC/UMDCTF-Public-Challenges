@@ -1,6 +1,6 @@
 # Misc challenges
 
-|                   Challenge Name                     | Points | Solves |
+|                   Challenge Name                     | Author | Points | Solves |
 |:----------------------------------------------------:|:------:|:------:
 | [Alakazam's Password](/alakazams-password) | ??? | ??? |
 | [Beheeyem's Password](/beheeyems-password) | ??? | ??? |

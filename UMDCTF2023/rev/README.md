@@ -1,6 +1,6 @@
 # Rev challenges
 
-|                   Challenge Name                     | Points | Solves |
+|                   Challenge Name                     | Author | Points | Solves |
 |:----------------------------------------------------:|:------:|:------:
 | [But Like When ](/butlikewhen) | ??? | ??? |
 | [Cleffa's Surprise](/cleffas-surprise) | ??? | ??? |

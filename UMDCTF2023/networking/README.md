@@ -1,6 +1,6 @@
 # Networking challenges
 
-|                   Challenge Name                     | Points | Solves |
+|                   Challenge Name                     | Author | Points | Solves |
 |:----------------------------------------------------:|:------:|:------:
 | [A Seq By Any Other Name](/a-seq-by-any-other-name) | ??? | ??? |
 | [A TXT For You and Me](/a-txt-for-you-and-me) | ??? | ??? |

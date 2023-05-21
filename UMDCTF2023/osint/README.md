@@ -1,6 +1,6 @@
 # OSINT challenges
 
-|                   Challenge Name                     | Points | Solves |
+|                   Challenge Name                     | Author | Points | Solves |
 |:----------------------------------------------------:|:------:|:------:
 | Gone Missing 1 | ??? | ??? |
 | Gone Missing 2 | ??? | ??? |

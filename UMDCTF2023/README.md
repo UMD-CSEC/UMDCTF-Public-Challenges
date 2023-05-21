@@ -27,7 +27,7 @@ Each challenge is the respective work of the listed author(s). The flag for each
  * [matlac](https://github.com/matl4c)
  * [nickfroehl](https://github.com/nickfroehl)
  * [parikhakshat](https://github.com/parikhakshat)
- * sd
+ * [sd](https://github.com/ben-sb)
  * [segal](https://github.com/segalll)
  * [shricubed](https://github.com/shricubed)
  * [silly-lily](https://github.com/silly-lily)
@@ -41,3 +41,6 @@ Each challenge is the respective work of the listed author(s). The flag for each
  * [drkmrin78](https://github.com/drkmrin78)
  * [edwfeng](https://github.com/edwfeng)
 
+## TODO
+- add authors to each challenge
+- include google drive links for the challenges that need them

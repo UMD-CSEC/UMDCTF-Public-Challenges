@@ -1,6 +1,6 @@
 # Web challenges
 
-|                   Challenge Name                     | Points | Solves |
+|                   Challenge Name                     | Author | Points | Solves |
 |:----------------------------------------------------:|:------:|:------:
 | [Homework Render](/hw_render) | ??? | ??? |
 | [i-heart-wasm](/i-heart-wasm) | ??? | ??? |
