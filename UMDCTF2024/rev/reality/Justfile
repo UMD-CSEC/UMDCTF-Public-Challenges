@@ -1,0 +1,2 @@
+gen:
+    python3 codegen.py && gcc reality.c -lm -O3 -s && ./a.out

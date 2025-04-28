@@ -1,0 +1,46 @@
+<html>
+<head>
+    <script>
+        function register(e) {
+            e.preventDefault();
+            fetch("/api/register", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    "username": document.getElementById("username").value,
+                    "password": document.getElementById("password").value
+                })
+            }).then((res) => {
+                if (res.status === 200) {
+                    window.location.href = "/login.html";
+                } else {
+                    res.text().then((text) => {
+                        document.getElementById("error").innerText = text;
+                    });
+                }
+            });
+        }
+
+        function setup() {
+            document.getElementById("register-form").addEventListener("submit", register)
+        }
+    </script>
+    <title>UMDProxy - Register</title>
+</head>
+<body onload="setup()">
+<form id="register-form">
+    <label for="username">Username</label>
+    <input id="username"/>
+    <br/>
+    <label for="password">Password</label>
+    <input id="password" type="password" minlength="8"/>
+    <br/>
+    <button type="submit">Register</button>
+</form>
+
+<p id="error"></p>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>md5 checker</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #shadowBox {
+            background-color: rgb(0, 0, 0);
+            border: 3px solid;
+        }
+
+        .rainbow {
+            letter-spacing: 5px;
+            background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: rainbow_animation 6s linear infinite;
+            background-size: 400% 100%;
+        }
+
+        @keyframes rainbow_animation {
+            0%,100% {
+                background-position: 0 0;
+            }
+
+            50% {
+                background-position: 100% 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="max-w-screen-md m-auto flex flex-col space-y-4 text-center">
+        <marquee>
+            <div class="shadowBox">
+                <h1 class="text-6xl rainbow">congratulations!</h1>
+            </div>
+        </marquee>
+        <p>uhhh please let me know how you did this</p>
+        <p>dm @edwfeng on discord</p>
+        <pre>UMDCTF{why_did_you_spend_your_time_doing_this}</pre>
+    </div>
+</body>
+</html>

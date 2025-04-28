@@ -1,0 +1,25 @@
+name: padding-oracle
+description: >-
+  The Baron used AES128-CBC with PKCS#7 to hide the flag. Can you recover the flag using his padding oracle?
+
+  `{{ nc }}`
+author: >-
+  lily
+
+visible: true
+deployed: true
+
+flag: 
+  UMDCTF{I_l0vE_p@dINg_0rAClE_@tTacKS}
+containers:
+  main:
+    build: .
+    ports: [1447]
+    privileged: true
+provide:
+  - iv.txt
+  - flag.txt
+expose: 
+  main:
+  - target: 1447
+    tcp: 32345

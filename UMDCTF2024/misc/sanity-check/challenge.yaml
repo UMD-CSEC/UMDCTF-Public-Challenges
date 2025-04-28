@@ -1,0 +1,6 @@
+name: sanity check
+author: umdctf
+description: |-
+  sorry for getting this up an hour late, UMDCTF{it's_hard_to_coodinate_time_zones_between_multiple_planets}
+flag: UMDCTF{it's_hard_to_coodinate_time_zones_between_multiple_planets}
+tiebreakEligible: false

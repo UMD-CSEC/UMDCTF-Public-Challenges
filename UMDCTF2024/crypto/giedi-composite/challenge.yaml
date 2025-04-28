@@ -1,0 +1,11 @@
+name: giedi-composite
+author: aparker
+description: |-
+  I don't like Giedi Prime, so I made my cryptosystem use a composite number instead (I am getting lazy with these Dune themes).
+
+flag: UMDCTF{NTRUly_a_n1c3_j0b}
+
+provide:
+  - ./chal.sage
+  - ./output.txt
+

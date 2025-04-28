@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>md5 checker</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="max-w-screen-md m-auto flex flex-col space-y-4 text-center">
+        <marquee><h1 class="text-6xl">md5 checker</h1></marquee>
+        <p>i took a class that had a hash-breaking hw</p>
+        <p>it had a fun bonus <span class="underline decoration-wavy">extra-credit</span> hash</p>
+        <p>according to the instructor, this hash is...</p>
+        <blockquote>"Very hard. Do not bother unless you intend to put a lot of effort into this - this has been included in every homework as a bonus since this class started and has <span class="italic">never</span> been cracked."</blockquote>
+        <p>i was, unfortunately, not able to crack it</p>
+        <p>you're welcome to try though!!!</p>
+        <p>uhhhhh no guarantees that this is solvable so maybe focus on some other challs</p>
+
+        <div class="h-4"></div>
+        <div class="flex justify-center items-baseline space-x-2">
+            <pre>826f550caf7b1f9e9026619ef6910410</pre>
+            <div>(MD5)</div>
+        </div>
+        <form action="/submit" method="get">
+            <div class="flex flex-row justify-center items-baseline space-x-4">
+                <input type="text" name="input" placeholder="what gives us the above md5 hash?" class="border-b border-slate-900 focus:outline-none focus:border-blue-600 min-w-80">
+                <button type="submit" class="border border-slate-900 rounded py-1 px-2 hover:bg-gray-200">Submit</button>
+            </div>
+        </form>
+
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="italic text-red-600">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    </div>
+</body>
+</html>

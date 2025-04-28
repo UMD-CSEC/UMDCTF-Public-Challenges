@@ -1,0 +1,10 @@
+services:
+  app:
+    build: "./app"
+    restart: always
+  reverse-proxy:
+    build: "./reverse-proxy"
+    restart: always
+    ports:
+      - "443:443/tcp"
+      - "443:443/udp"

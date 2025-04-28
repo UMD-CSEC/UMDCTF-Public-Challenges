@@ -1,0 +1,46 @@
+# KEEP THIS FILE IN THE ROOT OF YOUR CHALLENGE DIRECTORY IN THE GIT
+name: mentat-question
+author: cephi
+
+description: |-
+  Thufir Hawat is ready to answer any and all questions you have. Unless it's not about division...  
+
+  `{{ nc }}`
+
+flag: UMDCTF{3_6u1ld_n4v16470r5_4_7074l_0f_1.46_m1ll10n_62_50l4r15_r0und_7r1p}
+
+# remove this if your challenge has no distributed files
+# these files are taken from the same directory as the challenge.yaml
+provide:
+  - mentat-question
+  - mentat-question.c
+  - Dockerfile
+
+# remove this if your challenge has no online component
+# this default config will build the container using the
+# Dockerfile in the current directory
+#
+# also: see example Dockerfile in chall-template
+# feel free to replace with your own, but if making a simple challenge
+# w/ nc connetion it's a good start
+containers:
+  main:
+    build: .
+    privileged: true
+    ports:
+      - 32300
+
+# remove this if your challenge has no online component
+# use either tcp/http
+# this uses container name from above
+expose: 
+  main:
+    - target: 32300
+      tcp: 32300
+
+# set these to true when your challenge is ready
+# if you want to test your challenge, set deployed: true only, but
+# be fast since your challenge is technically accessible by others
+# if they guess url/port
+visible: true
+deployed: true

@@ -1,0 +1,25 @@
+name: the worm strikes back
+author: segal
+description: |
+  once again, the fremen are trying to sabotage the spice harvest and need you to fool the spice harvester's worm image recognition! this time though, you need to generate a 40x40 patch to add to the image.
+
+  NOTE: the model is the same as `attack of the worm`
+
+  `{{ nc }}`
+flag: UMDCTF{sandworms_love_adversarial_patches}
+
+deployed: true
+
+provide:
+  - ./model.pt
+  - ./server.py
+containers:
+  main:
+    build: .
+    privileged: true
+    ports:
+      - 7275
+expose:
+  main:
+    - target: 7275
+      tcp: 31775

@@ -1,0 +1,9 @@
+name: literally arrakis II
+author: segal
+description: |-
+  *snap* can you find your second fremen target? flag format is `UMDCTF{latitude,longitude}`, for example: `UMDCTF{38.9865489,-76.9451673}`
+
+  the coordinates are exact to what google gives you in the street view url.
+flag: UMDCTF{-24.7287779,15.4722992}
+provide:
+  - ./arrakis2.jpg

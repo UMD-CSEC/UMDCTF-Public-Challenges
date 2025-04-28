@@ -1,0 +1,218 @@
+<html>
+<head>
+    <script>
+        async function updateCredits() {
+            let response = await fetch("/api/info", {
+                credentials: "include"
+            });
+            if (response.status !== 200) {
+                window.location.href = encodeURI("/index.html?error=not logged in");
+                return;
+            }
+
+            let result = await response.json();
+            document.getElementById("credit-count").innerText = result.credits;
+        }
+
+        async function buyFlag() {
+            let response = await fetch("/api/flag", {
+                method: "POST",
+                credentials: "include"
+            });
+
+            if (response.status === 200) {
+                updateCredits();
+            }
+
+            document.getElementById("flag-info").innerText = await response.text();
+        }
+
+        async function onPLSubmit(e) {
+            e.preventDefault();
+
+            let response = await fetch("/api/guess/pl", {
+                method: "POST",
+                credentials: "include",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    "guess": document.getElementById("programming-language").value
+                })
+            });
+
+            if (response.status === 200) {
+                document.getElementById("programming-language-info").innerText = "correct";
+                document.getElementById("credit-count").innerText = (await response.json()).credits;
+            } else {
+                document.getElementById("programming-language-info").innerText = await response.text();
+            }
+        }
+
+        async function onMovieSubmit(e) {
+            e.preventDefault();
+
+            let response = await fetch("/api/guess/movie", {
+                method: "POST",
+                credentials: "include",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    "guess": document.getElementById("movie").value
+                })
+            });
+
+            if (response.status === 200) {
+                document.getElementById("movie-info").innerText = "correct";
+                document.getElementById("credit-count").innerText = (await response.json()).credits;
+            } else {
+                document.getElementById("movie-info").innerText = await response.text();
+            }
+        }
+
+        async function checkProxyStatus() {
+            let response = await fetch("/api/redeem-proxy/check", {
+                credentials: "include"
+            });
+
+            if (response.status === 200) {
+                let text = await response.text();
+                if (text === "success") {
+                    updateCredits();
+                    document.getElementById("proxy-info").innerText = "success";
+                    return true;
+                } else if (text === "failure") {
+                    document.getElementById("proxy-info").innerText = "failed to connect via proxy";
+                    return true;
+                }
+
+                return false;
+            }
+
+            response.text().then((text) => {
+                document.getElementById("proxy-info").innerText = text;
+            });
+
+            return true;
+        }
+
+        async function onProxySubmit(e) {
+            e.preventDefault();
+
+            let response = await fetch("/api/redeem-proxy", {
+                method: "POST",
+                credentials: "include",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    proxy_url: document.getElementById("proxy").value
+                })
+            })
+
+            if (response.status === 200) {
+                document.getElementById("proxy-info").innerText = "checking if proxy works...";
+                let timer = setInterval(async () => {
+                    if (await checkProxyStatus()) {
+                        clearInterval(timer);
+                    }
+                }, 1000);
+            } else {
+                document.getElementById("proxy-info").innerText = await response.text();
+            }
+        }
+
+        function setup() {
+            updateCredits();
+
+            document.getElementById("programming-language-form").addEventListener("submit", onPLSubmit);
+            document.getElementById("movie-form").addEventListener("submit", onMovieSubmit);
+            document.getElementById("proxy-form").addEventListener("submit", onProxySubmit);
+        }
+    </script>
+    <title>UMDProxy - Dashboard</title>
+</head>
+<body onload="setup()">
+<h1>Dashboard</h1>
+
+<p>Hello user. You have <span id="credit-count">0</span> credits.</p>
+<p>You can buy the following items:</p>
+<div>
+    <h4>Residential Proxy Service</h4>
+    <p><i>Out of stock</i></p>
+</div>
+<div>
+    <h4>Flag</h4>
+    <p>Cost: 10,000 credits</p>
+    <button onclick="buyFlag()">Purchase</button>
+    <p id="flag-info"></p>
+</div>
+
+<br/>
+
+<div>
+    You can gain credits in the following ways:
+</div>
+
+<br/>
+
+<div>
+    Give me money: 1,000,000 credits for $2
+    <br/>
+    Only accepting NFTs, contact for more info
+</div>
+
+<br/>
+
+<div>
+    Guess my favorite programming language
+    <br/>
+    <form id="programming-language-form">
+        <input id="programming-language">
+        <button type="submit">Guess</button>
+        <p id="programming-language-info"></p>
+    </form>
+</div>
+
+<br/>
+
+<div>
+    Guess my favorite movie that I definitely 100% watched
+    <br/>
+    <form id="movie-form">
+        <input id="movie">
+        <button type="submit">Guess</button>
+        <p id="movie-info"></p>
+    </form>
+</div>
+
+<br/>
+
+<div>
+    Donate your proxies to the service.
+    <br/>
+    By donating your proxies to our service, you will help us become an even better platform.
+    <br/>
+    We will test your proxies to make sure they work. If they work, we will give you some credits.
+    <br/>
+    Enter your HTTP or HTTPS proxy URL. Make sure there is no username/password authentication.
+    <br/>
+    We have been getting some complaints that our servers haven't been working, so we will try to send multiple requests through your proxies if they don't work the first time.
+    <br/>
+    With help from UMDVPN, we are using military-grade encryption, using the <b>latest</b> version and <b>fastest</b> features, in order to protect whatever we send through your proxy. Don't even try to snoop on us.
+    <br/>
+    <b>This can only be redeemed one time.</b>
+    <br/>
+    <form id="proxy-form">
+        <br/>
+        <label for="proxy">Proxy URL (i.e. `http://192.168.1.2/`)</label>
+        <br/>
+        <input id="proxy">
+        <button type="submit">Submit</button>
+        <p id="proxy-info"></p>
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+name: the_spice
+author: relkochta
+deployed: true
+description: |-
+  House Harkonnen's spice harvesters keep getting overrun by Atreides pwners.
+  Help keep their riches secure using exotic techniques.
+
+  `{{ nc }}`
+
+flag: UMDCTF{use_the_spice_to_see_into_the_srop_future}
+
+provide:
+  - the_spice
+  - the_spice.c
+  - Dockerfile
+
+containers:
+  main:
+    build: .
+    privileged: true
+    ports:
+      - 1447
+expose:
+  main:
+    - target: 1447
+      tcp: 31721
+

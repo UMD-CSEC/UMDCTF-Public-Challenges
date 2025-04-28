@@ -1,0 +1,26 @@
+name: ready_aim_fire
+author: aparker
+deployed: true
+description: |-
+  Firing your weapon when the spice harvester's shields are down requires exceptional timing.
+
+  `{{ nc }}` 
+
+flag: UMDCTF{h0p3fu11y_th3_c++_pwn_w4snt_t00_h0rr1bl3}
+
+provide:
+  - ready_aim_fire
+  - ready_aim_fire.cpp
+  - Dockerfile
+
+containers:
+  main:
+    build: .
+    privileged: true
+    ports:
+      - 1447
+
+expose:
+  main:
+    - target: 1447
+      tcp: 31008

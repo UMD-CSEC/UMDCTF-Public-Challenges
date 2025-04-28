@@ -1,0 +1,10 @@
+name: Flavors
+author: edwfeng
+description: |-
+  ah, elixirs, the sweet liquid flavor that brings a little spice to my life
+
+  desired output is AD38A5970B000E1500041F0B00011617AA85109204082D1485040326051D13012716BF081189AB990E2D0F182CA824
+provide:
+  - ./Elixir.Flavors.beam
+
+flag: UMDCTF{what_about_melange_but_in_elixir_form_?}

@@ -1,0 +1,9 @@
+name: Key Recovery
+author: clam
+description: Oops, Paul's private key was in the ornithopter when he crashed it. It's a bit damaged, but can you recover it?
+flag:
+  file: flag.txt
+provide:
+  - ./encrypt.py
+  - ./modified.pem
+  - ./out.txt

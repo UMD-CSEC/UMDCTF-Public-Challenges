@@ -1,0 +1,25 @@
+name: the_voice
+author: aparker
+deployed: true
+description: |-
+  If you want the flag, command me to give it to you.
+
+  `{{ nc }}` 
+
+flag: UMDCTF{pwn_g3ss3r1t_sk1ll5_d0nt_tak3_a5_many_y3ar5_t0_l3arn_pau1}
+
+provide:
+  - the_voice
+  - the_voice.c
+  - Dockerfile
+
+containers:
+  main:
+    build: .
+    privileged: true
+    ports:
+      - 1447
+expose:
+  main:
+    - target: 1447
+      tcp: 31192

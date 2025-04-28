@@ -1,0 +1,28 @@
+name: chisel
+author: triacontakai
+deployed: true
+description: |-
+  Help! Baron Harkonnen is forcing me to make a statue in the light of the scorching black sun.
+
+  Lend me a helping hand, will you?
+
+  `{{ nc }}` 
+
+flag:
+  file: flag.txt
+
+provide:
+  - ./chisel
+  - ./libc.so.6
+  - ./ld-linux-x86-64.so.2
+
+containers:
+  main:
+    build: .
+    privileged: true
+    ports:
+      - 1447
+expose:
+  main:
+    - target: 1447
+      tcp: 31447

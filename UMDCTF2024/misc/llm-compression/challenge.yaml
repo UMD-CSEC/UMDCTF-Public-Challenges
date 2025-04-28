@@ -1,0 +1,8 @@
+name: llm compression
+author: segal
+description: since computers are banned, mentats compute llm token outputs in their heads. turns out they can use them to compress data. apparently language modeling is compression.
+flag: UMDCTF{holy_compression_with_ml!!!}
+provide:
+  - ./flag.txt
+  - ./params.npz
+visible: false

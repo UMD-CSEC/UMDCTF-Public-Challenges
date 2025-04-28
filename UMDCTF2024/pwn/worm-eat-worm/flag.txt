@@ -1,0 +1,1 @@
+UMDCTF{libstdc++_has_a_GOT_too}

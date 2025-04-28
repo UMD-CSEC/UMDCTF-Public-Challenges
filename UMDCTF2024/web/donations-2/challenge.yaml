@@ -1,0 +1,24 @@
+name: Donations (but I fixed it)
+author: tahmid-23
+description: |-
+  Bezos is not happy with what you did to his net worth.
+
+  <https://{{ challenge.expose.frontend[0].http }}>
+flag: UMDCTF{TeS7_your_CHAL1En93S 6UyS}
+
+deployed: true
+
+containers:
+  app:
+    build: ./app
+    ports: [80]
+  frontend:
+    build: ./frontend
+    ports: [80]
+expose:
+  app:
+    - target: 80
+      http: donations2-api
+  frontend:
+    - target: 80
+      http: donations2

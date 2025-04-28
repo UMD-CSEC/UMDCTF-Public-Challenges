@@ -1,0 +1,32 @@
+name: worm-eat-worm 
+author: aparker
+deployed: true
+visible: true
+description: |-
+  Do sandworms eat each other? I don't know, but I made a challenge about that anyways.
+
+  `{{ nc }}` 
+
+flag: UMDCTF{libstdc++_has_a_GOT_too}
+
+provide:
+  - ./worm
+  - ./worm.cpp
+  - ./Dockerfile 
+  - ./libc.so.6
+  - ./ld-linux-x86-64.so.2
+  - ./libm.so.6
+  - ./libgcc_s.so.1
+  - ./libstdc++.so.6
+
+
+containers:
+  main:
+    build: .
+    privileged: true
+    ports:
+      - 1447
+expose:
+  main:
+    - target: 1447
+      tcp: 31818

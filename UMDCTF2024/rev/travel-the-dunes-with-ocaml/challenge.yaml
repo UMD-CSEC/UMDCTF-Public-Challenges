@@ -1,0 +1,14 @@
+name: travel the dunes... with OCaml!
+author: assgent
+
+description: |-
+  `ocaml_executable` is a flag checker compiled and assembled from OCaml using `ocamlopt`. Can you rev it?
+  
+  **Hint:** The flag is `123` characters in length.
+
+flag: UMDCTF{rvgxbvhm89tc83oc3t84mo90m83dt4m_____s3R10Us1Y_whO_@ctu@11y_usEs_0c@m1???_____al7of37d3otdxlsdt8nysfln8y43fsg7xuvnsf}
+
+# remove this if your challenge has no distributed files
+# these files are taken from the same directory as the challenge.yaml
+provide:
+  - ./ocaml_executable

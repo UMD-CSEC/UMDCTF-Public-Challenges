@@ -1,0 +1,20 @@
+name: UMDProxy
+author: tahmid-23
+description: |-
+  UMDProxy is the #1 HTTP proxy provider. Try out our services today!
+  
+  <https://{{ host }}:{{ port }}/>
+flag: UMDCTF{YoU_w1lL_n3Ver_rEaCh_7H3_tRuTh}
+containers:
+  app:
+    build: ./app
+    ports: [80]
+  nginx:
+    build: ./nginx
+    ports: [443]
+expose:
+  nginx:
+    - target: 443
+      tcp: 31111
+
+deployed: true

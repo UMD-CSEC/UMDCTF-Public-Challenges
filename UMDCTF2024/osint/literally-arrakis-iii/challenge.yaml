@@ -1,0 +1,9 @@
+name: literally arrakis III
+author: segal
+description: |-
+  *snap* can you find your third and final fremen target? flag format is `UMDCTF{latitude,longitude}`, for example: `UMDCTF{38.9865489,-76.9451673}`
+
+  the coordinates are exact to what google gives you in the street view url.
+flag: UMDCTF{-27.5672775,-67.6098535}
+provide:
+  - ./arrakis3.jpg

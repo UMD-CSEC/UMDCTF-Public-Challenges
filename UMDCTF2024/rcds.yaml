@@ -1,0 +1,37 @@
+docker:
+  image:
+    prefix: us-east4-docker.pkg.dev/umdctf-2024/challs
+
+flagFormat: UMDCTF{[a-zA-Z0-9_,.'"?!@$<>*:\-+ ]+}
+
+defaults:
+  containers:
+    limits:
+      cpu: 100m
+      memory: 150Mi
+    requests:
+      cpu: 10m
+      memory: 30Mi
+
+backends:
+  - resolve: k8s
+    options:
+      kubeContext: challs
+      domain: challs.umdctf.io
+      annotations:
+        ingress:
+          traefik.ingress.kubernetes.io/router.tls: "true"
+  - resolve: rctf
+    options:
+      url: https://api.umdctf.io/
+      scoring:
+        minPoints: 50
+        maxPoints: 500
+      sortOrder:
+        - literally-arrakis-i
+        - literally-arrakis-ii
+        - literally-arrakis-iii
+        - donations
+        - donations-2
+        - http-fanatics
+        - umdproxy

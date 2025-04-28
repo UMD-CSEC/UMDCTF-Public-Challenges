@@ -1,0 +1,8 @@
+name: survey
+author: umdctf
+description: |-
+  survey time! we really appreciate your feedback and we will use it to improve our CTF next year :)
+
+  <https://forms.gle/wFajQHUsZcaXrwhR8>
+flag: UMDCTF{frank_herbert_thanks_you_for_playing_except_he_doesnt_know_we_exist}
+tiebreakEligible: false

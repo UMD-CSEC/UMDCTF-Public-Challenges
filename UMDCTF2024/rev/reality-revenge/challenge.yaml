@@ -1,0 +1,23 @@
+name: reality's revenge
+author: emh 
+description: |-
+  The mystery of life isn't a problem to solve, but a reality to experience.
+
+  `{{ nc }}`
+
+flag: UMDCTF{guys please dont break reality again at flocto anyways hope you liked the qr decomposition}
+
+provide:
+  - reality
+
+containers:
+  main:
+    build: .
+    privileged: true
+    ports:
+      - 1447
+expose:
+  main:
+    - target: 1447
+      tcp: 31812
+
