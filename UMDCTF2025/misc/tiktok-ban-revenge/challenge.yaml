@@ -1,0 +1,25 @@
+# KEEP THIS FILE IN THE ROOT OF YOUR CHALLENGE DIRECTORY IN THE GIT
+name: tiktok-ban-revenge
+author: cephi
+
+description: |-
+  Oh snap! Oh crap! President Trump's delay on the ban ran out!
+
+  `{{ nc }}`
+
+flag: UMDCTF{we_remembered_pointer_compression_but_forgor_about_case_insensitivity_:skull:}
+
+provide:
+  - filter.py
+
+containers:
+  main:
+    build: .
+    privileged: true
+    ports:
+      - 32300
+
+expose: 
+  main:
+    - target: 32300
+      tcp: 32301

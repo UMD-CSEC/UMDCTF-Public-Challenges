@@ -1,0 +1,9 @@
+name: beauty
+author: segal
+description: |-
+  truly a beautiful panorama. ohio is not always ugly. i really wanna know who made this pano tho. what's their name?
+
+  flag will look like: `UMDCTF{Darryll Pines}`
+flag: UMDCTF{Neil Larimore}
+provide:
+  - ./beauty.jpg

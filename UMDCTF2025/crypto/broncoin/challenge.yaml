@@ -1,0 +1,17 @@
+name: "bron coin"
+author: evilmuffinha
+description: |-
+  you are my sunshine
+
+  [lecoin.challs.umdctf.io](https://lecoin.challs.umdctf.io)
+flag: UMDCTF{Lebron-honey-my-pookie-bear-I-have-loved-you-ever-since-I-first-laid-eyes-on-you-xoxo-act-like-an-angel-dress-like-crazy-allthegirlsbegirling}
+provide:
+  - ./lecoin.zip
+containers:
+  server:
+    build: .
+    ports: [3000]
+expose:
+  server:
+    - target: 3000
+      http: lecoin

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spindle</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div id="boom">
+        <h1>spindle</h1>
+        <div id="target-word">Target Word: {{ target_word }}</div>
+        <div id="game-board">
+            <div class="grid">
+            </div>
+        </div>
+        <div id="moves">
+            <h3>Moves</h3>
+            <p id="move-count">Move Count: 0</p>
+        </div>
+    </div>
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const grid = document.querySelector(".grid");
+        const moveCountElement = document.getElementById("move-count");
+        let moves = 0;
+        let selectedLetters = [];
+
+        function generateGrid() {
+            for (let i = 0; i < 5; i++) {
+                for (let j = 0; j < 5; j++) {
+                    const div = document.createElement("div");
+                    div.dataset.index = `${i}-${j}`;
+                    div.addEventListener("click", () => handleLetterClick(div));
+                    grid.appendChild(div);
+                }
+            }
+            updateGrid({{ grid | tojson }});
+        }
+
+        function updateGrid(gridData) {
+            for (let i = 0; i < 5; i++) {
+                for (let j = 0; j < 5; j++) {
+                    const cell = document.querySelector(`div[data-index="${i}-${j}"]`);
+                    cell.textContent = gridData[i][j];
+                }
+            }
+        }
+
+        function handleLetterClick(letterDiv) {
+            if (selectedLetters.length < 2) {
+                selectedLetters.push(letterDiv);
+                letterDiv.style.backgroundColor = "yellow";
+                if (selectedLetters.length === 2) {
+                    checkWord();
+                }
+            }
+        }
+
+        function checkWord() {
+            const [firstLetter, secondLetter] = selectedLetters;
+
+            fetch(`/move/${firstLetter.dataset.index}-${secondLetter.dataset.index}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.valid) {
+                        updateGrid(data.grid);
+                        moveCountElement.textContent = `Move Count: ${data.moves}`;
+                    }
+                    if (data.solved) {
+                        const body = document.querySelector("body");
+                        if (!data.flag) {
+                            const p = document.createElement("p");
+                            p.textContent = "Move count too high! Try again.";
+                            body.appendChild(p);
+                        } else {
+                            const pre = document.createElement("pre");
+                            pre.textContent = data.flag;
+                            body.appendChild(pre);
+                        }
+                    }
+                });
+
+            selectedLetters.forEach(letter => letter.style.backgroundColor = "");
+            selectedLetters = [];
+        }
+
+        generateGrid();
+    });
+    </script>
+</body>
+</html>

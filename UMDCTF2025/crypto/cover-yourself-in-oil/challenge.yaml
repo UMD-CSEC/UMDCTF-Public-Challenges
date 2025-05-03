@@ -1,0 +1,34 @@
+name: cover-yourself-in-oil
+author: aparker 
+
+description: |-
+  UOV signature schemes have big public keys, so I invented a way to compress them.
+
+  Note that this challenge includes a proof-of-work at the beginning. Please solve the challenge locally before 
+  attempting the remote. Instructions for the proof-of-work are displayed on connection.
+
+  `{{ nc }}`
+
+
+flag: UMDCTF{s0_much_0il_that_USA_1s_try1ng_t0_1nvad3}
+
+provide:
+  - server.py
+  - public_key.py
+  - keygen.sage
+  - solution.py
+
+containers:
+  main:
+    build: .
+    privileged: true
+    ports:
+      - 1447 
+
+expose: 
+  main:
+    - target: 1447
+      tcp: 31302
+
+visible: true
+deployed: true

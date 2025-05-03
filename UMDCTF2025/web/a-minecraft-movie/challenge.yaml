@@ -1,0 +1,38 @@
+name: "A Minecraft Movie"
+author: tahmid-23
+description: |-
+  I...AM STEVE!
+
+  [a-minecraft-movie.challs.umdctf.io](https://a-minecraft-movie.challs.umdctf.io)
+  [a-minecraft-movie-admin.challs.umdctf.io](https://a-minecraft-movie-admin.challs.umdctf.io)
+flag: UMDCTF{I_y3@RNeD_f0R_7HE_Min3S}
+containers:
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_URL: https://a-minecraft-movie-api.challs.umdctf.io
+    ports: [4173]
+  backend:
+    build: ./backend
+    environment:
+      FRONTEND_URL: https://a-minecraft-movie.challs.umdctf.io
+    ports: [3000]
+  bot:
+    build: ./bot
+    environment:
+      FRONTEND_URL: https://a-minecraft-movie.challs.umdctf.io
+    ports: [4000]
+    resources:
+      limits:
+        memory: "2048Mi"
+expose:
+  frontend:
+    - target: 4173
+      http: a-minecraft-movie
+  backend:
+    - target: 3000
+      http: a-minecraft-movie-api
+  bot:
+    - target: 4000
+      http: a-minecraft-movie-admin

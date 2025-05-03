@@ -1,0 +1,11 @@
+name: gambling
+author: tahmid-23
+description: |-
+  Sports Gambling is evil and here's why
+
+  [gambling.challs.umdctf.io](https://gambling.challs.umdctf.io)
+flag: UMDCTF{d_D_d_dehH_@W_dANG_!7}
+provide:
+  - ./src/router.rs
+  - ./src/user.rs
+visible: true

@@ -1,0 +1,31 @@
+name: sudoku
+author: clam
+
+description: |-
+  try this numbers game, minus the math
+
+  `{{ nc }}`
+
+flag: UMDCTF{has_operator_chaining_gone_too_far}
+
+# remove this if your challenge has no online component
+# this default config will build the container using the
+# Dockerfile in the current directory
+#
+# also: see example Dockerfile in chall-template
+# feel free to replace with your own, but if making a simple challenge
+# w/ nc connetion it's a good start
+containers:
+  main:
+    build: .
+    privileged: true
+    ports:
+      - 1447
+
+# remove this if your challenge has no online component
+# use either tcp/http
+# this uses container name from above
+expose: 
+  main:
+    - target: 1447
+      tcp: 31602

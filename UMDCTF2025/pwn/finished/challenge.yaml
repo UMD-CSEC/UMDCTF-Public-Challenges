@@ -1,0 +1,29 @@
+name: finished 
+author: aparker
+description: |-
+  Okay, I finished it.
+
+  `{{ nc }}`
+
+flag: UMDCTF{sorry_for_the_revenge_chall_hope_you_enjoyed_reading_exceptions}
+
+provide:
+  - finished
+  - finished.cpp
+  - Makefile
+  - Dockerfile
+
+containers:
+  main:
+    build: .
+    privileged: true
+    ports:
+      - 1447
+
+expose:
+  main:
+    - target: 1447
+      tcp: 31099
+
+deployed: true
+visible: true

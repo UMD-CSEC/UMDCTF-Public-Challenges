@@ -1,0 +1,26 @@
+name: brainrot-dictionary
+author: aparker
+description: |- 
+  This website will help you understand the rest of the nonsense going on in the CTF. You can even upload your own brainrot words and get definitions!
+
+  {{ link }}
+
+flag: UMDCTF{POSIX_no_longer_recommends_that_this_is_possible}
+
+provide: 
+  - ./main.py
+  - ./requirements.txt
+
+containers:
+  main:
+    build: .
+    ports:
+      - 5000 
+
+expose: 
+  main:
+    - target: 5000
+      http: brainrot-dictionary
+
+visible: true
+deployed: true

@@ -1,0 +1,9 @@
+name: sunshine
+author: segal
+description: |-
+  what a nice sunny day. what is the full address of house number 356?
+
+  flag will look like: `UMDCTF{3983 Campus Dr, College Park, MD 20742}`
+flag: UMDCTF{356 Hillwood Dr, Akron, OH 44320}
+provide:
+  - ./sunshine.jpg

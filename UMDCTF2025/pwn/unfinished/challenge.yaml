@@ -1,0 +1,29 @@
+name: unfinished 
+author: aparker
+description: |-
+  TODO: finish the challenge
+
+  `{{ nc }}`
+
+flag: UMDCTF{crap_i_have_to_come_up_with_a_flag_too?????????}
+
+provide:
+  - unfinished
+  - unfinished.cpp
+  - Makefile
+  - Dockerfile
+
+containers:
+  main:
+    build: .
+    privileged: true
+    ports:
+      - 1447
+
+expose:
+  main:
+    - target: 1447
+      tcp: 31003
+
+deployed: true
+visible: true

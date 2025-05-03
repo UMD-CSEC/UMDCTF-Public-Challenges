@@ -1,0 +1,29 @@
+name: off-by-one-error
+author: clam
+deployed: true
+description: |-
+  I made a program to keep track of my Subway Surfers scores! It seems to have an off by one error though...
+
+  `{{ nc }}`
+
+flag: UMDCTF{one_two_skip_a_few_ninety_nine_NaN_zero_ten_thousand}
+
+provide:
+  - offbyone
+  - offbyone.c
+  - libc.so.6
+  - ld-linux-x86-64.so.2
+  - Makefile
+  - Dockerfile
+
+containers:
+  main:
+    build: .
+    privileged: true
+    ports:
+      - 1447
+
+expose:
+  main:
+    - target: 1447
+      tcp: 31002

@@ -1,0 +1,13 @@
+name: alien-transmission
+author: aparker
+
+description: |-
+  We've intercepted a signal from an alien planet! Surely they're not infected with the brainrot as well...
+
+flag: UMDCTF{gl33p_gl0rp}
+
+provide:
+  - gen.py
+  - output.png
+
+visible: true

@@ -1,0 +1,9 @@
+name: the-blueprint
+author: segal
+description: |-
+  always respect the blueprint (she's never coming back lil bro (i am heartbroken)). anyways, what street are we on?
+
+  flag will look like: `UMDCTF{Campus Dr, College Park, MD 20742}`
+flag: UMDCTF{Bryn Du Dr, Granville, OH 43023}
+provide:
+  - ./the-blueprint.jpg

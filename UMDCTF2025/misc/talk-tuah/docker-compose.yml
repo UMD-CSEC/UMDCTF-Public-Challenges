@@ -1,0 +1,8 @@
+services:
+  talk-tuah:
+    build: .
+    ports:
+      - 1447:1447
+    privileged: true
+    cgroup: host
+    restart: unless-stopped

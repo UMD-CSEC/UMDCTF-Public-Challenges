@@ -1,0 +1,28 @@
+name: one-write
+author: triacontakai
+description: |-
+  🕺Take a look at this - a heap challenge with just one write!
+
+  🤺Oh, they should actually solve that!
+
+  🕺Yeah, the challenge would go viral!
+
+  `{{ nc }}`
+
+flag:
+  file: flag.txt
+provide:
+  - one_write
+  - Dockerfile
+
+containers:
+  main:
+    build: .
+    privileged: true
+    ports:
+      - 1447
+
+expose:
+  main:
+    - target: 1447
+      tcp: 31727

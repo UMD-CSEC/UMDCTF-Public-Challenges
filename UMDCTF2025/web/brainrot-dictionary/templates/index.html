@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE BRAINROT DICTIONARY</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>CONFUSED BY THE BRAINROT? WE'RE HERE TO HELP.</h1>
+        {% if error %}
+            <div class="error">{{ error }}</div>
+        {% endif %}
+        <form method="POST" action="/" enctype="multipart/form-data">
+			<input type="file" name="user_file" accept=".brainrot" required/>
+            <button type="submit">Submit New Brainrot</button>
+        </form>
+		<a href="/dict"> <button type="submit">View the list!</button> </a>
+    </div>
+</body>
+</html>

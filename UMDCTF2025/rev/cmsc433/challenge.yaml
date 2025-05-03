@@ -1,0 +1,13 @@
+name: cmsc433
+author: aparker
+
+description: |-
+  I'm taking a course about functional programming, but I really don't want to stop using C++...
+
+
+flag: UMDCTF{c++_is_the_most_dysfunctional_functional_language}
+
+provide:
+  - ./cmsc433
+
+visible: true

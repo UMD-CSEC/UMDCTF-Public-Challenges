@@ -1,0 +1,9 @@
+name: swag-like-ohio
+author: segal
+description: |-
+  swag like ohio. down in ohio. swag like ohio. down in ohio. anyway we seem to be on a bridge. what's the address of the bridge?
+
+  flag will look like: `UMDCTF{Boulder Bridge, Washington, DC 20008}`
+flag: UMDCTF{Putnam Bridge, Marietta, OH 45750}
+provide:
+  - ./swag-like-ohio.jpg

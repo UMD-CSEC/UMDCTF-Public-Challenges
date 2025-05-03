@@ -1,0 +1,31 @@
+name: literally-1984
+author: aparker
+description: |-
+  Commit hash is `c963fb98a204005df30553bec7bbbe1997e0ab5f` in the v8 repo.
+  Build configuration and patch are provided. Binary was built in Docker Ubuntu 24.04
+  Please let the author know if you're having trouble with the build process - this is my first
+  v8 challenge so I may have messed something up.
+
+  `{{ nc }}`
+
+flag: UMDCTF{W4r_1s_p3ace_Fre3dom_1s_slavery_Br4inrot_is_5trength}
+provide:
+  - ./dist.tar.gz
+  - ./literally1984.patch
+  - ./args.gn
+  - ./d8
+
+containers:
+  main:
+    build: .
+    privileged: true
+    ports:
+      - 1447
+
+expose:
+  main:
+    - target: 1447
+      tcp: 31004
+
+deployed: true
+visible: true

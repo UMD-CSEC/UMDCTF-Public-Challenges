@@ -1,0 +1,2 @@
+Werkzeug==3.0.4
+Flask==3.0.3

@@ -1,0 +1,9 @@
+services:
+  queue:
+    build: ./queue
+    ports:
+      - 80:5000
+  runner:
+    build: ./runner
+    ports:
+      - 6967:6967

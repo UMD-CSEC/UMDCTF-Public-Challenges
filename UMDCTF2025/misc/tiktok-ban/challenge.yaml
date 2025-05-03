@@ -1,0 +1,25 @@
+# KEEP THIS FILE IN THE ROOT OF YOUR CHALLENGE DIRECTORY IN THE GIT
+name: tiktok-ban
+author: cephi
+
+description: |-
+  Oh snap! Oh crap! TikTok is banned in Ohio!
+
+  `{{ nc }}`
+
+flag: UMDCTF{W31C0M3_84CK_4ND_7H4NK5_F0r_Y0Ur_P4713NC3_4ND_5UPP0r7_45_4_r35U17_0F_Pr351D3N7_7rUMP_71K70K_15_84CK_1N_7H3_U5}
+
+provide:
+  - filter.py
+
+containers:
+  main:
+    build: .
+    privileged: true
+    ports:
+      - 32300
+
+expose: 
+  main:
+    - target: 32300
+      tcp: 32300

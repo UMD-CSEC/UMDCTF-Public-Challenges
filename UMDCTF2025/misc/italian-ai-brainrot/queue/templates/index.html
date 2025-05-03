@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>italian ai brainrot</title>
+    <style>
+        body {
+            background: url("static/tungtung.jpg");
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            color: #ffffff;
+            text-align: center;
+            animation: glitch 1s infinite;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #ffffff;
+            text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
+            animation: flicker 1.5s infinite alternate;
+        }
+
+        input, button {
+            padding: 10px;
+            margin: 10px;
+            border: 2px dashed #ffffff;
+            background: #111;
+            color: #ffffff;
+            font-size: 1.2em;
+            box-shadow: 0 0 10px #ffffff;
+            transition: all 0.3s ease;
+        }
+
+        input:focus, button:hover {
+            background: #ffffff;
+            color: #000;
+            transform: rotate(5deg) scale(1.1);
+        }
+
+        button {
+            cursor: pointer;
+            animation: spin 2s linear infinite;
+        }
+
+        p#result {
+            margin-top: 20px;
+            font-size: 1.5em;
+            color: #ffffff;
+            text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
+            animation: glow 2s infinite alternate;
+        }
+
+        /* Animations */
+        @keyframes glitch {
+            0% { transform: translate(0); }
+            50% { transform: translate(5px, 5px); }
+            100% { transform: translate(0); }
+        }
+
+        @keyframes flicker {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes glow {
+            0% { text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff; }
+            100% { text-shadow: 0 0 20px #ffffff, 0 0 30px #ffffff; }
+        }
+    </style>
+    <script>
+        function submitBytes(event) {
+            event.preventDefault();
+            const bytes = document.getElementById("bytes").value.split(" ").map(Number);
+            fetch("/submit", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ bytes: bytes })
+            })
+            .then(res => res.text())
+            .then(text => {
+                document.getElementById("result").textContent = text;
+            });
+        }
+
+        function submitToken(event) {
+            event.preventDefault();
+            const token = document.getElementById("token").value;
+            fetch("/status/" + token)
+            .then(res => res.text())
+            .then(text => {
+                document.getElementById("result").textContent = text;
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>Submit Your Bytes</h1>
+    <form onsubmit="submitBytes(event)">
+        <input type="text" id="bytes" placeholder="e.g. 1 2 3 4" />
+        <button type="submit">Submit</button>
+    </form>
+    <form onsubmit="submitToken(event)">
+        <input type="text" id="token" placeholder="token" />
+        <button type="submit">Submit</button>
+    </form>
+    <p id="result"></p>
+</body>
+</html>

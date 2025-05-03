@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>UMD Gambling</title>
+    <script>
+        function render() {
+            const authorization = localStorage.getItem("authorization");
+            if (authorization) {
+                document.getElementById("homepage").style.display = "none";
+                document.getElementById("dashboard").style.removeProperty("display");
+                refreshCredits(authorization);
+            } else {
+                document.getElementById("homepage").style.removeProperty("display");
+                document.getElementById("dashboard").style.display = "none";
+            }
+        }
+
+        async function refreshCredits(authorization) {
+            const response = await fetch("/credits", {
+                headers: {
+                    "Authorization": authorization
+                }
+            });
+            if (response.status === 401) {
+                localStorage.removeItem("authorization");
+                render();
+                return false;
+            }
+
+            const newCredits = await response.json();
+            document.getElementById("credits").innerText = `Credits: ${newCredits}`;
+            return true;
+        }
+
+        function gamble() {
+            const randomNumber = Math.floor(Math.random() * 100) + 1;
+            // aw, dang it!
+            return randomNumber > 314159265;
+        }
+
+        function onload() {
+            function playSoundFromContext(audioContext, audioBuffer) {
+                const source = audioContext.createBufferSource();
+                source.buffer = audioBuffer;
+                source.connect(audioContext.destination);
+                source.start(0);
+            }
+
+            const letsgo = new Audio("/letsgo.mp3");
+            let dangitContext = null;
+            let dangitBuffer = null;
+
+            document.getElementById("register").addEventListener("click", async () => {
+                const username = document.getElementById("username").value;
+                const password = document.getElementById("password").value;
+                const authorization = JSON.stringify({"username": username, "password": password});
+
+                const response = await fetch("/register", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: authorization
+                });
+
+                if (response.ok) {
+                    localStorage.setItem("authorization", authorization);
+                    render();
+                } else {
+                    document.getElementById("error-homepage").innerText = await response.text();
+                }
+            });
+
+            document.getElementById("login").addEventListener("click", async () => {
+                const username = document.getElementById("username").value;
+                const password = document.getElementById("password").value;
+                const authorization = JSON.stringify({"username": username, "password": password});
+
+                const response = await fetch("/login", {
+                    headers: {
+                        "Authorization": authorization,
+                    }
+                });
+
+                if (response.ok) {
+                    localStorage.setItem("authorization", authorization);
+                    render();
+                } else {
+                    document.getElementById("error-homepage").innerText = await response.text();
+                }
+            });
+
+            document.getElementById("buy-flag").addEventListener("click", async () => {
+                const authorization = localStorage.getItem("authorization");
+                if (!authorization) {
+                    render();
+                    return;
+                }
+
+                const response = await fetch("/flag", {
+                    method: "POST",
+                    headers: {
+                        "Authorization": authorization,
+                    }
+                });
+                if (response.status === 401) {
+                    localStorage.removeItem("authorization");
+                    render();
+                    return;
+                }
+
+                document.getElementById("flag-response").innerText = await response.text();
+            });
+
+            document.getElementById("form-redeem").addEventListener("submit", async (e) => {
+                e.preventDefault();
+
+                const authorization = localStorage.getItem("authorization");
+                if (!authorization) {
+                    render();
+                    return;
+                }
+
+                const formData = new FormData(e.target);
+                const code = formData.get("promo");
+
+                const response = await fetch("/redeem", {
+                    method: "POST",
+                    headers: {
+                        "Authorization": authorization,
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(code)
+                });
+                if (response.status === 401) {
+                    localStorage.removeItem("authorization");
+                    render();
+                    return;
+                }
+
+                if (response.ok) {
+                    document.getElementById("redeem-response").innerText = "Code successfully redeemed!";
+                    await refreshCredits(authorization);
+                } else {
+                    document.getElementById("redeem-response").innerText = await response.text();
+                }
+            });
+
+            document.getElementById("start-gambling").addEventListener("click", () => {
+                document.getElementById("gambling-pre").style.display = "none";
+                document.getElementById("gambling-post").style.removeProperty("display");
+                letsgo.play();
+            });
+
+            document.getElementById("wager").addEventListener("click", async () => {
+                const authorization = localStorage.getItem("authorization");
+                if (!authorization) {
+                    render();
+                    return;
+                }
+
+                if (gamble()) {
+                    document.getElementById("wager-result").innerText = "You won 0 credits!";
+                    return;
+                }
+
+                const response = await fetch("/wager", {
+                    method: "POST",
+                    headers: {
+                        "Authorization": authorization,
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(1)
+                });
+                if (response.status === 401) {
+                    localStorage.removeItem("authorization");
+                    render();
+                    return;
+                }
+                if (!response.ok) {
+                    document.getElementById("wager-result").innerText = await response.text();
+                    return;
+                }
+
+                if (dangitContext === null) {
+                    dangitContext = new AudioContext();
+                    (async () => {
+                        const dangitResponse = await fetch("dangit.mp3");
+                        const arrayBuffer = await dangitResponse.arrayBuffer();
+                        dangitBuffer = await dangitContext.decodeAudioData(arrayBuffer);
+
+                        playSoundFromContext(dangitContext, dangitBuffer);
+                    })();
+                } else {
+                    playSoundFromContext(dangitContext, dangitBuffer);
+                }
+
+                document.getElementById("wager-result").innerText = "You lost!";
+                await refreshCredits(authorization);
+            });
+
+            render();
+        }
+    </script>
+</head>
+<body onload="onload()">
+<div>
+    <h1>UMD Gambling</h1>
+    <div id="homepage">
+        <p>Welcome to UMD gambling. Can you hit it big?</p>
+        <div>
+            <label for="username">Username</label>
+            <input id="username" type="text">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input id="password" type="password">
+        </div>
+        <div style="display: flex">
+            <button id="register">Register</button>
+            <button id="login">Log In</button>
+        </div>
+        <p id="error-homepage" style="color: red"></p>
+    </div>
+    <div id="dashboard">
+        <h2>Gambling Dashboard</h2>
+        <p>Tip: 99% of gamblers quit before they hit it big.</p>
+        <p>Because this is a gambling site, we don't have a way for you to log out. Stay here forever.</p>
+        <hr/>
+        <div>
+            <p id="credits">Credits: 0</p>
+            <p>Don't worry you can have negative credits because it's funny if you owe us</p>
+        </div>
+        <hr/>
+        <div>
+            <h3>Shop</h3>
+            <div>
+                <button id="buy-flag">Buy Flag (300 credits)</button>
+                <p id="flag-response"></p>
+            </div>
+            <div>
+                <p>Do you have a promo code? Use it here! Promo codes can be used as many times as you want, but are
+                    subject to anti-bot measures.</p>
+                <form id="form-redeem">
+                    <label for="promo">Code</label>
+                    <input id="promo" name="promo">
+                    <button type="submit">Submit</button>
+                </form>
+                <p id="redeem-response"></p>
+            </div>
+        </div>
+        <hr/>
+        <div>
+            <div id="gambling-pre">
+                <p>Ready to go gambling?</p>
+                <button id="start-gambling">Let's Go!</button>
+            </div>
+            <div id="gambling-post" style="display: none">
+                <p>Wager one credit?</p>
+                <button id="wager">OK</button>
+                <p id="wager-result"></p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

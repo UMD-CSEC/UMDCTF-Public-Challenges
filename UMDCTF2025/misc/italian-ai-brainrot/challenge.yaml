@@ -1,0 +1,11 @@
+name: italian-ai-brainrot
+author: segal
+description: |-
+  Who would win in a fight? Bombardiro crocodilo or tralalero tralala?
+
+  [italian-ai-brainrot.challs.umdctf.io](https://italian-ai-brainrot.challs.umdctf.io)
+flag: UMDCTF{italian_ai_brainrot_is_so_goated_also_isnt_ddim_inversion_cool}
+provide:
+  - runner/runner.py
+  - runner/requirements.txt
+  - runner/tralalero_tralala.jpg

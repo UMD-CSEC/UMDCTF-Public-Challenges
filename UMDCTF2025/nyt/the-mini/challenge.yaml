@@ -1,0 +1,11 @@
+name: the-mini
+author: aparker
+description: |-
+  Joel Fagliano has nothing on me.
+  (flag is all caps)
+
+flag: UMDCTF{CANYOUBEATMYTIME}
+
+provide:
+  - ./the mini.puz
+visible: true

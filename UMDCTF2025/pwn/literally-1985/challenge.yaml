@@ -1,0 +1,26 @@
+name: literally-1985
+author: aparker
+description: |-
+  Same build instructions and `dist.tar.gz` as literally-1984, but the patch is slightly different.
+
+  `{{ nc }}`
+
+flag: UMDCTF{next_time_i_should_probably_disable_the_d8_builtins_lesson_learned}
+provide:
+  - ./dist.tar.gz
+  - ./literally1985.patch
+  - ./args.gn
+  - ./d8
+  - ./Dockerfile
+
+containers:
+  main:
+    build: .
+    privileged: true
+    ports:
+      - 1447
+
+expose:
+  main:
+    - target: 1447
+      tcp: 31085

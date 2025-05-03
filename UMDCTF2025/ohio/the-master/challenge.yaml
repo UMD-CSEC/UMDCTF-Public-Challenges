@@ -1,0 +1,9 @@
+name: the-master
+author: segal
+description: |-
+  trust me bro, i know what im talking about. im the master when it comes to these things. what street are we on?
+
+  flag will look like: `UMDCTF{Campus Dr, College Park, MD 20742}`
+flag: UMDCTF{Main St, Lore City, OH 43755}
+provide:
+  - ./the-master.jpg

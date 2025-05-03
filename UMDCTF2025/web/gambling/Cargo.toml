@@ -1,0 +1,19 @@
+[package]
+name = "umdctf-umd-gambling"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bytes = "1.10.1"
+clap = { version = "4.5.37", features = ["derive"] }
+h3 = "0.0.7"
+h3-quinn = "0.0.9"
+http = "1.3.1"
+quinn = "0.11.7"
+rand = "0.9.1"
+rustls = "0.23.26"
+serde = { version = "1.0.219", features = ["derive"] }
+serde_json = "1.0.140"
+tokio = { version = "1.44.2", features = ["full"] }
+tokio-rustls = "0.26.2"
+webpki-roots = "0.26.8"

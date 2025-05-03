@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Brainrot Dictionary</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+		<h1>
+			LIST OF BRAINROT WORDS
+		</h1>
+		<ul>
+			{% for word in results %}
+				<li>{{ word }}: gen alpha nonsense</li>
+			{% endfor %}
+		</ul>
+		<a href="/"> <button> Go back </button> </a>
+	</div>
+</body>
+</html>
+

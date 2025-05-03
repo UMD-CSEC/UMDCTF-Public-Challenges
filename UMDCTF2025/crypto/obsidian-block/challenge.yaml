@@ -1,0 +1,16 @@
+# KEEP THIS FILE IN THE ROOT OF YOUR CHALLENGE DIRECTORY IN THE GIT
+name: obsidian-block 
+author: aparker
+
+description: |-
+  Hey guys welcome back to another minecraft lets play.
+  Today we're going to be building a block cipher that's as hard to break as obsidian!!!! 
+
+
+flag: UMDCTF{diamond_pickaxe_no_way!!}
+
+provide:
+  - dist.py
+  - output.txt
+
+visible: true

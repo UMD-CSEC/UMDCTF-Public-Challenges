@@ -1,0 +1,17 @@
+name: spindle
+author: segal
+description: |
+  you spin me right round baby right round when you go down when you go down down
+
+  {{ link }}
+flag: UMDCTF{spindle_is_the_ultimate_crossover_between_shape_rotators_and_wordcels}
+provide:
+  - dictionary.txt
+containers:
+  main:
+    build: .
+    ports: [5000]
+expose:
+  main:
+    - target: 5000
+      http: spindle

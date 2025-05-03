@@ -1,0 +1,12 @@
+name: sanity-check
+author: umdctf
+
+description: |-
+  tsology evolution
+
+  `UMDCTF{tsology_evolution}`
+
+  join the discord: https://discord.gg/nBZvNCZ3
+
+flag: UMDCTF{tsology_evolution}
+tiebreakEligible: false

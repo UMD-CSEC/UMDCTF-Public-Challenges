@@ -1,0 +1,14 @@
+name: find the seeds
+author: unsure
+
+description: |-
+  can u help Alice find her seeds in the bin? She's pretty sure the bin hasn't been dumped since it was generated.
+
+
+flag: UMDCTF{pseudo_entropy_hidden_seed}
+
+provide:
+  - secret.py
+  - secret.bin
+
+visible: true

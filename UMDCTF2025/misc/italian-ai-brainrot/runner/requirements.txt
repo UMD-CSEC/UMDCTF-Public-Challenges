@@ -1,0 +1,6 @@
+torch==2.6.0
+accelerate==1.6.0
+diffusers==0.33.1
+hf-xet==1.0.3
+tqdm==4.67.1
+transformers==4.51.3

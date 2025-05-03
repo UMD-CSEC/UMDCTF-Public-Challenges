@@ -1,0 +1,28 @@
+name: gambling2
+author: aparker
+description: |-
+  i gambled all of my life savings in this program (i have no life savings)
+
+  `{{ nc }}`
+
+flag: UMDCTF{99_percent_of_pwners_quit_before_they_get_a_shell_congrats_on_being_the_1_percent}
+provide:
+  - gambling.c
+  - gambling
+  - Makefile
+  - Dockerfile
+
+containers:
+  main:
+    build: .
+    privileged: true
+    ports:
+      - 1447
+
+expose:
+  main:
+    - target: 1447
+      tcp: 31005
+
+deployed: true
+visible: true

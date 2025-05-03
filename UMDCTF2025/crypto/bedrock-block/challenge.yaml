@@ -1,0 +1,44 @@
+name: bedrock-block
+author: aparker 
+
+description: |-
+  Since apparently you griefed by previous cipher, I made this one out of bedrock so you can't break it!!!!
+
+  `{{ nc }}`
+
+flag: UMDCTF{bad_d1ffusi0n_bad_c1ph3r}
+
+
+# remove this if your challenge has no distributed files
+# these files are taken from the same directory as the challenge.yaml
+provide:
+  - bedrock.py
+
+# remove this if your challenge has no online component
+# this default config will build the container using the
+# Dockerfile in the current directory
+#
+# also: see example Dockerfile in chall-template
+# feel free to replace with your own, but if making a simple challenge
+# w/ nc connetion it's a good start
+containers:
+  main:
+    build: .
+    privileged: true
+    ports:
+      - 1447 
+
+# remove this if your challenge has no online component
+# use either tcp/http
+# this uses container name from above
+expose: 
+  main:
+    - target: 1447
+      tcp: 31301
+
+# set these to true when your challenge is ready
+# if you want to test your challenge, set deployed: true only, but
+# be fast since your challenge is technically accessible by others
+# if they guess url/port
+visible: true
+deployed: true

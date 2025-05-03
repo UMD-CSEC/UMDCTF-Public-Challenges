@@ -1,0 +1,85 @@
+section .data
+    encrypted_flag db 0x20,0x22,0x20,0x26,0x35,0x37,0x14,0x07,0x46,0x00,0x5a,0x17,0x44,0x35,0x52,0x0c,0x70,0x28,0x37,0x1c,0x5b,0x1d,0x70,0x16,0x76,0x50,0x69,0x5c,0x6e,0x6c,0x1b,0x12,0x54,0x69,0x2d,0x38,0x06,0x23,0x11,0x3d,0x2f,0x00,0x02,0x4a,0x68,0x45,0x3b,0x64,0x1a,0x20,0x55,0x05
+    key_bytes       db 0x75,0x6F,0x64,0x65,0x61,0x71,0x6F,0x75,0x75,0x76,0x69,0x45,0x60,0x70,0x7F,0x65,0x54,0x77,0x63,0x74,0x68,0x42,0x53,0x54,0x45,0x03,0x3D,0x7F,0x31,0x58,0x75,0x46,0x75,0x44,0x60,0x78,0x6a,0x74,0x51,0x4F,0x1C,0x5F,0x76,0x79,0x0B,0x2D,0x75,0x45,0x4B,0x55,0x66,0x78
+    flag_len        equ 52
+    prompt db "Enter the password: ", 0
+    correct db "Correct! ", 0
+    wrong db "Wrong password.   ", 0
+
+section .bss
+    input resb 128
+    decoded resb 128
+
+section .text
+    global _start
+
+_start:
+    ; Print prompt
+    mov rax, 1          ; write syscall
+    mov rdi, 1          ; stdout
+    mov rsi, prompt
+    mov rdx, 21         ; length of prompt
+    syscall
+
+    ; Read user input
+    mov rax, 0          ; read syscall
+    mov rdi, 0          ; stdin
+    mov rsi, input
+    mov rdx, 128
+    syscall
+
+    xor rcx, rcx
+.decode_loop:
+    mov al, [input + rcx]
+    cmp al, 10
+    je .check_flag_len
+
+    xor al, [key_bytes + rcx]
+    mov [decoded + rcx], al
+    inc rcx
+    jmp .decode_loop
+
+.check_flag_len:
+    cmp rcx, flag_len                  ; If al was newline (0x0A), check flag_len again
+    jne .wrong                    ; If rcx > flag_len, jump to wrong label (error handling)
+
+.compare:
+    xor rcx, rcx
+.compare_loop:
+    mov al, [encrypted_flag + rcx]
+    mov bl, [decoded + rcx]
+    cmp al, bl
+    jne .wrong
+
+    inc rcx
+    cmp rcx, flag_len
+    jl .compare_loop
+
+.null_terminate:
+    mov byte [input + rcx], 0
+
+.correct:
+    ; Print "Correct! " message
+    mov rax, 1
+    mov rdi, 1
+    mov rsi, correct
+    mov rdx, 9
+    syscall
+
+    jmp .exit
+
+.wrong:
+    ; Print wrong message
+    mov rax, 1
+    mov rdi, 1
+    mov rsi, wrong
+    mov rdx, 18
+    syscall
+
+    jmp .exit
+
+.exit:
+    ; Exit
+    mov rax, 60
+    xor rdi, rdi
+    syscall

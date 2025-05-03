@@ -1,0 +1,13 @@
+name: survey
+author: umdctf
+value: 10
+
+
+description: |-
+  Tralalero Tralala or Lirilì Larilà?
+
+  [https://forms.gle/k9yL2LZgi2gcCWar6](https://forms.gle/k9yL2LZgi2gcCWar6)
+
+flag: UMDCTF{icl_ts_pmo_frfr}
+
+tiebreakEligible: false

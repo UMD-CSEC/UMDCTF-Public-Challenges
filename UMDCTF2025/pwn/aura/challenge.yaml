@@ -1,0 +1,25 @@
+name: aura
+author: esiddali
+description: |-
+  I can READ ur aura.
+
+  `{{ nc }}`
+
+flag:
+  file: flag.txt
+
+provide:
+  - ./aura
+  - ./Dockerfile
+
+containers:
+  main:
+    build: .
+    privileged: true
+    ports:
+      - 1447
+
+expose:
+  main:
+    - target: 1447
+      tcp: 31006

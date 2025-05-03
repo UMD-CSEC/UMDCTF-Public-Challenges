@@ -1,0 +1,12 @@
+name: suspicious-button
+author: aparker
+
+description: |-
+  So I downloaded a theme from the KDE store and I'm worried that my computer is hacked now.
+
+flag: UMDCTF{kde_global_themes_can_be_quite_sus}
+
+provide:
+  - dist.tar.gz
+
+visible: true

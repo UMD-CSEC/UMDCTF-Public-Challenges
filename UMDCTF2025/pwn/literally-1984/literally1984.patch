@@ -1,0 +1,29 @@
+diff --git a/src/compiler/machine-operator-reducer.cc b/src/compiler/machine-operator-reducer.cc
+index 2da3715a58f..e6896555188 100644
+--- a/src/compiler/machine-operator-reducer.cc
++++ b/src/compiler/machine-operator-reducer.cc
+@@ -1101,6 +1101,11 @@ Reduction MachineOperatorReducer::ReduceInt32Add(Node* node) {
+   DCHECK_EQ(IrOpcode::kInt32Add, node->opcode());
+   Int32BinopMatcher m(node);
+   if (m.right().Is(0)) return Replace(m.left().node());  // x + 0 => x
++
++  if (m.left().Is(2) && m.right().Is(2)) {
++    return ReplaceInt32(5);
++  }
++
+   if (m.IsFoldable()) {  // K + K => K  (K stands for arbitrary constants)
+     return ReplaceInt32(base::AddWithWraparound(m.left().ResolvedValue(),
+                                                 m.right().ResolvedValue()));
+diff --git a/src/compiler/simplified-lowering.cc b/src/compiler/simplified-lowering.cc
+index 4cc858bb22c..1e0056e7130 100644
+--- a/src/compiler/simplified-lowering.cc
++++ b/src/compiler/simplified-lowering.cc
+@@ -1993,7 +1993,7 @@ class RepresentationSelector {
+             // The bounds check is redundant if we already know that
+             // the index is within the bounds of [0.0, length[.
+             // TODO(neis): Move this into TypedOptimization?
+-            if (v8_flags.turbo_typer_hardening) {
++            if (v8_flags.turbo_typer_hardening && 2 + 2 == 5) {
+               new_flags |= CheckBoundsFlag::kAbortOnOutOfBounds;
+             } else {
+               DeferReplacement(node, NodeProperties::GetValueInput(node, 0));

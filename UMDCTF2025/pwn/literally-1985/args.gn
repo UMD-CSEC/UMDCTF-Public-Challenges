@@ -1,0 +1,10 @@
+is_debug = true
+target_cpu = "x64"
+v8_enable_backtrace = true
+v8_enable_slow_dchecks = false
+v8_optimized_debug = false
+v8_symbol_level = 2
+symbol_level = 2
+v8_enable_object_print = true
+v8_enable_disassembler = true
+v8_enable_sandbox = false

@@ -1,0 +1,120 @@
+body {
+  background: #ffecd2;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 2rem;
+}
+
+.steve {
+  margin: 2rem auto;
+  position: relative;
+  width: 200px;
+  height: 150px;
+}
+
+.fish-body {
+  background: orange;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.eye {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 30%;
+  left: 65%;
+}
+
+.fin {
+  width: 30px;
+  height: 20px;
+  background: darkorange;
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: rotate(45deg);
+  border-radius: 5px;
+}
+
+.arms, .legs {
+  background: #f90;
+  position: absolute;
+}
+
+.arms {
+  width: 20px;
+  height: 50px;
+  left: -10px;
+  top: 20%;
+  border-radius: 10px;
+}
+
+.legs {
+  width: 20px;
+  height: 50px;
+  left: 85px;
+  bottom: -30px;
+  border-radius: 10px;
+}
+
+.lyrics {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.guess-section {
+  margin-top: 3rem;
+  background: #fff8f0;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.guess-section h2 {
+  margin-bottom: 1rem;
+  color: #e67e22;
+}
+
+.guess-section input {
+  padding: 0.5rem 1rem;
+  border: 2px solid #ffa94d;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  width: 70%;
+  margin-right: 0.5rem;
+}
+
+.guess-section button {
+  padding: 0.5rem 1rem;
+  background: #ffa94d;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.guess-section button:hover {
+  background: #e67e22;
+}
+
+.response {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #333;
+}
+  

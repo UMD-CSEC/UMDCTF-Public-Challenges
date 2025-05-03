@@ -1,0 +1,14 @@
+name: prime-sponsorship
+author: aparker
+
+description: |-
+  Welcome to your PRIME. Where great flavor meets function. Zero Added Sugar. 10% Coconut Water. BCAAs, Electrolytes, Antioxidants, Lattices, and more.
+
+
+flag: UMDCTF{no_logan_paul_here}
+
+provide:
+  - ./gen.sage
+  - ./output.txt
+
+visible: true

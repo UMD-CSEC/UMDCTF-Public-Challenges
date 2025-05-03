@@ -1,0 +1,31 @@
+docker:
+  image:
+    prefix: us-east1-docker.pkg.dev/umdctf-2025/rctf
+
+# clam why do u make me change the format :sob:
+flagFormat: UMDCTF{[a-zA-Z0-9_,.'"?!@$<>*:\-+ ~#^%\/|\\&=]+}
+
+defaults:
+  containers:
+    limits:
+      cpu: 100m
+      memory: 150Mi
+    requests:
+      cpu: 10m
+      memory: 30Mi
+
+backends:
+  - resolve: k8s
+    options:
+      domain: challs.umdctf.io
+      annotations:
+        ingress:
+          traefik.ingress.kubernetes.io/router.tls: "true"
+          traefik.ingress.kubernetes.io/router.middlewares: "default-ip-whitelist@kubernetescrd"
+          #traefik.ingress.kubernetes.io/router.middlewares: ""
+  - resolve: rctf
+    options:
+      url: https://umdctf.io/
+      scoring:
+        minPoints: 50
+        maxPoints: 500

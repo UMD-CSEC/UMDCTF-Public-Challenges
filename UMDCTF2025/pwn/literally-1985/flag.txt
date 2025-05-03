@@ -1,0 +1,2 @@
+UMDCTF{next_time_i_should_probably_disable_the_d8_builtins_lesson_learned}
+

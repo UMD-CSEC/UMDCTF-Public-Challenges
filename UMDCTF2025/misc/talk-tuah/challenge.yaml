@@ -1,0 +1,29 @@
+name: talk-tuah
+author: relkochta
+
+description: |-
+  Join Hailey Welch on the Talk Tuah podcast for some file and directory fun!
+  
+  `{{ nc }}`
+
+#`nc talk-tuah.challs.umdctf.io 1447`
+
+flag: UMDCTF{more_tocttou_bugs_next_week_with_hailey_welch}
+
+# remove this if your challenge has no distributed files
+# these files are taken from the same directory as the challenge.yaml
+provide:
+  - Cargo.toml
+  - src/main.rs
+
+containers:
+  main:
+    build: .
+    privileged: true
+    ports:
+      - 1447
+
+expose:
+  main:
+    - target: 1447
+      tcp: 32727

@@ -1,0 +1,14 @@
+name: brainrot13
+author: aparker
+
+description: |-
+  An extremely secure military-grade encryption scheme and also RSA.
+
+
+flag: UMDCTF{shouldverotatedtwice}
+
+provide:
+  - dist.py
+  - output.txt
+
+visible: true

@@ -1,0 +1,31 @@
+name: cmsc351
+author: aparker
+
+description: |-
+  Most unorganized class I have taken. It took him over a month to release a syllabus which was not even accurate. In his lectures he just rants instead of actually teaching. You go the entire semester having to guess if you will pass and with what grade because he takes forever to grade things and the average grade was in the 50s.
+
+  ~ Rate My Professor
+
+  `{{ nc }}`
+
+
+flag: UMDCTF{C4ll_Gr4ph5_ar3_st1ll_gr4ph5}
+
+provide:
+  - cmsc351
+
+containers:
+  main:
+    build: .
+    privileged: true
+    ports:
+      - 1447
+
+
+expose:
+  main:
+    - target: 1447
+      tcp: 30351
+
+visible: true
+deployed: true

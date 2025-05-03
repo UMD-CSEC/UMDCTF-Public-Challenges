@@ -1,0 +1,13 @@
+name: ls
+author: aparker
+
+description: |-
+  My `ls` program only works if you provide the flag first.
+
+
+flag: UMDCTF{ptrace-is-funky-i5n+-1t}
+
+provide:
+  - ./ls
+
+visible: true

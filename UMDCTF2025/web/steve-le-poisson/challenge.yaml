@@ -1,0 +1,27 @@
+name: "Steve Le Poisson"
+author: tahmid-23
+description: |-
+  il est orange
+
+  [steve-le-poisson.challs.umdctf.io](https://steve-le-poisson.challs.umdctf.io)
+flag: UMDCTF{ile5TVR4IM3NtTresbEAu}
+provide:
+  - ./backend/index.js
+containers:
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_URL: https://steve-le-poisson-api.challs.umdctf.io
+    ports: [4173]
+  backend:
+    build: ./backend
+    ports: [3000]
+expose:
+  frontend:
+    - target: 4173
+      http: steve-le-poisson
+  backend:
+    - target: 3000
+      http: steve-le-poisson-api
+visible: true

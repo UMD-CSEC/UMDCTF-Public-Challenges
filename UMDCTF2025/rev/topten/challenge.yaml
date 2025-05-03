@@ -1,0 +1,10 @@
+name: top-ten-craziest-x86-instructions
+author: clam
+
+description: |-
+  the ten instructions with the most rizz
+
+flag: "UMDCTF{stop_st0p_STOP!_w3_n33d_t0_g0_B4ck...back_t0_R0cks_in_th3_d3sErt}"
+
+provide:
+  - ./top10

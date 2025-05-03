@@ -1,0 +1,11 @@
+services:
+  main:
+    build: .
+    environment:
+      - HTTPS_URL=https://gambling.challs.umdctf.io/
+    ports:
+      - "80:80/tcp"
+      - "443:443/tcp"
+      - "443:443/udp"
+    restart: always
+    
