@@ -1,0 +1,19 @@
+name: the_akari
+author: clam
+
+description: |-
+  always bet on the solver
+
+flag: UMDCTF{r3venge_of_the_pclmulqdq}
+
+provide:
+  - challenge.py
+  - flag_enc.bin
+  - board.txt.gz
+
+# set these to true when your challenge is ready
+# if you want to test your challenge, set deployed: true only, but
+# be fast since your challenge is technically accessible by others
+# if they guess url/port
+visible: true
+deployed: false

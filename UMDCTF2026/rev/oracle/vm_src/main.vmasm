@@ -1,0 +1,6 @@
+; main entry point — invokes validate and returns its status.
+; The flag is never touched here; the native side derives the decryption
+; key from the ticket's signature state after this returns 0.
+
+INVOKE      validate, 0
+RET

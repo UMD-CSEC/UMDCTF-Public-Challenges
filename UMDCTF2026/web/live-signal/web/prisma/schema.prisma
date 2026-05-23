@@ -1,0 +1,34 @@
+datasource db {
+  provider = "sqlite"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Analyst {
+  id             String   @id @default(cuid())
+  handle         String   @unique
+  displayName    String
+  bio            String
+  tier           String
+  claimedRoi     Float
+  claimedWinRate Float
+  joinedAt       DateTime @default(now())
+  signals        Signal[]
+}
+
+model Signal {
+  id            String   @id @default(cuid())
+  analyst       Analyst  @relation(fields: [analystId], references: [id])
+  analystId     String
+  ticker        String
+  side          String
+  contractPrice Int
+  signalHmac    String
+  thesis        String
+  publishedAt   DateTime
+  createdAt     DateTime @default(now())
+
+  @@index([analystId, publishedAt])
+}

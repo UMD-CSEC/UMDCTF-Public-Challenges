@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=JetBrains+Mono:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --color-surface: #101013;
+  --color-surface-2: #16161a;
+  --color-surface-3: #1e1e24;
+  --color-surface-4: #27272f;
+  --color-border: #2a2a33;
+  --color-border-light: #3a3a44;
+  --color-yes: #00e676;
+  --color-yes-dim: rgba(0, 230, 118, 0.12);
+  --color-yes-glow: rgba(0, 230, 118, 0.25);
+  --color-no: #ff1744;
+  --color-no-dim: rgba(255, 23, 68, 0.12);
+  --color-no-glow: rgba(255, 23, 68, 0.25);
+  --color-primary: #3d5afe;
+  --color-primary-hover: #536dfe;
+  --color-primary-dim: rgba(61, 90, 254, 0.12);
+  --color-muted: #72727e;
+  --color-text: #e8e8ed;
+  --color-text-dim: #9898a3;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #08080a;
+  color: var(--color-text);
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(61, 90, 254, 0.06), transparent),
+    #08080a;
+}
+
+/* Noise texture overlay */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-border-light);
+}
+
+/* Glow keyframes */
+@keyframes pulse-yes {
+  0%, 100% { box-shadow: 0 0 0 0 var(--color-yes-glow); }
+  50% { box-shadow: 0 0 16px 2px var(--color-yes-glow); }
+}
+
+@keyframes pulse-no {
+  0%, 100% { box-shadow: 0 0 0 0 var(--color-no-glow); }
+  50% { box-shadow: 0 0 16px 2px var(--color-no-glow); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes ticker-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.ticker-scroll {
+  display: inline-block;
+  animation: ticker-scroll 240s linear infinite;
+}
+
+.ticker-scroll:hover {
+  animation-play-state: paused;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.4s ease-out both;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.stagger-1 { animation-delay: 0.05s; }
+.stagger-2 { animation-delay: 0.1s; }
+.stagger-3 { animation-delay: 0.15s; }
+.stagger-4 { animation-delay: 0.2s; }
+.stagger-5 { animation-delay: 0.25s; }
+.stagger-6 { animation-delay: 0.3s; }
+
+/* Skeleton loader */
+.skeleton {
+  background: linear-gradient(90deg, var(--color-surface-3) 25%, var(--color-surface-4) 50%, var(--color-surface-3) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 4px;
+}
+
+/* Price flash animation */
+@keyframes flash-green {
+  0% { background-color: var(--color-yes-dim); }
+  100% { background-color: transparent; }
+}
+@keyframes flash-red {
+  0% { background-color: var(--color-no-dim); }
+  100% { background-color: transparent; }
+}
+.flash-up { animation: flash-green 0.6s ease-out; }
+.flash-down { animation: flash-red 0.6s ease-out; }
+
+/* Hide TradingView attribution from lightweight-charts */
+[id^="tv-attr"] {
+  display: none !important;
+}

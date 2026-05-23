@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>rainbet — 25 in a row</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">rainbet</div>
+    <div class="streak-pill">
+      <span class="streak-label">streak</span>
+      <span class="streak-val"><span id="streak-n">0</span> <span class="sep">/</span> <span id="streak-t">25</span></span>
+    </div>
+  </header>
+
+  <main id="stage">
+    <!-- ================================================================= -->
+    <!-- Mines                                                              -->
+    <!-- ================================================================= -->
+    <section id="mines" class="mines-container hidden">
+      <div class="side-bar">
+        <div class="bet-type-toggle">
+          <button type="button" class="toggle-button active" tabindex="-1">
+            <div class="bg-gradient"></div><span>Manual</span>
+          </button>
+          <button type="button" class="toggle-button" tabindex="-1">
+            <div class="bg-gradient"></div><span>Auto</span>
+          </button>
+        </div>
+
+        <form onsubmit="return false;">
+          <div class="top-fields">
+            <div class="bet-input-field">
+              <label class="bet-label"><span>Bet Amount</span></label>
+              <div class="bet-input-content">
+                <label class="currency-icon"><span>$</span></label>
+                <input type="text" value="max-win" readonly aria-readonly="true">
+                <div class="bet-adjust">
+                  <button type="button" tabindex="-1"><span>1/2</span></button>
+                  <button type="button" tabindex="-1"><span>2x</span></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-setting">
+              <div class="label-heading"><p class="label"><span>Grid Size</span></p></div>
+              <div class="grid-tabs" id="mines-grid-tabs">
+                <button type="button" class="tab" data-size="25" tabindex="-1"><div class="bg-gradient"></div><span>25</span></button>
+                <button type="button" class="tab" data-size="36" tabindex="-1"><div class="bg-gradient"></div><span>36</span></button>
+                <button type="button" class="tab" data-size="49" tabindex="-1"><div class="bg-gradient"></div><span>49</span></button>
+                <button type="button" class="tab" data-size="64" tabindex="-1"><div class="bg-gradient"></div><span>64</span></button>
+              </div>
+            </div>
+
+            <div class="mines-count-input">
+              <div class="label-heading"><p class="label"><span>Number of Mines</span></p></div>
+              <div class="mines-slider">
+                <div class="item-icon gem"><img src="/static/assets/diamond.png" width="18" height="14" alt=""><span class="count" id="mines-gem-count">0</span></div>
+                <div class="slider-track">
+                  <div class="slider-range" id="mines-slider-range"></div>
+                  <div class="slider-thumb" id="mines-slider-thumb"><div class="slits"><i></i><i></i><i></i></div></div>
+                </div>
+                <div class="item-icon bomb">
+                  <span class="count" id="mines-bomb-count">0</span>
+                  <div class="bomb-icon"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <div class="bet-control">
+          <button id="mines-cashout" class="bet-button" type="button"><span>Cash Out</span></button>
+        </div>
+      </div>
+
+      <div class="game-display">
+        <div class="game-header">
+          <button class="info-btn" type="button" tabindex="-1" aria-label="info">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M8 0C3.58 0 0 3.58 0 8C0 12.42 3.58 16 8 16C12.42 16 16 12.42 16 8C16 3.58 12.42 0 8 0ZM8 14.55C4.4 14.55 1.45 11.6 1.45 8C1.45 4.4 4.4 1.45 8 1.45C11.6 1.45 14.55 4.4 14.55 8C14.55 11.6 11.6 14.55 8 14.55Z" fill="#E8E5FF" fill-opacity="0.5"/>
+              <path d="M8 3.4C7.47 3.4 7.03 3.83 7.03 4.37C7.03 4.9 7.47 5.33 8 5.33C8.53 5.33 8.97 4.9 8.97 4.37C8.97 3.83 8.53 3.4 8 3.4ZM8 6.77C7.6 6.77 7.27 7.1 7.27 7.5V11.86C7.27 12.26 7.6 12.59 8 12.59C8.4 12.59 8.73 12.26 8.73 11.86V7.5C8.73 7.1 8.4 6.77 8 6.77Z" fill="#E8E5FF" fill-opacity="0.5"/>
+            </svg>
+          </button>
+          <div class="sponsor">
+            <div class="game-icon">
+              <svg width="18" height="16" viewBox="0 0 18 16" fill="none">
+                <path fill="#7D7E97" d="M17.713 1.501c-1.559-.998-2.886-.799-4.042-.14C12.66.497 11.711.47 11.711.47l-1.443 1.443C7.601.63 4.308 1.086 2.098 3.296a7.167 7.167 0 0 0 10.135 10.135c2.21-2.21 2.668-5.504 1.386-8.17l1.443-1.443s-.02-.678-.545-1.498c.799-.384 1.59-.373 2.526.227a.622.622 0 0 0 .67-1.046M6.667 3.925c-.14.03-3.457.766-3.91 3.833a.621.621 0 1 1-1.23-.184c.582-3.934 4.712-4.83 4.888-4.866a.623.623 0 0 1 .645.95.62.62 0 0 1-.393.267m2.128-.395a.615.615 0 1 1-.87-.87.615.615 0 0 1 .87.87"/>
+              </svg>
+            </div>
+            <span class="title">mines</span>
+          </div>
+          <a class="fairplay" href="#" onclick="return false;">
+            <svg width="14" height="16" viewBox="0 0 14 16" fill="none">
+              <path d="M13.554 6.245L13.003 2.666C9.003 2.666 7.003 0.666 7.003 0.666C7.003 0.666 5.003 2.666 1.003 2.666L0.453 6.245C0.223 7.735 0.459 9.26 1.127 10.612C1.796 11.964 2.865 13.077 4.189 13.8L7.003 15.333L9.817 13.8C11.141 13.077 12.211 11.964 12.879 10.612C13.548 9.26 13.784 7.735 13.554 6.245ZM10.141 6.471L6.141 10.471C6.016 10.596 5.847 10.666 5.67 10.666C5.493 10.666 5.324 10.596 5.199 10.471L3.865 9.137C3.802 9.076 3.751 9.002 3.716 8.921C3.681 8.84 3.663 8.752 3.662 8.664C3.661 8.575 3.678 8.487 3.711 8.405C3.745 8.323 3.795 8.249 3.857 8.186C3.920 8.124 3.994 8.074 4.076 8.041C4.158 8.007 4.246 7.990 4.334 7.991C4.423 7.992 4.510 8.010 4.592 8.045C4.673 8.080 4.747 8.131 4.808 8.195L5.67 9.057L9.199 5.528C9.324 5.407 9.493 5.339 9.668 5.341C9.842 5.342 10.010 5.413 10.133 5.536C10.257 5.660 10.327 5.827 10.328 6.002C10.330 6.177 10.263 6.345 10.141 6.471Z" fill="white"/>
+            </svg>
+            <span>Fair Play</span>
+          </a>
+        </div>
+
+        <div class="game-content">
+          <div id="mines-grid" class="mines-grid"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- Chicken Cross                                                      -->
+    <!-- ================================================================= -->
+    <section id="chicken" class="chicken-frame hidden">
+      <div class="chicken-bet-bar">
+        <div class="bet-bar-row">
+          <div class="manual-bet-input">
+            <div class="bet-input-field">
+              <label class="bet-label"><span>Bet Amount</span></label>
+              <div class="bet-input-content">
+                <label class="currency-icon"><span>$</span></label>
+                <input type="text" value="max-win" readonly aria-readonly="true">
+                <div class="bet-adjust">
+                  <button type="button" tabindex="-1"><span>1/2</span></button>
+                  <button type="button" tabindex="-1"><span>2x</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bet-cashout-group">
+            <div class="chicken-action">
+              <button id="chicken-cross" class="cross-btn" type="button">
+                <span>Cross</span>
+              </button>
+            </div>
+            <div class="payout-and-action">
+              <div class="payout-display">
+                <div class="payout-value"><span id="chicken-payout-label">current payout</span></div>
+                <span class="payout-multiplier" id="chicken-multiplier">1.00x</span>
+              </div>
+              <button id="chicken-cashout" class="cashout-btn" type="button">
+                <div class="inner"><span>Cash Out</span></div>
+                <div class="gradient"></div>
+              </button>
+            </div>
+          </div>
+
+          <div class="difficulty-select">
+            <span class="select-label">Risk</span>
+            <button type="button" class="difficulty-trigger" tabindex="-1">
+              <span class="difficulty-name" id="chicken-risk-name">Easy</span>
+              <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-header chicken-header">
+        <button class="info-btn" type="button" tabindex="-1" aria-label="info">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path fill="#E8E5FF" fill-opacity="0.5" d="M8 0C3.58 0 0 3.58 0 8C0 12.42 3.58 16 8 16C12.42 16 16 12.42 16 8C16 3.58 12.42 0 8 0ZM8 14.55C4.4 14.55 1.45 11.6 1.45 8C1.45 4.4 4.4 1.45 8 1.45C11.6 1.45 14.55 4.4 14.55 8C14.55 11.6 11.6 14.55 8 14.55Z"/>
+            <path fill="#E8E5FF" fill-opacity="0.5" d="M8 3.4C7.47 3.4 7.03 3.83 7.03 4.37C7.03 4.9 7.47 5.33 8 5.33C8.53 5.33 8.97 4.9 8.97 4.37C8.97 3.83 8.53 3.4 8 3.4ZM8 6.77C7.6 6.77 7.27 7.1 7.27 7.5V11.86C7.27 12.26 7.6 12.59 8 12.59C8.4 12.59 8.73 12.26 8.73 11.86V7.5C8.73 7.1 8.4 6.77 8 6.77Z"/>
+          </svg>
+        </button>
+        <div class="sponsor">
+          <div class="game-icon chicken-icon">
+            <svg fill="none" height="20" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.968 9.627c.58 1.218.452 2.706.229 3.75-.207.966-1.231 2.181-2.822 2.909a1.39 1.39 0 0 1-.72 1.044l-.005.003a1 1 0 0 1-.066.033l.196 1.146.05.297h.003l-.037-.301.838-.203a.614.614 0 0 1 .757.602.617.617 0 0 1-.586.618l-2.052.092a.42.42 0 0 1-.116-.828l.455-.11-.144-1.19a1.37 1.37 0 0 1-1.098-.641c-.367.013-.728.005-1.066-.016-.225.46-.694.776-1.236.776h-.034l-.003.015-.215 1.067.859.075a.618.618 0 1 1-.22 1.211l-.294-.084-1.682-.482a.42.42 0 0 1 .15-.823l.465.04.223-1.109a.76.76 0 0 1-.26-.357 1.4 1.4 0 0 1-.364-.896c-3.202-1.437-3.37-4.786-3.376-5.36-.115.031-.183.029-.183.029s-1.99.237-2.113-.658c-.037-.684 1.203-.819 1.263-.825-.056.004-1.141.075-1.213-.824.098-.741 1.237-.344 1.256-.338-.017-.017-.732-.78-.732-1.482s1.033-2.094 2.22-1.197c.645.548 1.104 2.31 1.12 2.546.562-.247 1.154-.366 1.154-.366 1.099-.292 2.248-.407 3.296-.424.359-.62.374-1.508.612-3.269q.03-.215.074-.402c-.23-.2-.938-.154-.835-.877.177-1.234 1.35-.65 1.35-.65s-.791-.89-.315-1.37c.766-.798 1.534.485 1.534.485S13.23 0 14.149 0c.92 0 .846 1.574.846 1.574s.54-.552.91-.277c.495.848-.228 1.193-.457 1.456.175.32.271.68.33 1.01.053.012.105.045.17.06.41.098 1.134.08 1.552.707l-.24.082c-.31.1-.615.16-.91.226-.095.022-.19.046-.258.071l.068.112.193.244c.187.25.329.444.28.543-.142.327-.407.094-.587-.027.198.915.458 1.326.661 1.949.274.842.473 1.749.261 1.896zm-5.13 5.312q.311-.122.575-.303c-2.241.314-2.871-.3-2.871-.3.137-.036 1.144-.69 1.144-.69-2.065.15-2.72-1.282-2.72-1.282.263-.025 1.261-.484 1.261-.484-2.322-.97-2.05-1.897-2.042-2.187-.243-.075-.789-.164-1.014-.331 0 0-.296 1.748 1.59 2.471 0 0-.812.295-.975.105 0 0 .174 1.802 2.238 1.963 0 0-.774.339-.914.354 0 0 1.063 1.726 3.728.684" fill="#fff"/>
+            </svg>
+          </div>
+          <span class="title">chicken cross</span>
+        </div>
+        <a class="fairplay" href="#" onclick="return false;">
+          <svg width="14" height="16" viewBox="0 0 14 16" fill="none">
+            <path d="M13.554 6.245L13.003 2.666C9.003 2.666 7.003 0.666 7.003 0.666C7.003 0.666 5.003 2.666 1.003 2.666L0.453 6.245C0.223 7.735 0.459 9.26 1.127 10.612C1.796 11.964 2.865 13.077 4.189 13.8L7.003 15.333L9.817 13.8C11.141 13.077 12.211 11.964 12.879 10.612C13.548 9.26 13.784 7.735 13.554 6.245ZM10.141 6.471L6.141 10.471C6.016 10.596 5.847 10.666 5.67 10.666C5.493 10.666 5.324 10.596 5.199 10.471L3.865 9.137C3.802 9.076 3.751 9.002 3.716 8.921C3.681 8.84 3.663 8.752 3.662 8.664C3.661 8.575 3.678 8.487 3.711 8.405C3.745 8.323 3.795 8.249 3.857 8.186C3.920 8.124 3.994 8.074 4.076 8.041C4.158 8.007 4.246 7.990 4.334 7.991C4.423 7.992 4.510 8.010 4.592 8.045C4.673 8.080 4.747 8.131 4.808 8.195L5.67 9.057L9.199 5.528C9.324 5.407 9.493 5.339 9.668 5.341C9.842 5.342 10.010 5.413 10.133 5.536C10.257 5.660 10.327 5.827 10.328 6.002C10.330 6.177 10.263 6.345 10.141 6.471Z" fill="white"/>
+          </svg>
+          <span>Fair Play</span>
+        </a>
+      </div>
+
+      <div class="chicken-content">
+        <div class="chicken-track" id="chicken-track">
+          <div id="chicken-row" class="chicken-lanes"></div>
+          <div id="chicken-marker" class="chicken-marker">
+            <svg viewBox="0 0 20 20" fill="none" width="28" height="28">
+              <path d="M16.968 9.627c.58 1.218.452 2.706.229 3.75-.207.966-1.231 2.181-2.822 2.909a1.39 1.39 0 0 1-.72 1.044l-.005.003a1 1 0 0 1-.066.033l.196 1.146.05.297h.003l-.037-.301.838-.203a.614.614 0 0 1 .757.602.617.617 0 0 1-.586.618l-2.052.092a.42.42 0 0 1-.116-.828l.455-.11-.144-1.19a1.37 1.37 0 0 1-1.098-.641c-.367.013-.728.005-1.066-.016-.225.46-.694.776-1.236.776h-.034l-.003.015-.215 1.067.859.075a.618.618 0 1 1-.22 1.211l-.294-.084-1.682-.482a.42.42 0 0 1 .15-.823l.465.04.223-1.109a.76.76 0 0 1-.26-.357 1.4 1.4 0 0 1-.364-.896c-3.202-1.437-3.37-4.786-3.376-5.36-.115.031-.183.029-.183.029s-1.99.237-2.113-.658c-.037-.684 1.203-.819 1.263-.825-.056.004-1.141.075-1.213-.824.098-.741 1.237-.344 1.256-.338-.017-.017-.732-.78-.732-1.482s1.033-2.094 2.22-1.197c.645.548 1.104 2.31 1.12 2.546.562-.247 1.154-.366 1.154-.366 1.099-.292 2.248-.407 3.296-.424.359-.62.374-1.508.612-3.269q.03-.215.074-.402c-.23-.2-.938-.154-.835-.877.177-1.234 1.35-.65 1.35-.65s-.791-.89-.315-1.37c.766-.798 1.534.485 1.534.485S13.23 0 14.149 0c.92 0 .846 1.574.846 1.574s.54-.552.91-.277c.495.848-.228 1.193-.457 1.456.175.32.271.68.33 1.01.053.012.105.045.17.06.41.098 1.134.08 1.552.707l-.24.082c-.31.1-.615.16-.91.226-.095.022-.19.046-.258.071l.068.112.193.244c.187.25.329.444.28.543-.142.327-.407.094-.587-.027.198.915.458 1.326.661 1.949.274.842.473 1.749.261 1.896zm-5.13 5.312q.311-.122.575-.303c-2.241.314-2.871-.3-2.871-.3.137-.036 1.144-.69 1.144-.69-2.065.15-2.72-1.282-2.72-1.282.263-.025 1.261-.484 1.261-.484-2.322-.97-2.05-1.897-2.042-2.187-.243-.075-.789-.164-1.014-.331 0 0-.296 1.748 1.59 2.471 0 0-.812.295-.975.105 0 0 .174 1.802 2.238 1.963 0 0-.774.339-.914.354 0 0 1.063 1.726 3.728.684" fill="#ffd358"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="chicken-footer">
+        <div class="footer-controls">
+          <button type="button" tabindex="-1" class="footer-icon-btn" aria-label="settings">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path fill="#E8E5FF" d="M15.31 9.75l-1.47-1.15c.02-.18.04-.38.04-.6s-.02-.43-.04-.6l1.47-1.15a.72.72 0 00.17-.92l-1.53-2.65a.71.71 0 00-.88-.32l-1.74.7a5.95 5.95 0 00-1.04-.6L10.03.6A.71.71 0 009.32 0H6.26a.71.71 0 00-.7.6l-.27 1.85c-.35.16-.69.36-1.04.6l-1.74-.7a.72.72 0 00-.88.32L.1 5.33a.72.72 0 00.17.92l1.47 1.15c-.02.22-.03.42-.03.6s.01.38.03.6l-1.47 1.15a.72.72 0 00-.17.92l1.53 2.65c.17.3.54.44.88.32l1.74-.7c.33.24.68.44 1.04.6l.26 1.84a.71.71 0 00.71.62h3.06a.71.71 0 00.71-.6l.26-1.85c.35-.16.69-.36 1.04-.6l1.74.7a.7.7 0 00.88-.31l1.54-2.66a.72.72 0 00-.18-.91zm-7.52.92A2.67 2.67 0 015.13 8a2.67 2.67 0 012.67-2.67A2.67 2.67 0 0110.46 8a2.67 2.67 0 01-2.67 2.67z"/>
+            </svg>
+          </button>
+          <button type="button" tabindex="-1" class="footer-icon-btn" aria-label="hotkeys">
+            <svg width="17" height="16" viewBox="0 0 17 16" fill="#E8E5FF" fill-opacity="0.6">
+              <path d="M16.56 13.34V7.52a2.18 2.18 0 00-2.18-2.18H2.74A2.18 2.18 0 00.56 7.52v5.82a2.18 2.18 0 002.18 2.18h11.64a2.18 2.18 0 002.18-2.18zM4.2 10.79a1.09 1.09 0 110 2.18 1.09 1.09 0 010-2.18zm8.73 0a1.09 1.09 0 110 2.18 1.09 1.09 0 010-2.18zM7.1 12.61h2.91a.73.73 0 000-1.46H7.1a.73.73 0 100 1.46zM4.2 7.88a1.09 1.09 0 110 2.18 1.09 1.09 0 010-2.18zm2.9 0a1.09 1.09 0 11-.01 2.18 1.09 1.09 0 010-2.18zm2.91 0a1.09 1.09 0 11-.01 2.18 1.09 1.09 0 010-2.18zm2.9 0a1.09 1.09 0 11-.01 2.18 1.09 1.09 0 010-2.18z"/>
+            </svg>
+          </button>
+        </div>
+        <div class="faded-logo">
+          <img src="/static/assets/logo.webp" alt="rainbet" width="90" height="26">
+        </div>
+        <div class="footer-toggle">
+          <button type="button" tabindex="-1" class="toggle-button active">
+            <div class="bg-gradient"></div><span>Manual</span>
+          </button>
+          <button type="button" tabindex="-1" class="toggle-button">
+            <div class="bg-gradient"></div><span>Auto</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- Finished                                                           -->
+    <!-- ================================================================= -->
+    <section id="finished" class="finished-card hidden">
+      <div class="card-head"><span class="title">flag</span></div>
+      <pre id="flag"></pre>
+    </section>
+  </main>
+
+  <!-- hidden bomb SVG used for reveal state, cloned into tiles -->
+  <template id="tile-template">
+    <button class="grid-item" type="button">
+      <div class="reveal-transition"></div>
+      <div class="grid-icon grid-icon-gem">
+        <div class="gem-inner">
+          <img alt="" src="/static/assets/diamond.png">
+        </div>
+      </div>
+      <div class="grid-icon grid-icon-bomb"></div>
+      <div class="grid-item-hover"></div>
+    </button>
+  </template>
+
+  <div id="toast" class="toast hidden"></div>
+  <script src="/static/app.js"></script>
+</body>
+</html>

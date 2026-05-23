@@ -1,0 +1,26 @@
+name: rainbet
+author: segal
+
+description: |-
+  sponsored by rainbet (for legal reasons this is not true). their rng backend was leaked (for legal reasons this is also not true)! can you get enough max wins?
+
+  [rainbet.challs.umdctf.io](https://rainbet.challs.umdctf.io)
+
+flag: UMDCTF{one_might_argue_that_gambling_is_the_best_vice_but_they_would_be_wrong}
+
+provide:
+  - server/rainbet_gen.wasm
+  - server/rainbet.py
+
+containers:
+  rainbet:
+    build: .
+    ports: [8000]
+
+expose:
+  rainbet:
+    - target: 8000
+      http: rainbet
+
+visible: true
+deployed: true

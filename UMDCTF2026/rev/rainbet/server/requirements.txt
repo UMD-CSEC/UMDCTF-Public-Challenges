@@ -1,0 +1,5 @@
+flask==3.0.3
+flask-sock==0.7.0
+gevent==24.2.1
+gunicorn==22.0.0
+wasmtime==22.0.0

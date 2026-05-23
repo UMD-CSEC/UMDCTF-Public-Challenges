@@ -1,0 +1,29 @@
+name: bag_of_words
+author: clam
+
+description: |-
+  i bet a ton of money that i would win my next scrabble game, but it turns out i'm going against nigel richards... is there a way to give me an edge?
+
+  `{{ nc }}`
+
+flag: UMDCTF{unfortunately_nigel_richards_knew_the_strategy_too}
+
+provide:
+  - main
+  - libc.so.6
+  - ld-linux-x86-64.so.2
+
+containers:
+  main:
+    build: .
+    privileged: true
+    ports:
+      - 1452
+
+expose:
+  main:
+    - target: 1452
+      tcp: 30708
+
+visible: true
+deployed: true

@@ -1,0 +1,13 @@
+# KEEP THIS FILE IN THE ROOT OF YOUR CHALLENGE DIRECTORY IN THE GIT
+name: rag-poisoning
+author: unsure
+
+description: |-
+  Is CTF dead? really?
+
+  [rag-poisoning.challs.umdctf.io](http://rag-poisoning.challs.umdctf.io:45139)
+
+flag: UMDCTF{retrieval_augmented_misleading}
+
+visible: true
+deployed: true

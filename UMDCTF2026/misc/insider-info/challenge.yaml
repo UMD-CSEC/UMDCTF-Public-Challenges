@@ -1,0 +1,28 @@
+# KEEP THIS FILE IN THE ROOT OF YOUR CHALLENGE DIRECTORY IN THE GIT
+name: insider-info
+author: cephi-sui
+
+description: |-
+  What better way to hide inside info on the Internet?
+
+  `{{ nc }}`
+
+flag: UMDCTF{5Ur31Y_N0_0N3_W111_N071C3_MY_1N51D3r_7r4D1N6}
+
+provide:
+  - dns_server.py
+
+containers:
+  main:
+    build: .
+    privileged: true
+    ports:
+      - 32323
+
+expose: 
+  main:
+    - target: 32323
+      tcp: 32323
+
+visible: true
+deployed: true

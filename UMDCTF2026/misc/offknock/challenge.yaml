@@ -1,0 +1,28 @@
+# KEEP THIS FILE IN THE ROOT OF YOUR CHALLENGE DIRECTORY IN THE GIT
+name: offknock
+author: cephi-sui
+
+description: |-
+  I hope my knockoff is good
+
+  `{{ nc }}`
+
+flag: UMDCTF{175_4_107_34513r_70_M4K3_KN0CK0FF5_N0W}
+
+provide:
+  - dns_server.py
+
+containers:
+  main:
+    build: .
+    privileged: true
+    ports:
+      - 32324
+
+expose: 
+  main:
+    - target: 32324
+      tcp: 32324
+
+visible: true
+deployed: true

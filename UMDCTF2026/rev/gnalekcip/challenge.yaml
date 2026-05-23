@@ -1,0 +1,14 @@
+name: gnalekcip
+author: hellopir2
+
+description: |-
+  pickelang rev or gnalekcip? the markets are divided.
+
+flag: UMDCTF{pick3l_or_elkcIP_wh1cH_0ne_1s_i7_504f4c4c5554414e54}
+
+provide:
+  - pickelang.py
+  - pickle.pkl
+
+visible: true
+deployed: false

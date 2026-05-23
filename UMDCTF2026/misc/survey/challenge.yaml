@@ -1,0 +1,16 @@
+name: survey
+author: umdctf
+value: 10
+
+description: |-
+  I hate prediction markets.
+
+  I hate gambling.
+
+  [https://forms.gle/7d3nTFybB52PX3q97](https://forms.gle/7d3nTFybB52PX3q97)
+
+
+flag: UMDCTF{please_help_the_organizers_recover_from_their_crippling_gambling_addiction}
+
+visible: true
+tiebreakEligible: false

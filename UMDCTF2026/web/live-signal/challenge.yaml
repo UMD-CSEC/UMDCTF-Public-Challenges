@@ -1,0 +1,20 @@
+name: live-signal
+author: tahmid-23
+description: |-
+  Predict the market *now* with signals from expert traders at low fees.
+
+  [live-signal.challs.umdctf.io](https://live-signal.challs.umdctf.io)
+flag: UMDCTF{z0d_1s_f0r_sc4r3dy_c4ts}
+containers:
+  web:
+    build: ./web
+    ports: [3000]
+    environment:
+      FLAG: UMDCTF{z0d_1s_f0r_sc4r3dy_c4ts}
+      HMAC_SECRET: 652daf13bbe9081e473d5e50e176cb651af9b9f3df66008e3592e69400a7f789
+      DATABASE_URL: file:/app/data/signal.db
+expose:
+  web:
+    - target: 3000
+      http: live-signal
+visible: true

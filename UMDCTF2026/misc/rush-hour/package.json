@@ -1,0 +1,16 @@
+{
+  "name": "car-renderer",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -n VITE,SERVER -c cyan,yellow \"vite\" \"./.venv/bin/python server/server.py\"",
+    "server": "./.venv/bin/python server/server.py",
+    "train": "./.venv/bin/python server/train.py",
+    "build": "tsc && vite build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0",
+    "typescript": "^6.0.2",
+    "vite": "^8.0.8"
+  }
+}

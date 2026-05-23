@@ -1,0 +1,23 @@
+services:
+  server:
+    build:
+      context: .
+      target: server
+    ports:
+      - "4443:4443/udp"
+    environment:
+      - FLAG=UMDCTF{fu7ur3_j4n3_s7r33t_h1r3}
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: .
+      target: frontend
+      args:
+        VITE_SERVER_URL: https://umdmarket.challs.umdctf.io:4443/wt
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - server
+    restart: unless-stopped

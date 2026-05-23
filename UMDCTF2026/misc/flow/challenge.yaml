@@ -1,0 +1,32 @@
+name: flow
+author: segal
+
+description: |-  
+  i made a trading algorithm! it uses ai and i think it's really cool. it even purifies the predictor inputs with a flow model!
+
+  `{{ nc }}`
+
+flag: UMDCTF{id_like_to_thank_athalye_carlini_and_wagner_for_their_research}
+
+provide:
+  - dist/flow.pt
+  - dist/predictor.pt
+  - dist/reference_window.npy
+  - challenge.py
+  - flow.py
+  - predictor.py
+
+containers:
+  main:
+    build: .
+    privileged: true
+    ports:
+      - 7275
+
+expose:
+  main:
+    - target: 7275
+      tcp: 30302
+
+visible: true
+deployed: true

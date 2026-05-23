@@ -1,0 +1,24 @@
+services:
+  server:
+    build:
+      context: .
+      target: server
+    network_mode: host
+    environment:
+      - FLAG=UMDCTF{cmsc_417_TcP_3nj0y3r}
+      - PORT=4443
+      - SO_SNDBUF=65536
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: .
+      target: frontend
+      args:
+        VITE_WS_URL: wss://choppediver.challs.umdctf.io:4443/
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - server
+    restart: unless-stopped

@@ -1,0 +1,32 @@
+name: security-breach
+author: tahmid-23
+
+description: |-
+  Our agents have infiltrated the world's smallest--I mean largest--insider trading network!
+
+  They left a note for you on the server. Best of luck!
+
+  `{{ nc }}`
+
+flag: UMDCTF{cr1m3_p4ys_br34ch_m0re}
+
+provide:
+  - src/server.py
+  - src/admin.py
+
+containers:
+  main:
+    build: .
+    privileged: true
+    ports:
+      - 31337
+    environment:
+      FLAG: UMDCTF{cr1m3_p4ys_br34ch_m0re}
+
+expose:
+  main:
+    - target: 31337
+      tcp: 31337
+
+visible: true
+deployed: true

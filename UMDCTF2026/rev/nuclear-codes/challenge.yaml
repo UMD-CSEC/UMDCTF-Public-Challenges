@@ -1,0 +1,31 @@
+name: nuclear_codes
+author: clam
+
+description: |-
+  I put $100000000000 on a bet that there would be nuclear war before the CTF ends, please help me find the nuclear codes so I can win big
+
+  `{{ nc }}`
+
+flag: UMDCTF{ok_i_got_the_nuclear_codes_now_where_do_i_enter_them????}
+
+provide:
+  - main
+
+containers:
+  main:
+    build: .
+    privileged: true
+    ports:
+      - 1447
+
+expose:
+  main:
+    - target: 1447
+      tcp: 30301
+
+# set these to true when your challenge is ready
+# if you want to test your challenge, set deployed: true only, but
+# be fast since your challenge is technically accessible by others
+# if they guess url/port
+visible: true
+deployed: true

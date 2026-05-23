@@ -1,0 +1,31 @@
+#version 450
+
+layout(local_size_x = 1, local_size_y = 1, local_size_z = 1) in;
+
+layout(push_constant) uniform Push {
+    uint mode;
+    uint index;
+    uint value;
+} push;
+
+layout(set = 0, binding = 0) readonly buffer OracleBook {
+    uint oracle_words[];
+};
+
+layout(set = 0, binding = 1) writeonly buffer ClearingBook {
+    uint clearing_words[];
+};
+
+void main() {
+    if (push.index >= 64) {
+        return;
+    }
+
+    if (push.mode == 0) {
+        clearing_words[push.index] = oracle_words[push.index];
+    } else if (push.mode == 1) {
+        clearing_words[0] = oracle_words[push.index];
+    } else if (push.mode == 2) {
+        clearing_words[push.index] = push.value;
+    }
+}

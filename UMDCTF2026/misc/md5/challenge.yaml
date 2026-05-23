@@ -1,0 +1,17 @@
+name: md5
+author: edwfeng
+description: |
+  making a guest appearance from umdctf 2024: this challenge might not be solvable
+
+  [md5.challs.umdctf.io](https://md5.challs.umdctf.io)
+flag: UMDCTF{how_many_ai_tokens_did_you_waste_trying_to_solve_this_one}
+containers:
+  main:
+    build: .
+    ports: [5000]
+expose:
+  main:
+    - target: 5000
+      http: md5
+deployed: true
+visible: true

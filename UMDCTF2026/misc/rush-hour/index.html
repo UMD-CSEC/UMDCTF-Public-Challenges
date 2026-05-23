@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>rush hour</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; overflow: hidden; background: #000;
+      display: flex; justify-content: center; align-items: center; font-family: monospace; }
+    canvas { display: block; }
+    #status {
+      position: fixed; top: 10px; right: 10px;
+      color: #ccc; font: 11px/1.4 monospace;
+      background: rgba(0,0,0,0.6); padding: 4px 10px; border-radius: 4px;
+      user-select: none;
+    }
+    #status.connected { color: #8f8; }
+    #status.disconnected { color: #f88; }
+    #panel {
+      position: fixed; top: 10px; left: 10px;
+      color: #eee; font: 11px/1.5 monospace;
+      background: rgba(0,0,0,0.75); padding: 10px 12px; border-radius: 5px;
+      min-width: 260px; max-width: 340px; user-select: none;
+    }
+    #panel h2 { font-size: 12px; margin-bottom: 6px; color: #8cf; }
+    #panel .hint { color: #888; font-size: 10px; line-height: 1.4; margin: 4px 0 8px; }
+    #panel button { font: 11px monospace; padding: 4px 12px; margin-right: 4px; cursor: pointer;
+      background: #333; color: #eee; border: 1px solid #666; border-radius: 3px; }
+    #panel button:hover:not(:disabled) { background: #555; }
+    #panel button:disabled { opacity: 0.5; cursor: not-allowed; }
+    #attackStatus { margin-top: 6px; font-size: 10px; }
+    #attackStatus.none  { color: #888; }
+    #attackStatus.active { color: #8f8; }
+    #attackStatus.error { color: #f88; }
+    #flag {
+      position: fixed; inset: 0; display: none; align-items: center; justify-content: center;
+      background: rgba(0,0,0,0.85); color: #8f8; font: 18px/1.5 monospace;
+      text-align: center; padding: 20px; flex-direction: column; gap: 12px;
+    }
+    #loading {
+      position: fixed; inset: 0; display: flex; align-items: center; justify-content: center;
+      color: #aaa; font: 16px/1.5 monospace; background: #111;
+    }
+  </style>
+</head>
+<body>
+  <div id="loading">Loading...</div>
+  <canvas id="canvas"></canvas>
+  <div id="status">connecting…</div>
+  <div id="panel">
+    <h2>rush hour</h2>
+    <div class="hint">
+      Submit a .npz with keys <code>W0 (16,8)</code>, <code>b0 (16,)</code>,
+      <code>W1 (8,16)</code>, <code>b1 (8,)</code>. Output is L2-projected to radius 0.5
+      and added to the observation the policy sees. Submit resets the run.
+    </div>
+    <input type="file" id="fileInput" accept=".npz" style="display:none">
+    <button id="btnChoose">Choose .npz</button>
+    <button id="btnClear">Clear</button>
+    <button id="btnReset">Reset run</button>
+    <div id="fileName" style="font-size:10px;color:#aaa;margin-top:4px"></div>
+    <div id="attackStatus" class="none">attack: none</div>
+  </div>
+  <div id="flag"></div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

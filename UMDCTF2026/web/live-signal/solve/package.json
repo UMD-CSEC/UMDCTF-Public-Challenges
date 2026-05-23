@@ -1,0 +1,14 @@
+{
+  "name": "live-signal-solver",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "solve": "tsx solve.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.3",
+    "@types/node": "^20.14.0"
+  }
+}

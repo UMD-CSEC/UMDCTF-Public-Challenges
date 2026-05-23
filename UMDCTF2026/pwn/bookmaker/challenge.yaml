@@ -1,0 +1,29 @@
+id: bookmaker
+name: bookmaker
+author: NyxIsBad
+
+description: |-
+  the bookies are contesting:
+  will Tahmid finish a fifth web challenge on time?
+
+  `{{ nc }}`
+
+flag: UMDCTF{tahmid-will-surely-finish_his_challenge_on_time!!}
+
+provide:
+  - dist/bookmaker
+
+containers:
+  main:
+    build: .
+    privileged: true
+    ports:
+      - 1452
+
+expose:
+  main:
+    - target: 1452
+      tcp: 30307
+
+visible: true
+deployed: true

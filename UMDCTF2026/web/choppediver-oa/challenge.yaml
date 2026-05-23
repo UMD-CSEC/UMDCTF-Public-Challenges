@@ -1,0 +1,14 @@
+name: choppediver oa
+author: tahmid-23
+description: |-
+  Choppediver (pronounced: chopt-iver) is the leading quant firm in prediction markets. You're invited to take the online assessment.
+
+  Looking for candidates that can react quickly in fast-paced environments.
+
+  [choppediver.challs.umdctf.io](https://choppediver.challs.umdctf.io)
+flag: UMDCTF{cmsc_417_TcP_3nj0y3r}
+visible: true
+provide:
+  - server/server.py
+  - server/keepalive.py
+  - server/rounds.py

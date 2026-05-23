@@ -1,0 +1,8 @@
+services:
+  main:
+    build: .
+    privileged: true
+    ports:
+      - "31337:31337"
+    environment:
+      FLAG: UMDCTF{cr1m3_p4ys_br34ch_m0re}

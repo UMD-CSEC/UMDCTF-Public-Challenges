@@ -1,0 +1,27 @@
+name: ipv8
+author: tohkie
+
+description: |-
+  whats better than ipv9? ipv8 (backwards compatible) ofc!
+
+  `{{ nc }}`
+
+flag: UMDCTF{why_was_ipv9_afraid_of_ipv7?ipv789}
+
+provide:
+  - chal/ipv4
+
+containers:
+  main:
+    build: .
+    privileged: true
+    ports:
+      - 1452
+
+expose: 
+  main:
+    - target: 1452
+      tcp: 30308
+
+visible: true
+deployed: true

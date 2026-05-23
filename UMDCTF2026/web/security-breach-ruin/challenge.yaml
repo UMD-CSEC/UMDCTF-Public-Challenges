@@ -1,0 +1,30 @@
+name: security-breach-ruin
+author: tahmid-23
+
+description: |-
+  Just like in FNAF, Security Breach was buggy on release.
+
+  `{{ nc }}`
+
+flag: UMDCTF{s1z3s_b3tr4y_y0u_3v3n_w1th_ca}
+
+provide:
+  - src/server.py
+  - src/admin.py
+
+containers:
+  main:
+    build: .
+    privileged: true
+    ports:
+      - 31338
+    environment:
+      FLAG: UMDCTF{s1z3s_b3tr4y_y0u_3v3n_w1th_ca}
+
+expose:
+  main:
+    - target: 31338
+      tcp: 31338
+
+visible: true
+deployed: true

@@ -1,0 +1,14 @@
+name: weave
+author: ph1nx_
+
+description: |-
+  every piece of the cipher lies open on the table. compose them correctly and the flag is yours.
+
+flag: UMDCTF{l01dr34u_l4mbda3_brick5_th3_w34v3_but_th3_trapd00r_unsp00ls_1t}
+
+provide:
+  - chall.sage
+  - output.json
+
+visible: true
+deployed: false

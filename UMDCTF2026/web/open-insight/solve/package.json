@@ -1,0 +1,13 @@
+{
+  "name": "openinsight-solver",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "main": "solve.js",
+  "scripts": {
+    "solve": "node solve.js"
+  },
+  "dependencies": {
+    "puppeteer": "^23.0.0"
+  }
+}

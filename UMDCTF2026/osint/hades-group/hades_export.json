@@ -1,0 +1,3646 @@
+{
+  "name": "Hades Group",
+  "type": "private_group",
+  "id": 28740651,
+  "messages": [
+    {
+      "type": "message",
+      "date": "2025-12-24T07:10:12Z",
+      "from": "dani",
+      "from_id": "user7520941836",
+      "from_username": "apollo_trace",
+      "text": "yo someone literally pasted a targets full socials in here 2 min ago. deleted it. dont do that",
+      "id": 1
+    },
+    {
+      "type": "service",
+      "date": "2025-12-24T07:50:00Z",
+      "action": "pin_message",
+      "text": "Pinned message from Hades Group",
+      "id": 2,
+      "actor": "Hades Group",
+      "actor_id": "channel28740651"
+    },
+    {
+      "type": "message",
+      "date": "2025-12-24T08:15:00Z",
+      "from": "Hades Group",
+      "from_id": "channel28740651",
+      "text": "Read pinned. No samples in main. Fresh accounts stay quiet until vouched.",
+      "id": 3
+    },
+    {
+      "type": "message",
+      "date": "2025-12-24T08:20:00Z",
+      "from": "Hades Group",
+      "from_id": "channel28740651",
+      "text": "Broker requests go first. Do not improvise jurisdiction.",
+      "id": 4
+    },
+    {
+      "type": "service",
+      "date": "2025-12-24T08:35:31Z",
+      "action": "invite_members",
+      "actor": "Hades Group",
+      "actor_id": "channel28740651",
+      "members": [
+        "morph"
+      ],
+      "member_ids": [
+        "user7540997715"
+      ],
+      "id": 5,
+      "text": "yo dont post target info in main. ever."
+    },
+    {
+      "type": "message",
+      "date": "2025-12-24T08:59:31Z",
+      "from": "morph",
+      "from_id": "user7540997715",
+      "from_username": "morpheus_lag",
+      "text": "we back?? been dead since like last wednesday books been thin too, no good odds on anything worth fading rn",
+      "id": 6
+    },
+    {
+      "type": "message",
+      "date": "2025-12-24T11:40:28Z",
+      "from": "forge",
+      "from_id": "user7041885321",
+      "from_username": "hephaestus_drop",
+      "text": "lol read pinned bro its always running unless admin says otherwise",
+      "id": 7
+    },
+    {
+      "type": "service",
+      "date": "2025-12-24T12:10:00Z",
+      "action": "invite_members",
+      "actor": "Hades Group",
+      "actor_id": "channel28740651",
+      "members": [
+        "k"
+      ],
+      "member_ids": [
+        "user7543991028"
+      ],
+      "id": 8
+    },
+    {
+      "type": "message",
+      "date": "2025-12-24T14:27:56Z",
+      "from": "nyx",
+      "from_id": "user7448021137",
+      "from_username": "nyxrelay",
+      "text": "btw ares came thru on that 40 target batch. zero complaints from anyone. solid",
+      "id": 9
+    },
+    {
+      "type": "message",
+      "date": "2025-12-24T16:33:28Z",
+      "from": "forge",
+      "from_id": "user7041885321",
+      "from_username": "hephaestus_drop",
+      "text": "yo does anyone still have access to the old voter reg db?? mine keeps timing out since yesterday",
+      "id": 10
+    },
+    {
+      "type": "message",
+      "date": "2025-12-24T19:44:21Z",
+      "from": "iris",
+      "from_id": "user7139058844",
+      "from_username": "iris_queue",
+      "text": "take support tickets to dm ffs stop clogging main",
+      "id": 11
+    },
+    {
+      "type": "service",
+      "date": "2025-12-24T19:53:51Z",
+      "action": "invite_members",
+      "actor": "Hades Group",
+      "actor_id": "channel28740651",
+      "members": [
+        "sel"
+      ],
+      "member_ids": [
+        "user7645510921"
+      ],
+      "id": 12
+    },
+    {
+      "type": "message",
+      "date": "2025-12-24T20:04:51Z",
+      "from": "sel",
+      "from_id": "user7645510921",
+      "from_username": "selene_packet",
+      "text": "@hermes_locker does a full pack come w/ workplace or nah",
+      "id": 13
+    },
+    {
+      "type": "service",
+      "date": "2025-12-24T20:06:00Z",
+      "action": "invite_members",
+      "actor": "Hades Group",
+      "actor_id": "channel28740651",
+      "members": [
+        "dio"
+      ],
+      "member_ids": [
+        "user7346615520"
+      ],
+      "id": 14
+    },
+    {
+      "type": "message",
+      "date": "2025-12-24T20:44:40Z",
+      "from": "mason h",
+      "from_id": "user7415839206",
+      "from_username": "hermes_locker",
+      "text": "nah workplace is extra. base is name addr phone family",
+      "id": 15
+    },
+    {
+      "type": "message",
+      "date": "2025-12-24T21:01:37Z",
+      "from": "mason h",
+      "from_id": "user7415839206",
+      "from_username": "hermes_locker",
+      "text": "taking US targets tonight, county level. dm me target + state. thats it",
+      "id": 16
+    },
+    {
+      "type": "message",
+      "date": "2025-12-24T21:40:20Z",
+      "from": "pan",
+      "from_id": "user7849230015",
+      "from_username": "pan_cache",
+      "text": "heads up some of the addrs from voter db are showing 2019 lol",
+      "id": 17
+    },
+    {
+      "type": "message",
+      "date": "2025-12-24T22:16:00Z",
+      "from": "dio",
+      "from_id": "user7346615520",
+      "from_username": "dionysusplug",
+      "text": "half the new ppl here cant even write a proper request smh. they see 'contract' on the book and think its point-and-click",
+      "id": 18
+    },
+    {
+      "type": "message",
+      "date": "2025-12-25T01:51:08Z",
+      "from": "mason h",
+      "from_id": "user7415839206",
+      "from_username": "hermes_locker",
+      "text": "first name + state. thats literally all i need. stop writing me novels",
+      "id": 19
+    },
+    {
+      "type": "message",
+      "date": "2025-12-25T05:07:11Z",
+      "from": "jian",
+      "from_id": "user7682014550",
+      "from_username": "ares_forge",
+      "text": "shift over here. left the batch running overnight, ull have results by morning ur time",
+      "id": 20
+    },
+    {
+      "type": "message",
+      "date": "2025-12-25T09:00:26Z",
+      "from": "dani",
+      "from_id": "user7520941836",
+      "from_username": "apollo_trace",
+      "text": "if ur request format is wrong im just dropping it. not gonna fix it for u",
+      "id": 21
+    },
+    {
+      "type": "message",
+      "date": "2025-12-25T10:38:54Z",
+      "from": "Hades Group",
+      "from_id": "channel28740651",
+      "text": "No fresh handles get priority. Queue order stands.",
+      "id": 22
+    },
+    {
+      "type": "message",
+      "date": "2025-12-25T12:15:06Z",
+      "from": "Hades Group",
+      "from_id": "channel28740651",
+      "text": "Queue is closed tonight. Do not ask when it reopens.",
+      "id": 23
+    },
+    {
+      "type": "message",
+      "date": "2025-12-25T13:53:03Z",
+      "from": "nyx",
+      "from_id": "user7448021137",
+      "from_username": "nyxrelay",
+      "text": "vouch hermes btw. homie needed a streamer doxxed, got the whole family tree same day lol",
+      "id": 24
+    },
+    {
+      "type": "service",
+      "date": "2025-12-25T14:37:50Z",
+      "action": "invite_members",
+      "actor": "Hades Group",
+      "actor_id": "channel28740651",
+      "members": [
+        "euro"
+      ],
+      "member_ids": [
+        "user7241176508"
+      ],
+      "id": 25
+    },
+    {
+      "type": "message",
+      "date": "2025-12-25T15:24:19Z",
+      "from": "pan",
+      "from_id": "user7849230015",
+      "from_username": "pan_cache",
+      "text": "how fresh is the dmv src? last pull had addrs from like 2021",
+      "id": 26
+    },
+    {
+      "type": "message",
+      "date": "2025-12-25T15:52:50Z",
+      "from": "euro",
+      "from_id": "user7241176508",
+      "from_username": "europa_vouch",
+      "text": "idc who pulls it i want proof the addr is current b4 i put $ in escrw",
+      "id": 27
+    },
+    {
+      "type": "message",
+      "date": "2025-12-25T16:12:24Z",
+      "from": "sel",
+      "from_id": "user7645510921",
+      "from_username": "selene_packet",
+      "text": "@hermes_locker sry to ask again but is employer included in household pack or extra",
+      "id": 28
+    },
+    {
+      "type": "message",
+      "date": "2025-12-25T16:45:26Z",
+      "from": "euro",
+      "from_id": "user7241176508",
+      "from_username": "europa_vouch",
+      "text": "got burned last month. paid full escrw and the addr was 3 yrs old. not doing that again",
+      "id": 29
+    },
+    {
+      "type": "message",
+      "date": "2025-12-25T18:18:35Z",
+      "from": "forge",
+      "from_id": "user7041885321",
+      "from_username": "hephaestus_drop",
+      "text": "voter reg src is def down now. tried 3 diff routes. anyone got a backup??",
+      "id": 30
+    },
+    {
+      "type": "message",
+      "date": "2025-12-25T18:39:39Z",
+      "from": "tri",
+      "from_id": "user7741023895",
+      "from_username": "tritonbrief",
+      "text": "diff question, can anyone still pull telecom? carrier + billing addr etc",
+      "id": 31
+    },
+    {
+      "type": "message",
+      "date": "2025-12-25T19:52:08Z",
+      "from": "charon",
+      "from_id": "user7341102986",
+      "from_username": "charon_settle",
+      "text": "seller gets 24h. stop pinging me about it. next ping = back of the line",
+      "id": 32
+    },
+    {
+      "type": "service",
+      "date": "2025-12-26T09:05:00Z",
+      "action": "invite_members",
+      "actor": "Hades Group",
+      "actor_id": "channel28740651",
+      "members": [
+        "gai"
+      ],
+      "member_ids": [
+        "user7945521033"
+      ],
+      "id": 33
+    },
+    {
+      "type": "message",
+      "date": "2025-12-26T10:30:15Z",
+      "from": "dani",
+      "from_id": "user7520941836",
+      "from_username": "apollo_trace",
+      "text": "got the old src back up. diff path but same records. @hephaestus_drop dm me",
+      "id": 34
+    },
+    {
+      "type": "message",
+      "date": "2025-12-26T15:43:39Z",
+      "from": "charon",
+      "from_id": "user7341102986",
+      "from_username": "charon_settle",
+      "text": "escrw releases after buyer confirms. no shortcuts no exceptions",
+      "id": 35
+    },
+    {
+      "type": "message",
+      "date": "2025-12-26T15:48:37Z",
+      "from": "tri",
+      "from_id": "user7741023895",
+      "from_username": "tritonbrief",
+      "text": "one more thing, telecom pull, does it show actual carrier or just the #?",
+      "id": 36
+    },
+    {
+      "type": "message",
+      "date": "2025-12-26T17:08:01Z",
+      "from": "ath",
+      "from_id": "user7236189055",
+      "from_username": "athena_markup",
+      "text": "genuine q: is there a policy on pulling minors or is anything fair game",
+      "id": 37
+    },
+    {
+      "type": "message",
+      "date": "2025-12-26T17:30:59Z",
+      "from": "ath",
+      "from_id": "user7236189055",
+      "from_username": "athena_markup",
+      "text": "what category do i pick for a govt employee target?? cant find it",
+      "id": 38
+    },
+    {
+      "type": "message",
+      "date": "2025-12-26T17:35:42Z",
+      "from": "gai",
+      "from_id": "user7945521033",
+      "from_username": "gaiarefund",
+      "text": "the pack i got is trash. paid for full fam and the mothers side is completely missing @iris_queue",
+      "id": 39
+    },
+    {
+      "type": "message",
+      "date": "2025-12-26T17:48:59Z",
+      "from": "tri",
+      "from_id": "user7741023895",
+      "from_username": "tritonbrief",
+      "text": "telecom shows carrier, billing city, reg date. full block",
+      "id": 40
+    },
+    {
+      "type": "message",
+      "date": "2025-12-26T20:19:23Z",
+      "from": "ath",
+      "from_id": "user7236189055",
+      "from_username": "athena_markup",
+      "text": "fam is always bundled in the full pack. u cant order it separate",
+      "id": 41
+    },
+    {
+      "type": "message",
+      "date": "2025-12-26T22:20:54Z",
+      "from": "hes",
+      "from_id": "user7146032211",
+      "from_username": "hestiaasks",
+      "text": "ok im new. what is a \"full pack\" exactly? like what do i actually get",
+      "id": 42
+    },
+    {
+      "type": "message",
+      "date": "2025-12-26T22:36:18Z",
+      "from": "mason h",
+      "from_id": "user7415839206",
+      "from_username": "hermes_locker",
+      "text": "full pack = name, current addr, phone, fam members, known socials. dm me if u want 1",
+      "id": 43
+    },
+    {
+      "type": "message",
+      "date": "2025-12-27T09:51:09Z",
+      "from": "iris",
+      "from_id": "user7139058844",
+      "from_username": "iris_queue",
+      "text": "@gaiarefund dm me the ord id. we dont chase sellers in main. they deliver or get dropped",
+      "id": 44
+    },
+    {
+      "type": "message",
+      "date": "2025-12-27T11:02:00Z",
+      "from": "forge",
+      "from_id": "user7041885321",
+      "from_username": "hephaestus_drop",
+      "text": "old phoebus mirror still there or dead?",
+      "id": 45
+    },
+    {
+      "type": "message",
+      "date": "2025-12-27T11:05:00Z",
+      "from": "dani",
+      "from_id": "user7520941836",
+      "from_username": "apollo_trace",
+      "text": "name died. mirror didnt.",
+      "id": 46
+    },
+    {
+      "type": "message",
+      "date": "2025-12-27T18:06:23Z",
+      "from": "euro",
+      "from_id": "user7241176508",
+      "from_username": "europa_vouch",
+      "text": "is apollo still doing db work or did he go dark?? @apollo_trace",
+      "id": 47
+    },
+    {
+      "type": "service",
+      "date": "2025-12-28T13:29:44Z",
+      "action": "invite_members",
+      "actor": "Hades Group",
+      "actor_id": "channel28740651",
+      "members": [
+        "art"
+      ],
+      "member_ids": [
+        "user7443021169"
+      ],
+      "id": 48
+    },
+    {
+      "type": "message",
+      "date": "2025-12-28T14:44:44Z",
+      "from": "art",
+      "from_id": "user7443021169",
+      "from_username": "artemis_guest",
+      "text": "nah ill wait for hermes then. faster last time n the data was solid",
+      "id": 49
+    },
+    {
+      "type": "message",
+      "date": "2025-12-28T17:29:28Z",
+      "from": "k",
+      "from_id": "user7543991028",
+      "from_username": "kratos_ticket",
+      "text": "hello?? my ord been sitting for 6 HOURS. nobody even ackd it. my position on it settles tmrw btw. someone move",
+      "id": 50
+    },
+    {
+      "type": "message",
+      "date": "2025-12-28T17:59:50Z",
+      "from": "hes",
+      "from_id": "user7146032211",
+      "from_username": "hestiaasks",
+      "text": "wait what do u mean \"pack\"? like a zip file or smth??",
+      "id": 51
+    },
+    {
+      "type": "message",
+      "date": "2025-12-28T18:26:06Z",
+      "from": "art",
+      "from_id": "user7443021169",
+      "from_username": "artemis_guest",
+      "text": "got a one-off. school board official in my county. need addr + fam. who can do it",
+      "id": 52
+    },
+    {
+      "type": "message",
+      "date": "2025-12-28T20:29:57Z",
+      "from": "ath",
+      "from_id": "user7236189055",
+      "from_username": "athena_markup",
+      "text": "how current is school employee data? anything from this yr?",
+      "id": 53
+    },
+    {
+      "type": "message",
+      "date": "2025-12-28T20:39:27Z",
+      "from": "forge",
+      "from_id": "user7041885321",
+      "from_username": "hephaestus_drop",
+      "text": "fixed the issue w/ the old src btw. records should pull clean now",
+      "id": 54
+    },
+    {
+      "type": "message",
+      "date": "2025-12-28T22:24:08Z",
+      "from": "mason h",
+      "from_id": "user7415839206",
+      "from_username": "hermes_locker",
+      "text": "@artemis_guest household pack takes about an hr. no workplace. dm me the target",
+      "id": 55
+    },
+    {
+      "type": "message",
+      "date": "2025-12-29T10:23:00Z",
+      "from": "Hades Group",
+      "from_id": "channel28740651",
+      "media_type": "sticker",
+      "sticker_set_name": "styx_reaction_pack",
+      "file": "stickers/styx_reaction_pack_001.webp",
+      "text": "",
+      "id": 56
+    },
+    {
+      "type": "message",
+      "date": "2025-12-29T10:41:00Z",
+      "from": "Hades Group",
+      "from_id": "channel28740651",
+      "text": "Kids get one warning.",
+      "id": 57
+    },
+    {
+      "type": "message",
+      "date": "2025-12-29T12:17:14Z",
+      "from": "pan",
+      "from_id": "user7849230015",
+      "from_username": "pan_cache",
+      "text": "that src from last week is back up but half the records r coming back incomplete",
+      "id": 58
+    },
+    {
+      "type": "message",
+      "date": "2025-12-29T13:38:14Z",
+      "from": "Hades Group",
+      "from_id": "channel28740651",
+      "text": "No live method talk in main. Take it to DM.",
+      "id": 59
+    },
+    {
+      "type": "message",
+      "date": "2025-12-29T15:05:12Z",
+      "from": "gai",
+      "from_id": "user7945521033",
+      "from_username": "gaiarefund",
+      "text": "@iris_queue filed a ticket. full pack, half the fields empty. addr is from 2020 lmao",
+      "id": 60
+    },
+    {
+      "type": "message",
+      "date": "2025-12-29T16:42:22Z",
+      "from": "gai",
+      "from_id": "user7945521033",
+      "from_username": "gaiarefund",
+      "text": "phone # is disconnected and the addr is literally a vacant lot. i paid FULL PRICE for this",
+      "id": 61
+    },
+    {
+      "type": "message",
+      "date": "2025-12-29T18:13:45Z",
+      "from": "k",
+      "from_id": "user7543991028",
+      "from_username": "kratos_ticket",
+      "text": "forget all that who is taking rush tonight?? need a pack b4 midnight",
+      "id": 62
+    },
+    {
+      "type": "message",
+      "date": "2025-12-29T23:06:36Z",
+      "from": "mason h",
+      "from_id": "user7415839206",
+      "from_username": "hermes_locker",
+      "text": "@kratos_ticket i can do household no workplace. ~1 hr. dm me name + state",
+      "id": 63
+    },
+    {
+      "type": "message",
+      "date": "2025-12-30T02:15:10Z",
+      "from": "k",
+      "from_id": "user7543991028",
+      "from_username": "kratos_ticket",
+      "text": "RUSH. i said RUSH. is anyone even reading",
+      "id": 64
+    },
+    {
+      "type": "message",
+      "date": "2025-12-30T05:02:27Z",
+      "from": "jian",
+      "from_id": "user7682014550",
+      "from_username": "ares_forge",
+      "text": "cleaning dupes from last nights batch rn. some targets came back twice",
+      "id": 65
+    },
+    {
+      "type": "service",
+      "date": "2025-12-30T05:58:33Z",
+      "action": "invite_members",
+      "actor": "Hades Group",
+      "actor_id": "channel28740651",
+      "members": [
+        "ZEUS"
+      ],
+      "member_ids": [
+        "user7644400289"
+      ],
+      "id": 66
+    },
+    {
+      "type": "message",
+      "date": "2025-12-30T06:45:33Z",
+      "from": "ZEUS",
+      "from_id": "user7644400289",
+      "from_username": "lilzeus1337",
+      "text": "yo can u do vc swat or only irl calls lol",
+      "id": 67
+    },
+    {
+      "type": "message",
+      "date": "2025-12-30T07:32:55Z",
+      "from": "jian",
+      "from_id": "user7682014550",
+      "from_username": "ares_forge",
+      "text": "cleaning dupes this afternoon. should b done b4 end of shift",
+      "id": 68
+    },
+    {
+      "type": "message",
+      "date": "2025-12-30T08:47:40Z",
+      "from": "jian",
+      "from_id": "user7682014550",
+      "from_username": "ares_forge",
+      "text": "after lunch here. rerun in 40.",
+      "id": 69
+    },
+    {
+      "type": "message",
+      "date": "2025-12-30T15:07:31Z",
+      "from": "Hades Group",
+      "from_id": "channel28740651",
+      "text": "Fresh handles stay quiet until vouched. This is not a suggestion.",
+      "id": 70
+    },
+    {
+      "type": "message",
+      "date": "2025-12-30T16:10:30Z",
+      "from": "ath",
+      "from_id": "user7236189055",
+      "from_username": "athena_markup",
+      "text": "@hermes_locker do ur packs include the targets kids or is that off limits",
+      "id": 71
+    },
+    {
+      "type": "message",
+      "date": "2025-12-30T17:05:58Z",
+      "from": "forge",
+      "from_id": "user7041885321",
+      "from_username": "hephaestus_drop",
+      "text": "@lilzeus1337 dont discuss methods in main. basic opsec bro. how many times",
+      "id": 72
+    },
+    {
+      "type": "message",
+      "date": "2025-12-30T19:38:48Z",
+      "from": "mason h",
+      "from_id": "user7415839206",
+      "from_username": "hermes_locker",
+      "text": "west coast targets not tonight. east coast data is way fresher rn",
+      "id": 73
+    },
+    {
+      "type": "service",
+      "date": "2025-12-31T03:58:43Z",
+      "action": "invite_members",
+      "actor": "Hades Group",
+      "actor_id": "channel28740651",
+      "members": [
+        "posei"
+      ],
+      "member_ids": [
+        "user7745501922"
+      ],
+      "id": 74
+    },
+    {
+      "type": "message",
+      "date": "2025-12-31T04:22:43Z",
+      "from": "posei",
+      "from_id": "user7745501922",
+      "from_username": "poseidonfan9",
+      "text": "whats the cheapest thing u do? i literally just need 1 phone #",
+      "id": 75
+    },
+    {
+      "type": "message",
+      "date": "2025-12-31T19:56:17Z",
+      "from": "gai",
+      "from_id": "user7945521033",
+      "from_username": "gaiarefund",
+      "text": "@iris_queue update on my ticket?? mothers maiden name + addr still missing from pack",
+      "id": 76
+    },
+    {
+      "type": "message",
+      "date": "2025-12-31T21:16:15Z",
+      "from": "mason h",
+      "from_id": "user7415839206",
+      "from_username": "hermes_locker",
+      "text": "@poseidonfan9 cheapest is phone-only lookup but its still not free lol. dm me",
+      "id": 77
+    },
+    {
+      "type": "message",
+      "date": "2025-12-31T21:31:01Z",
+      "from": "sel",
+      "from_id": "user7645510921",
+      "from_username": "selene_packet",
+      "text": "i keep getting diff answers, is employer a sep order or part of the pack",
+      "id": 78
+    },
+    {
+      "type": "message",
+      "date": "2025-12-31T21:57:44Z",
+      "from": "dio",
+      "from_id": "user7346615520",
+      "from_username": "dionysusplug",
+      "text": "lmaoo gift card kid is back. 3rd time this week asking the same thing 💀 still doesnt get how the book works lmao",
+      "id": 79
+    },
+    {
+      "type": "message",
+      "date": "2025-12-31T22:55:55Z",
+      "from": "sel",
+      "from_id": "user7645510921",
+      "from_username": "selene_packet",
+      "text": "employer is extra. fam comes in base pack. its. in. the. pin. READ IT",
+      "id": 80
+    },
+    {
+      "type": "message",
+      "date": "2026-01-01T00:47:56Z",
+      "from": "mason h",
+      "from_id": "user7415839206",
+      "from_username": "hermes_locker",
+      "text": "taking bookings for tmrw. send details now, fulfillment when queue reopens",
+      "id": 81
+    },
+    {
+      "type": "message",
+      "date": "2026-01-01T10:09:49Z",
+      "from": "Hades Group",
+      "from_id": "channel28740651",
+      "text": "Queue closes when I decide. Tonight it's closed.",
+      "id": 82
+    },
+    {
+      "type": "message",
+      "date": "2026-01-01T10:32:39Z",
+      "from": "Hades Group",
+      "from_id": "channel28740651",
+      "text": "If you do not know the local dispatch stack, do not touch the request.",
+      "id": 83
+    },
+    {
+      "type": "message",
+      "date": "2026-01-01T10:35:38Z",
+      "from": "charon",
+      "from_id": "user7341102986",
+      "from_username": "charon_settle",
+      "text": "@gaiarefund escrw is non-refundable once released. thats what u agreed to",
+      "id": 84
+    },
+    {
+      "type": "message",
+      "date": "2026-01-01T10:40:19Z",
+      "from": "iris",
+      "from_id": "user7139058844",
+      "from_username": "iris_queue",
+      "text": "@gaiarefund ur correction is in progress. 1 correction per ord. u dont get a 2nd pass",
+      "id": 85
+    },
+    {
+      "type": "message",
+      "date": "2026-01-01T15:14:17Z",
+      "from": "art",
+      "from_id": "user7443021169",
+      "from_username": "artemis_guest",
+      "text": "ok ill wait. just lmk when someone can take the school board target",
+      "id": 86
+    },
+    {
+      "type": "message",
+      "date": "2026-01-01T18:29:04Z",
+      "from": "art",
+      "from_id": "user7443021169",
+      "from_username": "artemis_guest",
+      "text": "@hermes_locker is the school board thing doable tn or should i wait",
+      "id": 87
+    },
+    {
+      "type": "message",
+      "date": "2026-01-01T19:44:37Z",
+      "from": "mason h",
+      "from_id": "user7415839206",
+      "from_username": "hermes_locker",
+      "text": "@artemis_guest not tn. next slot tmrw. east coast targets first",
+      "id": 88
+    },
+    {
+      "type": "service",
+      "date": "2026-01-01T20:10:52Z",
+      "action": "invite_members",
+      "actor": "Hades Group",
+      "actor_id": "channel28740651",
+      "members": [
+        "forgekid"
+      ],
+      "member_ids": [
+        "user7844190076"
+      ],
+      "id": 89
+    },
+    {
+      "type": "message",
+      "date": "2026-01-01T20:34:52Z",
+      "from": "forgekid",
+      "from_id": "user7844190076",
+      "from_username": "hephaestusjr",
+      "text": "can i pay half now half on delivery??",
+      "id": 90
+    },
+    {
+      "type": "message",
+      "date": "2026-01-02T07:25:12Z",
+      "from": "Hades Group",
+      "from_id": "channel28740651",
+      "text": "Escrow decides. Not the seller. Not the buyer. Escrow. Final.",
+      "id": 91
+    },
+    {
+      "type": "message",
+      "date": "2026-01-02T08:03:15Z",
+      "from": "morph",
+      "from_id": "user7540997715",
+      "from_username": "morpheus_lag",
+      "text": "is queue open or did it reset after holidays",
+      "id": 92
+    },
+    {
+      "type": "message",
+      "date": "2026-01-02T08:20:00Z",
+      "from": "morph",
+      "from_id": "user7540997715",
+      "from_username": "morpheus_lag",
+      "text": "anyone around?? feels dead in here. volume on the market trash tonight too, nothing printing",
+      "id": 93
+    },
+    {
+      "type": "message",
+      "date": "2026-01-02T10:50:23Z",
+      "from": "Hades Group",
+      "from_id": "channel28740651",
+      "text": "taking bookings for tmrw. US targets. dm me first name + state so ur in queue when it opens",
+      "id": 94
+    },
+    {
+      "type": "message",
+      "date": "2026-01-02T11:47:31Z",
+      "from": "dani",
+      "from_id": "user7520941836",
+      "from_username": "apollo_trace",
+      "text": "dbs r back up after holiday maintenance. check pinned for current format",
+      "id": 95
+    },
+    {
+      "type": "message",
+      "date": "2026-01-02T12:35:35Z",
+      "from": "nyx",
+      "from_id": "user7448021137",
+      "from_username": "nyxrelay",
+      "text": "vouch for ares btw. batch of 30 targets, all came back w/ verified current addrs",
+      "id": 96
+    },
+    {
+      "type": "message",
+      "date": "2026-01-02T12:45:16Z",
+      "from": "nyx",
+      "from_id": "user7448021137",
+      "from_username": "nyxrelay",
+      "text": "vouching again. ares batch work is always clean. never had to file a correction",
+      "id": 97
+    },
+    {
+      "type": "message",
+      "date": "2026-01-02T12:46:45Z",
+      "from": "Hades Group",
+      "from_id": "channel28740651",
+      "text": "stop posting names in main. use DMs for target info jfc",
+      "id": 98
+    },
+    {
+      "type": "message",
+      "date": "2026-01-02T15:33:50Z",
+      "from": "forge",
+      "from_id": "user7041885321",
+      "from_username": "hephaestus_drop",
+      "text": "someone w/ upload access needs to push the updated US records. current set expired last wk",
+      "id": 99
+    },
+    {
+      "type": "message",
+      "date": "2026-01-02T17:30:30Z",
+      "from": "dio",
+      "from_id": "user7346615520",
+      "from_username": "dionysusplug",
+      "text": "gift card kid is back asking abt bitcoin alternatives now 💀 every week w this guy",
+      "id": 100
+    },
+    {
+      "type": "message",
+      "date": "2026-01-02T20:15:45Z",
+      "from": "mason h",
+      "from_id": "user7415839206",
+      "from_username": "hermes_locker",
+      "text": "taking bookings for tmrw. send details now, fulfillment when queue reopens",
+      "id": 101
+    },
+    {
+      "type": "message",
+      "date": "2026-01-02T21:44:32Z",
+      "from": "euro",
+      "from_id": "user7241176508",
+      "from_username": "europa_vouch",
+      "text": "does apollo still maintain the dbs or did he dip? @apollo_trace",
+      "id": 102
+    },
+    {
+      "type": "message",
+      "date": "2026-01-02T23:16:37Z",
+      "from": "k",
+      "from_id": "user7543991028",
+      "from_username": "kratos_ticket",
+      "text": "my ticket has been open TWO DAYS. zero response. hello?? anyone home??",
+      "id": 103
+    },
+    {
+      "type": "message",
+      "date": "2026-01-03T04:34:40Z",
+      "from": "jian",
+      "from_id": "user7682014550",
+      "from_username": "ares_forge",
+      "text": "rerun after lunch here. 2nd pass usually catches the stragglers",
+      "id": 104
+    },
+    {
+      "type": "message",
+      "date": "2026-01-03T10:18:35Z",
+      "from": "forge",
+      "from_id": "user7041885321",
+      "from_username": "hephaestus_drop",
+      "text": "someone just posted a full name + city in main. deleted it. USE DMs for target info jfc",
+      "id": 105
+    },
+    {
+      "type": "message",
+      "date": "2026-01-03T11:26:11Z",
+      "from": "iris",
+      "from_id": "user7139058844",
+      "from_username": "iris_queue",
+      "text": "@kratos_ticket stop msging every 3 hrs. ur ticket is in queue. ull hear back",
+      "id": 106
+    },
+    {
+      "type": "message",
+      "date": "2026-01-03T15:19:53Z",
+      "from": "ath",
+      "from_id": "user7236189055",
+      "from_username": "athena_markup",
+      "text": "q: are workplace records in a diff db than household or same src?",
+      "id": 107
+    },
+    {
+      "type": "message",
+      "date": "2026-01-03T18:09:10Z",
+      "from": "art",
+      "from_id": "user7443021169",
+      "from_username": "artemis_guest",
+      "text": "@hermes_locker can u take my request tn? got the target info ready to send",
+      "id": 108
+    },
+    {
+      "type": "message",
+      "date": "2026-01-03T18:40:44Z",
+      "from": "charon",
+      "from_id": "user7341102986",
+      "from_username": "charon_settle",
+      "text": "escrw releases after buyer verifies the data is accurate. standard procedure",
+      "id": 109
+    },
+    {
+      "type": "message",
+      "date": "2026-01-04T01:44:43Z",
+      "from": "jian",
+      "from_id": "user7682014550",
+      "from_username": "ares_forge",
+      "text": "remaining dupes in the batch ill handle next shift. nbd",
+      "id": 110
+    },
+    {
+      "type": "message",
+      "date": "2026-01-04T01:47:56Z",
+      "from": "mason h",
+      "from_id": "user7415839206",
+      "from_username": "hermes_locker",
+      "text": "small towns r fast. cities take longer cuz more records to xref, more aliases to check",
+      "id": 111
+    },
+    {
+      "type": "message",
+      "date": "2026-01-04T02:11:55Z",
+      "from": "jian",
+      "from_id": "user7682014550",
+      "from_username": "ares_forge",
+      "text": "morning batch done",
+      "id": 112
+    },
+    {
+      "type": "message",
+      "date": "2026-01-04T04:22:46Z",
+      "from": "morph",
+      "from_id": "user7540997715",
+      "from_username": "morpheus_lag",
+      "text": "anyone here this early?? my tz makes catching the queue basically impossible lol",
+      "id": 113
+    },
+    {
+      "type": "message",
+      "date": "2026-01-04T10:08:04Z",
+      "from": "dani",
+      "from_id": "user7520941836",
+      "from_username": "apollo_trace",
+      "text": "@hephaestus_drop old voter reg src is fully dead. switch to the 1 i set up. link in dm",
+      "id": 114
+    },
+    {
+      "type": "message",
+      "date": "2026-01-04T14:08:04Z",
+      "from": "nyx",
+      "from_id": "user7448021137",
+      "from_username": "nyxrelay",
+      "text": "vouch hermes. buddy needed a ytber doxxed, got full pack incl relatives same day",
+      "id": 115
+    },
+    {
+      "type": "message",
+      "date": "2026-01-04T15:44:59Z",
+      "from": "charon",
+      "from_id": "user7341102986",
+      "from_username": "charon_settle",
+      "text": "escrw holds til both sides confirm. non-negotiable",
+      "id": 116
+    },
+    {
+      "type": "message",
+      "date": "2026-01-04T16:02:52Z",
+      "from": "tri",
+      "from_id": "user7741023895",
+      "from_username": "tritonbrief",
+      "text": "telecom q: does the pull show who actually pays the bill or just the registered owner?",
+      "id": 117
+    },
+    {
+      "type": "message",
+      "date": "2026-01-04T20:24:12Z",
+      "from": "mason h",
+      "from_id": "user7415839206",
+      "from_username": "hermes_locker",
+      "text": "east coast records r current as of yest. west coast is like a wk behind",
+      "id": 118
+    },
+    {
+      "type": "message",
+      "date": "2026-01-04T21:04:41Z",
+      "from": "mason h",
+      "from_id": "user7415839206",
+      "from_username": "hermes_locker",
+      "text": "county + fam tonight. US only. dm me the name",
+      "id": 119
+    },
+    {
+      "type": "message",
+      "date": "2026-01-05T07:33:38Z",
+      "from": "jian",
+      "from_id": "user7682014550",
+      "from_username": "ares_forge",
+      "text": "cleaning dupes from this mornings scrape. should have results pushed by afternoon",
+      "id": 120
+    },
+    {
+      "type": "message",
+      "date": "2026-01-05T09:41:31Z",
+      "from": "Hades Group",
+      "from_id": "channel28740651",
+      "text": "Pinned rules still apply. Nothing has changed.",
+      "id": 121
+    },
+    {
+      "type": "message",
+      "date": "2026-01-05T10:18:12Z",
+      "from": "dani",
+      "from_id": "user7520941836",
+      "from_username": "apollo_trace",
+      "text": "format ur requests properly. wrong format = skipped. im not ur secretary lol",
+      "id": 122
+    },
+    {
+      "type": "message",
+      "date": "2026-01-05T12:33:56Z",
+      "from": "art",
+      "from_id": "user7443021169",
+      "from_username": "artemis_guest",
+      "text": "ive been waiting 3 days on my school board request. is it even in the system?? @hermes_locker",
+      "id": 123
+    },
+    {
+      "type": "message",
+      "date": "2026-01-05T16:32:35Z",
+      "from": "charon",
+      "from_id": "user7341102986",
+      "from_username": "charon_settle",
+      "text": "@gaiarefund escrw stays held til the correction is delivered. thats the process",
+      "id": 124
+    },
+    {
+      "type": "message",
+      "date": "2026-01-05T16:41:10Z",
+      "from": "tri",
+      "from_id": "user7741023895",
+      "from_username": "tritonbrief",
+      "text": "telecom, carrier name or just registered #?",
+      "id": 125
+    },
+    {
+      "type": "message",
+      "date": "2026-01-05T17:58:40Z",
+      "from": "sel",
+      "from_id": "user7645510921",
+      "from_username": "selene_packet",
+      "text": "@hermes_locker workplace + fam, bundled as 1 ord or do i pay 2x?",
+      "id": 126
+    },
+    {
+      "type": "message",
+      "date": "2026-01-05T18:54:27Z",
+      "from": "iris",
+      "from_id": "user7139058844",
+      "from_username": "iris_queue",
+      "text": "send me the ord id in DM. NOT here. i cant look up ur order from a chat msg",
+      "id": 127
+    },
+    {
+      "type": "message",
+      "date": "2026-01-05T19:19:02Z",
+      "from": "posei",
+      "from_id": "user7745501922",
+      "from_username": "poseidonfan9",
+      "text": "i need 1 target. phone # + current addr. fastest option pls",
+      "id": 128
+    },
+    {
+      "type": "message",
+      "date": "2026-01-05T20:00:11Z",
+      "from": "mason h",
+      "from_id": "user7415839206",
+      "from_username": "hermes_locker",
+      "text": "east coast data is fresh. west is lagging. same as last wk",
+      "id": 129
+    },
+    {
+      "type": "message",
+      "date": "2026-01-05T22:34:20Z",
+      "from": "hes",
+      "from_id": "user7146032211",
+      "from_username": "hestiaasks",
+      "text": "this is embarrassing but what does \"pack\" mean lol. what do u actually receive",
+      "id": 130
+    },
+    {
+      "type": "message",
+      "date": "2026-01-06T02:25:01Z",
+      "from": "jian",
+      "from_id": "user7682014550",
+      "from_username": "ares_forge",
+      "text": "2nd batch queued. running after current 1 finishes",
+      "id": 131
+    },
+    {
+      "type": "message",
+      "date": "2026-01-06T03:36:25Z",
+      "from": "posei",
+      "from_id": "user7745501922",
+      "from_username": "poseidonfan9",
+      "text": "@hermes_locker i literally just need 1 persons addr. whats the minimum?",
+      "id": 132
+    },
+    {
+      "type": "message",
+      "date": "2026-01-06T05:27:57Z",
+      "from": "morph",
+      "from_id": "user7540997715",
+      "from_username": "morpheus_lag",
+      "text": "is queue open rn? i keep trying at diff times and missing it every time fml",
+      "id": 133
+    },
+    {
+      "type": "message",
+      "date": "2026-01-06T11:01:25Z",
+      "from": "dani",
+      "from_id": "user7520941836",
+      "from_username": "apollo_trace",
+      "text": "heads up: db schema changed in latest update. if ur old lookups stopped working thats y",
+      "id": 134
+    },
+    {
+      "type": "message",
+      "date": "2026-01-06T19:17:38Z",
+      "from": "sel",
+      "from_id": "user7645510921",
+      "from_username": "selene_packet",
+      "text": "can i get school enrollment history as part of the pack? like what schools they went to?",
+      "id": 135
+    },
+    {
+      "type": "message",
+      "date": "2026-01-06T21:09:40Z",
+      "from": "charon",
+      "from_id": "user7341102986",
+      "from_username": "charon_settle",
+      "text": "@poseidonfan9 no partial payments. full amt in escrw or no deal",
+      "id": 136
+    },
+    {
+      "type": "message",
+      "date": "2026-01-06T21:43:09Z",
+      "from": "ath",
+      "from_id": "user7236189055",
+      "from_username": "athena_markup",
+      "text": "q: are journalists priced differently? their info is usually harder to pull",
+      "id": 137
+    },
+    {
+      "type": "message",
+      "date": "2026-01-07T01:25:20Z",
+      "from": "mason h",
+      "from_id": "user7415839206",
+      "from_username": "hermes_locker",
+      "text": "east coast fully current. west catching up. i push updates daily",
+      "id": 138
+    },
+    {
+      "type": "message",
+      "date": "2026-01-07T08:56:33Z",
+      "from": "jian",
+      "from_id": "user7682014550",
+      "from_username": "ares_forge",
+      "text": "rerun after lunch here. diff tz makes the batches overlap weirdly lol",
+      "id": 139
+    },
+    {
+      "type": "message",
+      "date": "2026-01-07T13:55:24Z",
+      "from": "art",
+      "from_id": "user7443021169",
+      "from_username": "artemis_guest",
+      "text": "@hermes_locker not rushing u. just confirming my ord is still in the system",
+      "id": 140
+    },
+    {
+      "type": "message",
+      "date": "2026-01-07T16:00:30Z",
+      "from": "orion",
+      "from_id": "user7045529812",
+      "from_username": "orionview",
+      "text": "whats the rate for a full pack rn? havent seen a price update in a while",
+      "id": 141
+    },
+    {
+      "type": "message",
+      "date": "2026-01-07T16:10:43Z",
+      "from": "charon",
+      "from_id": "user7341102986",
+      "from_username": "charon_settle",
+      "text": "@gaiarefund escrw on ur ord stays held til correction confirmed. hands off",
+      "id": 142
+    },
+    {
+      "type": "message",
+      "date": "2026-01-07T17:12:29Z",
+      "from": "sel",
+      "from_id": "user7645510921",
+      "from_username": "selene_packet",
+      "text": "school enrollment history, anyone?? 2nd time asking. is it available or not",
+      "id": 143
+    },
+    {
+      "type": "message",
+      "date": "2026-01-07T17:48:22Z",
+      "from": "dio",
+      "from_id": "user7346615520",
+      "from_username": "dionysusplug",
+      "text": "someone just asked if we accept venmo 💀 this group gets worse every wk i stg",
+      "id": 144
+    },
+    {
+      "type": "message",
+      "date": "2026-01-07T18:22:52Z",
+      "from": "mason h",
+      "from_id": "user7415839206",
+      "from_username": "hermes_locker",
+      "text": "@orionview small town = fast. metro = slower. more records to verify",
+      "id": 145
+    },
+    {
+      "type": "message",
+      "date": "2026-01-07T22:19:49Z",
+      "from": "orion",
+      "from_id": "user7045529812",
+      "from_username": "orionview",
+      "text": "prices same as last wk? @hermes_locker",
+      "id": 146
+    },
+    {
+      "type": "message",
+      "date": "2026-01-08T07:48:47Z",
+      "from": "ZEUS",
+      "from_id": "user7644400289",
+      "from_username": "lilzeus1337",
+      "text": "can i do like 1 target as a trial?? just to check quality b4 i commit",
+      "id": 147
+    },
+    {
+      "type": "message",
+      "date": "2026-01-08T08:47:28Z",
+      "from": "dani",
+      "from_id": "user7520941836",
+      "from_username": "apollo_trace",
+      "text": "db cleanup done. new structure is live. format guide pinned, read it b4 querying",
+      "id": 148
+    },
+    {
+      "type": "message",
+      "date": "2026-01-08T12:33:03Z",
+      "from": "art",
+      "from_id": "user7443021169",
+      "from_username": "artemis_guest",
+      "text": "@hermes_locker the school board official, is that ord still open? i got the name rdy",
+      "id": 149
+    },
+    {
+      "type": "message",
+      "date": "2026-01-08T12:38:20Z",
+      "from": "tri",
+      "from_id": "user7741023895",
+      "from_username": "tritonbrief",
+      "text": "telecom pulls still available. same carriers as b4",
+      "id": 150
+    },
+    {
+      "type": "message",
+      "date": "2026-01-08T15:03:24Z",
+      "from": "pan",
+      "from_id": "user7849230015",
+      "from_username": "pan_cache",
+      "text": "some records from the latest src arent pulling right. looking into it",
+      "id": 151
+    },
+    {
+      "type": "message",
+      "date": "2026-01-08T18:28:56Z",
+      "from": "mason h",
+      "from_id": "user7415839206",
+      "from_username": "hermes_locker",
+      "text": "adding relatives costs ~15 min per person on top of base pack time. dm me details",
+      "id": 152
+    },
+    {
+      "type": "message",
+      "date": "2026-01-08T19:01:16Z",
+      "from": "ath",
+      "from_id": "user7236189055",
+      "from_username": "athena_markup",
+      "text": "for telecom stuff who has the best carrier-level data?",
+      "id": 153
+    },
+    {
+      "type": "message",
+      "date": "2026-01-08T19:42:20Z",
+      "from": "mason h",
+      "from_id": "user7415839206",
+      "from_username": "hermes_locker",
+      "text": "for the LAST time: dm me target name + state. dont send me anything else. THATS ALL I NEED",
+      "id": 154
+    },
+    {
+      "type": "message",
+      "date": "2026-01-08T20:38:56Z",
+      "from": "charon",
+      "from_id": "user7341102986",
+      "from_username": "charon_settle",
+      "text": "full amt in escrw or no service. partial payments r not a thing here. ever.",
+      "id": 155
+    },
+    {
+      "type": "message",
+      "date": "2026-01-08T20:54:58Z",
+      "from": "forge",
+      "from_id": "user7041885321",
+      "from_username": "hephaestus_drop",
+      "text": "@apollo_trace do records from the old src still work or did the format change break em",
+      "id": 156
+    },
+    {
+      "type": "message",
+      "date": "2026-01-08T21:44:58Z",
+      "from": "pan",
+      "from_id": "user7849230015",
+      "from_username": "pan_cache",
+      "text": "getting dupes again. same target showing up under 2 diff record ids. src issue??",
+      "id": 157
+    },
+    {
+      "type": "message",
+      "date": "2026-01-09T01:53:02Z",
+      "from": "mason h",
+      "from_id": "user7415839206",
+      "from_username": "hermes_locker",
+      "text": "fam members add ~15 min each on top of base pack time",
+      "id": 158
+    },
+    {
+      "type": "message",
+      "date": "2026-01-09T02:53:56Z",
+      "from": "jian",
+      "from_id": "user7682014550",
+      "from_username": "ares_forge",
+      "text": "shift done for today. batch keeps running overnight. results by ur morning",
+      "id": 159
+    },
+    {
+      "type": "message",
+      "date": "2026-01-09T03:17:04Z",
+      "from": "jian",
+      "from_id": "user7682014550",
+      "from_username": "ares_forge",
+      "text": "cleaning the dupe records now. should b sorted b4 my next shift",
+      "id": 160
+    },
+    {
+      "type": "message",
+      "date": "2026-01-09T14:01:55Z",
+      "from": "hes",
+      "from_id": "user7146032211",
+      "from_username": "hestiaasks",
+      "text": "sry but what does \"pull\" mean?? like pulling someones records from a db?",
+      "id": 161
+    },
+    {
+      "type": "message",
+      "date": "2026-01-09T15:20:12Z",
+      "from": "iris",
+      "from_id": "user7139058844",
+      "from_username": "iris_queue",
+      "text": "@hestiaasks scroll up. this was explained 2x yesterday",
+      "id": 162
+    },
+    {
+      "type": "message",
+      "date": "2026-01-09T15:49:43Z",
+      "from": "sel",
+      "from_id": "user7645510921",
+      "from_username": "selene_packet",
+      "text": "employer is SEPARATE from base pack. ive said this 3 times now cmon",
+      "id": 163
+    },
+    {
+      "type": "message",
+      "date": "2026-01-09T17:12:14Z",
+      "from": "ath",
+      "from_id": "user7236189055",
+      "from_username": "athena_markup",
+      "text": "school records r stale af. havent been updated in months. known issue, dont waste ur time asking",
+      "id": 164
+    },
+    {
+      "type": "message",
+      "date": "2026-01-09T18:02:38Z",
+      "from": "gai",
+      "from_id": "user7945521033",
+      "from_username": "gaiarefund",
+      "text": "@iris_queue filed a correction 3 days ago for missing fam data. any update??",
+      "id": 165
+    },
+    {
+      "type": "message",
+      "date": "2026-01-09T18:03:34Z",
+      "from": "ath",
+      "from_id": "user7236189055",
+      "from_username": "athena_markup",
+      "text": "school enrollment hasnt been refreshed since early last yr. data is basically useless rn",
+      "id": 166
+    },
+    {
+      "type": "message",
+      "date": "2026-01-09T19:42:23Z",
+      "from": "forge",
+      "from_id": "user7041885321",
+      "from_username": "hephaestus_drop",
+      "text": "some records from new src r returning conflicting addrs. verifying which is current",
+      "id": 167
+    },
+    {
+      "type": "message",
+      "date": "2026-01-09T21:42:44Z",
+      "from": "forge",
+      "from_id": "user7041885321",
+      "from_username": "hephaestus_drop",
+      "text": "DO NOT post target names in main. DMs exist. jfc i should not still b saying this",
+      "id": 168
+    },
+    {
+      "type": "message",
+      "date": "2026-01-10T09:06:30Z",
+      "from": "dani",
+      "from_id": "user7520941836",
+      "from_username": "apollo_trace",
+      "text": "voter reg src is permanently down. use the replacement i set up. link pinned",
+      "id": 169
+    },
+    {
+      "type": "message",
+      "date": "2026-01-10T10:51:02Z",
+      "from": "dani",
+      "from_id": "user7520941836",
+      "from_username": "apollo_trace",
+      "text": "current records r pinned. new format. if ur still using old format ur pulls will fail",
+      "id": 170
+    },
+    {
+      "type": "service",
+      "date": "2026-01-10T11:25:00Z",
+      "action": "invite_members",
+      "actor": "Hades Group",
+      "actor_id": "channel28740651",
+      "members": [
+        "ody"
+      ],
+      "member_ids": [
+        "user7948814401"
+      ],
+      "id": 171
+    },
+    {
+      "type": "message",
+      "date": "2026-01-10T14:06:39Z",
+      "from": "ath",
+      "from_id": "user7236189055",
+      "from_username": "athena_markup",
+      "text": "which lookup category covers county govt employee?? is it under \"government\" or \"public\"?",
+      "id": 172
+    },
+    {
+      "type": "message",
+      "date": "2026-01-10T14:28:58Z",
+      "from": "ath",
+      "from_id": "user7236189055",
+      "from_username": "athena_markup",
+      "text": "fam data, can i get just parents or does it always come w siblings too?",
+      "id": 173
+    },
+    {
+      "type": "message",
+      "date": "2026-01-10T18:48:29Z",
+      "from": "sel",
+      "from_id": "user7645510921",
+      "from_username": "selene_packet",
+      "text": "school enrollment, 3rd time asking. does anyone offer this or not",
+      "id": 174
+    },
+    {
+      "type": "message",
+      "date": "2026-01-10T19:09:56Z",
+      "from": "orion",
+      "from_id": "user7045529812",
+      "from_username": "orionview",
+      "text": "@hermes_locker u still clearing last wks queue? wondering if my ord got lost",
+      "id": 175
+    },
+    {
+      "type": "message",
+      "date": "2026-01-10T21:10:47Z",
+      "from": "hes",
+      "from_id": "user7146032211",
+      "from_username": "hestiaasks",
+      "text": "whats the diff btwn a \"pack\" and a \"full dox\"?? r those the same thing?",
+      "id": 176
+    },
+    {
+      "type": "message",
+      "date": "2026-01-11T00:32:25Z",
+      "from": "k",
+      "from_id": "user7543991028",
+      "from_username": "kratos_ticket",
+      "text": "MY ORDER. its been HOURS. is anyone actually doing any work or is this just a chatroom",
+      "id": 177
+    },
+    {
+      "type": "message",
+      "date": "2026-01-11T00:42:29Z",
+      "from": "sel",
+      "from_id": "user7645510921",
+      "from_username": "selene_packet",
+      "text": "need a pack on a twitch streamer. full dox + fam + mgmt contact if possible. adding workplace",
+      "id": 178
+    },
+    {
+      "type": "message",
+      "date": "2026-01-11T05:18:12Z",
+      "from": "jian",
+      "from_id": "user7682014550",
+      "from_username": "ares_forge",
+      "text": "after lunch here. rerun in 40.",
+      "id": 179
+    },
+    {
+      "type": "message",
+      "date": "2026-01-11T08:54:57Z",
+      "from": "jian",
+      "from_id": "user7682014550",
+      "from_username": "ares_forge",
+      "text": "next batch starts after my shift ends tn. results by ur morning",
+      "id": 180
+    },
+    {
+      "type": "message",
+      "date": "2026-01-11T12:00:56Z",
+      "from": "dani",
+      "from_id": "user7520941836",
+      "from_username": "apollo_trace",
+      "text": "@pan_cache old voter src is dead for good. stop trying it. use pinned replacement",
+      "id": 181
+    },
+    {
+      "type": "message",
+      "date": "2026-01-11T12:11:32Z",
+      "from": "pan",
+      "from_id": "user7849230015",
+      "from_username": "pan_cache",
+      "text": "@apollo_trace how fresh is new src? my last pull had disconnected phone #s",
+      "id": 182
+    },
+    {
+      "type": "message",
+      "date": "2026-01-11T16:00:57Z",
+      "from": "nyx",
+      "from_id": "user7448021137",
+      "from_username": "nyxrelay",
+      "text": "ares batch from last wk: all 30 targets came back w current addrs. can vouch",
+      "id": 183
+    },
+    {
+      "type": "message",
+      "date": "2026-01-11T17:19:28Z",
+      "from": "pan",
+      "from_id": "user7849230015",
+      "from_username": "pan_cache",
+      "text": "diff experience here lol. my batch had at least 12 dupes. same person diff ids",
+      "id": 184
+    },
+    {
+      "type": "message",
+      "date": "2026-01-11T20:36:03Z",
+      "from": "ath",
+      "from_id": "user7236189055",
+      "from_username": "athena_markup",
+      "text": "genuine q: if target has kids at the addr does that info show up in the pack?",
+      "id": 185
+    },
+    {
+      "type": "message",
+      "date": "2026-01-11T21:42:45Z",
+      "from": "ZEUS",
+      "from_id": "user7644400289",
+      "from_username": "lilzeus1337",
+      "text": "do u guys take gift cards?? like google play or itunes lol",
+      "id": 186
+    },
+    {
+      "type": "message",
+      "date": "2026-01-11T22:56:09Z",
+      "from": "sel",
+      "from_id": "user7645510921",
+      "from_username": "selene_packet",
+      "text": "@hermes_locker employer data, included in pack or totally sep order",
+      "id": 187
+    },
+    {
+      "type": "message",
+      "date": "2026-01-12T00:38:16Z",
+      "from": "mason h",
+      "from_id": "user7415839206",
+      "from_username": "hermes_locker",
+      "text": "@selene_packet employer is sep. small town targets available tn. metro areas wait til tmrw",
+      "id": 188
+    },
+    {
+      "type": "message",
+      "date": "2026-01-12T04:21:22Z",
+      "from": "jian",
+      "from_id": "user7682014550",
+      "from_username": "ares_forge",
+      "text": "morning pass came back clean. 0 dupes this time 🙏",
+      "id": 189
+    },
+    {
+      "type": "message",
+      "date": "2026-01-12T05:55:40Z",
+      "from": "posei",
+      "from_id": "user7745501922",
+      "from_username": "poseidonfan9",
+      "text": "cheapest option?? i literally just need 1 phone #. just one",
+      "id": 190
+    },
+    {
+      "type": "message",
+      "date": "2026-01-12T09:14:00Z",
+      "from": "Hades Group",
+      "from_id": "channel28740651",
+      "text": "If you don't know the local dispatch stack, don't touch the request. This is not optional.",
+      "id": 191
+    },
+    {
+      "type": "message",
+      "date": "2026-01-12T12:20:54Z",
+      "from": "Hades Group",
+      "from_id": "channel28740651",
+      "text": "Technical details go to DM. Final warning.",
+      "id": 192
+    },
+    {
+      "type": "message",
+      "date": "2026-01-12T13:50:57Z",
+      "from": "gai",
+      "from_id": "user7945521033",
+      "from_username": "gaiarefund",
+      "text": "@iris_queue filed ticket. paid for full pack. received: a name and a disconnected phone #. thats IT. lmao",
+      "id": 193
+    },
+    {
+      "type": "message",
+      "date": "2026-01-12T14:07:43Z",
+      "from": "charon",
+      "from_id": "user7341102986",
+      "from_username": "charon_settle",
+      "text": "@kratos_ticket seller has 24h. every ping resets ur position. stop",
+      "id": 194
+    },
+    {
+      "type": "message",
+      "date": "2026-01-12T17:20:02Z",
+      "from": "ath",
+      "from_id": "user7236189055",
+      "from_username": "athena_markup",
+      "text": "govt employee target, which category do i pick?? been redirected 3x now smh",
+      "id": 195
+    },
+    {
+      "type": "message",
+      "date": "2026-01-12T21:18:26Z",
+      "from": "hes",
+      "from_id": "user7146032211",
+      "from_username": "hestiaasks",
+      "text": "ok dumb q but what does \"pull\" mean in this context lol",
+      "id": 196
+    },
+    {
+      "type": "message",
+      "date": "2026-01-12T23:46:52Z",
+      "from": "euro",
+      "from_id": "user7241176508",
+      "from_username": "europa_vouch",
+      "text": "@hermes_locker i want proof the addr is current. screenshot of src date. b4 i release escrw",
+      "id": 197
+    },
+    {
+      "type": "message",
+      "date": "2026-01-12T23:55:29Z",
+      "from": "mason h",
+      "from_id": "user7415839206",
+      "from_username": "hermes_locker",
+      "text": "no target info in main. DM only. rule #1. not repeating this",
+      "id": 198
+    },
+    {
+      "type": "message",
+      "date": "2026-01-13T11:50:04Z",
+      "from": "dani",
+      "from_id": "user7520941836",
+      "from_username": "apollo_trace",
+      "text": "@poseidonfan9 what part of \"dont post target details here\" is unclear to u",
+      "id": 199
+    },
+    {
+      "type": "message",
+      "date": "2026-01-13T16:10:52Z",
+      "from": "pan",
+      "from_id": "user7849230015",
+      "from_username": "pan_cache",
+      "text": "@apollo_trace getting dupe records from new src. same target diff ids. known issue?",
+      "id": 200
+    },
+    {
+      "type": "message",
+      "date": "2026-01-13T18:12:06Z",
+      "from": "pan",
+      "from_id": "user7849230015",
+      "from_username": "pan_cache",
+      "text": "checked another batch and same issue there too. pulled batch of 20, at least 10 were dupes from diff record sets lol",
+      "id": 201
+    },
+    {
+      "type": "message",
+      "date": "2026-01-13T18:26:35Z",
+      "from": "iris",
+      "from_id": "user7139058844",
+      "from_username": "iris_queue",
+      "text": "@gaiarefund corrections get processed 1x per ord. file it right or dont file it",
+      "id": 202
+    },
+    {
+      "type": "message",
+      "date": "2026-01-13T19:27:26Z",
+      "from": "mason h",
+      "from_id": "user7415839206",
+      "from_username": "hermes_locker",
+      "text": "small town targets tn. metro starts tmrw morning. east coast priority",
+      "id": 203
+    },
+    {
+      "type": "message",
+      "date": "2026-01-13T20:45:29Z",
+      "from": "orion",
+      "from_id": "user7045529812",
+      "from_username": "orionview",
+      "text": "prices r in pinned. havent changed in wks",
+      "id": 204
+    },
+    {
+      "type": "message",
+      "date": "2026-01-13T21:15:54Z",
+      "from": "ath",
+      "from_id": "user7236189055",
+      "from_username": "athena_markup",
+      "text": "can i skip fam section and just get addr + phone? tryna save $",
+      "id": 205
+    },
+    {
+      "type": "message",
+      "date": "2026-01-13T22:06:46Z",
+      "from": "nyx",
+      "from_id": "user7448021137",
+      "from_username": "nyxrelay",
+      "text": "ares batch this wk also clean. 2 wks running w zero corrections. respect 💪",
+      "id": 206
+    },
+    {
+      "type": "message",
+      "date": "2026-01-14T01:07:36Z",
+      "from": "k",
+      "from_id": "user7543991028",
+      "from_username": "kratos_ticket",
+      "text": "i submitted BEFORE half the ppl complaining. i should be next",
+      "id": 207
+    },
+    {
+      "type": "message",
+      "date": "2026-01-14T06:18:54Z",
+      "from": "jian",
+      "from_id": "user7682014550",
+      "from_username": "ares_forge",
+      "text": "rerun after lunch here. the second pass usually catches what the first one misses",
+      "id": 208
+    },
+    {
+      "type": "message",
+      "date": "2026-01-14T10:41:34Z",
+      "from": "iris",
+      "from_id": "user7139058844",
+      "from_username": "iris_queue",
+      "text": "@kratos_ticket 6 orders ahead of u. estimated delivery: sometime tn. chill",
+      "id": 209
+    },
+    {
+      "type": "message",
+      "date": "2026-01-14T13:06:35Z",
+      "from": "pan",
+      "from_id": "user7849230015",
+      "from_username": "pan_cache",
+      "text": "why does every batch have dupes?? is nobody running dedup b4 delivery",
+      "id": 210
+    },
+    {
+      "type": "message",
+      "date": "2026-01-14T15:36:12Z",
+      "from": "ody",
+      "from_id": "user7948814401",
+      "from_username": "odysseusleft",
+      "text": "been completely ignored for a full day. not even an ack. is this a scam??",
+      "id": 211
+    },
+    {
+      "type": "message",
+      "date": "2026-01-14T15:50:06Z",
+      "from": "hes",
+      "from_id": "user7146032211",
+      "from_username": "hestiaasks",
+      "text": "can someone PLEASE explain diff btwn \"pack\" and \"full dox\"?? nobody ever answers this",
+      "id": 212
+    },
+    {
+      "type": "message",
+      "date": "2026-01-14T16:47:48Z",
+      "from": "tri",
+      "from_id": "user7741023895",
+      "from_username": "tritonbrief",
+      "text": "telecom pull: actual carrier name or just registered phone #?",
+      "id": 213
+    },
+    {
+      "type": "message",
+      "date": "2026-01-14T17:30:59Z",
+      "from": "nyx",
+      "from_id": "user7448021137",
+      "from_username": "nyxrelay",
+      "text": "vouch apollo. db pull came back clean this time. fast turnaround",
+      "id": 214
+    },
+    {
+      "type": "message",
+      "date": "2026-01-14T21:28:48Z",
+      "from": "k",
+      "from_id": "user7543991028",
+      "from_username": "kratos_ticket",
+      "text": "PLEASE i need this done b4 tonight. ill pay 2x rush rate. ANYONE",
+      "id": 215
+    },
+    {
+      "type": "message",
+      "date": "2026-01-15T03:35:50Z",
+      "from": "k",
+      "from_id": "user7543991028",
+      "from_username": "kratos_ticket",
+      "text": "keep identifying info out of main. basic opsec",
+      "id": 216
+    },
+    {
+      "type": "message",
+      "date": "2026-01-15T05:24:52Z",
+      "from": "jian",
+      "from_id": "user7682014550",
+      "from_username": "ares_forge",
+      "text": "cleaning dupes b4 noon here. this batch had way more than usual",
+      "id": 217
+    },
+    {
+      "type": "message",
+      "date": "2026-01-15T05:42:02Z",
+      "from": "posei",
+      "from_id": "user7745501922",
+      "from_username": "poseidonfan9",
+      "text": "@hermes_locker cheapest thing u do? just need to confirm 1 addr is current",
+      "id": 218
+    },
+    {
+      "type": "message",
+      "date": "2026-01-15T10:38:03Z",
+      "from": "forge",
+      "from_id": "user7041885321",
+      "from_username": "hephaestus_drop",
+      "text": "someone posted targets full name + workplace in main 5 min ago. deleted. USE DMs ffs",
+      "id": 219
+    },
+    {
+      "type": "message",
+      "date": "2026-01-15T11:06:42Z",
+      "from": "Hades Group",
+      "from_id": "channel28740651",
+      "text": "Pinned rules have not changed. Stop asking if they have.",
+      "id": 220
+    },
+    {
+      "type": "message",
+      "date": "2026-01-15T13:40:00Z",
+      "from": "iris",
+      "from_id": "user7139058844",
+      "from_username": "iris_queue",
+      "text": "@odysseusleft support goes to DM. main is not a helpdesk. send me ur ord id",
+      "id": 221
+    },
+    {
+      "type": "message",
+      "date": "2026-01-15T14:28:18Z",
+      "from": "ody",
+      "from_id": "user7948814401",
+      "from_username": "odysseusleft",
+      "text": "hello? HELLO? my request been sitting here 2 days. does anyone actually WORK here??",
+      "id": 222
+    },
+    {
+      "type": "message",
+      "date": "2026-01-15T14:43:09Z",
+      "from": "tri",
+      "from_id": "user7741023895",
+      "from_username": "tritonbrief",
+      "text": "need parent info + employer same target. 1 ord or 2??",
+      "id": 223
+    },
+    {
+      "type": "message",
+      "date": "2026-01-15T15:20:46Z",
+      "from": "nyx",
+      "from_id": "user7448021137",
+      "from_username": "nyxrelay",
+      "text": "@apollo_trace vouch. db pull came back current n verified. clean work 👍",
+      "id": 224
+    },
+    {
+      "type": "message",
+      "date": "2026-01-15T16:24:44Z",
+      "from": "charon",
+      "from_id": "user7341102986",
+      "from_username": "charon_settle",
+      "text": "@kratos_ticket seller has 24h. whining in main doesnt speed it up. it slows everything down lol",
+      "id": 225
+    },
+    {
+      "type": "message",
+      "date": "2026-01-15T17:54:47Z",
+      "from": "forge",
+      "from_id": "user7041885321",
+      "from_username": "hephaestus_drop",
+      "text": "next person who drops target details in main is getting muted. done asking nicely",
+      "id": 226
+    },
+    {
+      "type": "message",
+      "date": "2026-01-15T18:30:11Z",
+      "from": "gai",
+      "from_id": "user7945521033",
+      "from_username": "gaiarefund",
+      "text": "@iris_queue workplace section on my pack was completely blank. i paid for employer addon. wtf happened",
+      "id": 227
+    },
+    {
+      "type": "message",
+      "date": "2026-01-15T21:34:35Z",
+      "from": "dio",
+      "from_id": "user7346615520",
+      "from_username": "dionysusplug",
+      "text": "half this room doesnt even understand what escrw means and theyre trying to order packs lmao 💀",
+      "id": 228
+    },
+    {
+      "type": "message",
+      "date": "2026-01-15T22:50:59Z",
+      "from": "k",
+      "from_id": "user7543991028",
+      "from_username": "kratos_ticket",
+      "text": "WHERE IS MY ORDER. paid crypto 2 days ago. heard absolutely nothing since",
+      "id": 229
+    },
+    {
+      "type": "message",
+      "date": "2026-01-16T01:48:07Z",
+      "from": "dio",
+      "from_id": "user7346615520",
+      "from_username": "dionysusplug",
+      "text": "gift card kid is back 💀 now hes asking about apple pay. i genuinely cannot w these ppl",
+      "id": 230
+    },
+    {
+      "type": "message",
+      "date": "2026-01-16T06:42:15Z",
+      "from": "morph",
+      "from_id": "user7540997715",
+      "from_username": "morpheus_lag",
+      "text": "is anyone even online or am i talking to myself lol",
+      "id": 231
+    },
+    {
+      "type": "message",
+      "date": "2026-01-16T15:56:37Z",
+      "from": "ath",
+      "from_id": "user7236189055",
+      "from_username": "athena_markup",
+      "text": "county employees, which category. asked FOUR TIMES. been ignored every single time",
+      "id": 232
+    },
+    {
+      "type": "message",
+      "date": "2026-01-16T23:28:31Z",
+      "from": "ZEUS",
+      "from_id": "user7644400289",
+      "from_username": "lilzeus1337",
+      "text": "can u guys do 1 target as like a free trial?? so i can see quality first",
+      "id": 233
+    },
+    {
+      "type": "message",
+      "date": "2026-01-17T10:39:55Z",
+      "from": "iris",
+      "from_id": "user7139058844",
+      "from_username": "iris_queue",
+      "text": "DM. for. support. i will keep repeating this til it physically sinks in",
+      "id": 234
+    },
+    {
+      "type": "message",
+      "date": "2026-01-17T10:58:30Z",
+      "from": "iris",
+      "from_id": "user7139058844",
+      "from_username": "iris_queue",
+      "text": "@gaiarefund if u dont include an ord id i literally cannot find ur case. im not psychic lol",
+      "id": 235
+    },
+    {
+      "type": "message",
+      "date": "2026-01-17T12:59:05Z",
+      "from": "forge",
+      "from_id": "user7041885321",
+      "from_username": "hephaestus_drop",
+      "text": "US records in shared src r a month old. someone w access needs to upload new set",
+      "id": 236
+    },
+    {
+      "type": "message",
+      "date": "2026-01-17T13:00:06Z",
+      "from": "forge",
+      "from_id": "user7041885321",
+      "from_username": "hephaestus_drop",
+      "text": "@apollo_trace do older records from og src still work or did schema change break em",
+      "id": 237
+    },
+    {
+      "type": "message",
+      "date": "2026-01-17T18:05:03Z",
+      "from": "dio",
+      "from_id": "user7346615520",
+      "from_username": "dionysusplug",
+      "text": "next new handle will prob ask if we take robux. this room hits a new low every wk 😂",
+      "id": 238
+    },
+    {
+      "type": "message",
+      "date": "2026-01-17T19:42:53Z",
+      "from": "hes",
+      "from_id": "user7146032211",
+      "from_username": "hestiaasks",
+      "text": "does \"family\" include cousins or just parents + siblings?",
+      "id": 239
+    },
+    {
+      "type": "message",
+      "date": "2026-01-17T21:37:21Z",
+      "from": "sel",
+      "from_id": "user7645510921",
+      "from_username": "selene_packet",
+      "text": "@hestiaasks employer extra. fam included. its in the pin. PLEASE read it b4 asking",
+      "id": 240
+    },
+    {
+      "type": "message",
+      "date": "2026-01-18T10:01:27Z",
+      "from": "forge",
+      "from_id": "user7041885321",
+      "from_username": "hephaestus_drop",
+      "text": "older records from 1st src need reformatting to match new schema b4 theyll pull",
+      "id": 241
+    },
+    {
+      "type": "message",
+      "date": "2026-01-18T14:07:25Z",
+      "from": "charon",
+      "from_id": "user7341102986",
+      "from_username": "charon_settle",
+      "text": "@kratos_ticket escrw releases when buyer confirms delivery. this is standard. always has been",
+      "id": 242
+    },
+    {
+      "type": "message",
+      "date": "2026-01-18T16:35:13Z",
+      "from": "k",
+      "from_id": "user7543991028",
+      "from_username": "kratos_ticket",
+      "text": "WHERE. IS. MY. ORDER. 4th time. FOURTH.",
+      "id": 243
+    },
+    {
+      "type": "message",
+      "date": "2026-01-18T17:07:22Z",
+      "from": "hes",
+      "from_id": "user7146032211",
+      "from_username": "hestiaasks",
+      "text": "cousins r hit or miss depending on src. parents + siblings always come back clean",
+      "id": 244
+    },
+    {
+      "type": "message",
+      "date": "2026-01-18T17:45:36Z",
+      "from": "iris",
+      "from_id": "user7139058844",
+      "from_username": "iris_queue",
+      "text": "@odysseusleft send me ur ord id. in a DM. not in main. directly to my inbox. rn",
+      "id": 245
+    },
+    {
+      "type": "message",
+      "date": "2026-01-18T19:19:13Z",
+      "from": "ody",
+      "from_id": "user7948814401",
+      "from_username": "odysseusleft",
+      "text": "nobody replies. nobody acks. is this whole group a scam?? genuinely asking",
+      "id": 246
+    },
+    {
+      "type": "message",
+      "date": "2026-01-18T22:30:01Z",
+      "from": "gai",
+      "from_id": "user7945521033",
+      "from_username": "gaiarefund",
+      "text": "paid for FULL pack. received basic tier. missing employer AND mothers info. @iris_queue come on",
+      "id": 247
+    },
+    {
+      "type": "message",
+      "date": "2026-01-19T01:42:28Z",
+      "from": "mason h",
+      "from_id": "user7415839206",
+      "from_username": "hermes_locker",
+      "text": "no target info in main. dm me name + state. thats the only way i take ords",
+      "id": 248
+    },
+    {
+      "type": "message",
+      "date": "2026-01-19T02:38:42Z",
+      "from": "ZEUS",
+      "from_id": "user7644400289",
+      "from_username": "lilzeus1337",
+      "text": "why is everything so expensive tho?? ur literally just querying a db lol",
+      "id": 249
+    },
+    {
+      "type": "message",
+      "date": "2026-01-19T10:42:33Z",
+      "from": "jian",
+      "from_id": "user7682014550",
+      "from_username": "ares_forge",
+      "text": "heading home now. next shift tomorrow",
+      "id": 250
+    },
+    {
+      "type": "message",
+      "date": "2026-01-19T15:51:14Z",
+      "from": "iris",
+      "from_id": "user7139058844",
+      "from_username": "iris_queue",
+      "text": "@odysseusleft check ur dms. i responded to ur ticket 2x already. look b4 u complain",
+      "id": 251
+    },
+    {
+      "type": "message",
+      "date": "2026-01-19T19:20:57Z",
+      "from": "forge",
+      "from_id": "user7041885321",
+      "from_username": "hephaestus_drop",
+      "text": "posting target names in main = u expose urself too. its not just rules its basic self-preservation",
+      "id": 252
+    },
+    {
+      "type": "message",
+      "date": "2026-01-19T19:53:38Z",
+      "from": "iris",
+      "from_id": "user7139058844",
+      "from_username": "iris_queue",
+      "text": "@gaiarefund 1 correction per ord. policy. yelling at me in main wont change it",
+      "id": 253
+    },
+    {
+      "type": "message",
+      "date": "2026-01-20T08:36:33Z",
+      "from": "jian",
+      "from_id": "user7682014550",
+      "from_username": "ares_forge",
+      "text": "cleaning dupes this afternoon. should b done b4 end of shift",
+      "id": 254
+    },
+    {
+      "type": "message",
+      "date": "2026-01-20T10:13:21Z",
+      "from": "dani",
+      "from_id": "user7520941836",
+      "from_username": "apollo_trace",
+      "text": "@hephaestus_drop that old path is dead but the data still exists. URL changed but data is still there under new path",
+      "id": 255
+    },
+    {
+      "type": "message",
+      "date": "2026-01-20T11:29:53Z",
+      "from": "ody",
+      "from_id": "user7948814401",
+      "from_username": "odysseusleft",
+      "text": "literally nobody answers me. ever. what is the point of being in this group lmao",
+      "id": 256
+    },
+    {
+      "type": "message",
+      "date": "2026-01-20T13:51:03Z",
+      "from": "iris",
+      "from_id": "user7139058844",
+      "from_username": "iris_queue",
+      "text": "@odysseusleft check ur dms ffs. i responded 3 hrs ago. look in ur inbox b4 complaining",
+      "id": 257
+    },
+    {
+      "type": "message",
+      "date": "2026-01-20T18:16:47Z",
+      "from": "tri",
+      "from_id": "user7741023895",
+      "from_username": "tritonbrief",
+      "text": "telecom q: landline data included in standard pull or sep?",
+      "id": 258
+    },
+    {
+      "type": "message",
+      "date": "2026-01-20T18:47:38Z",
+      "from": "forge",
+      "from_id": "user7041885321",
+      "from_username": "hephaestus_drop",
+      "text": "updated US records need uploading to shared src. who has write access? @apollo_trace?",
+      "id": 259
+    },
+    {
+      "type": "message",
+      "date": "2026-01-20T19:27:51Z",
+      "from": "charon",
+      "from_id": "user7341102986",
+      "from_username": "charon_settle",
+      "text": "@kratos_ticket do NOT msg me 2x. i read everything. 1 msg is enough. 2nd msg = moved back",
+      "id": 260
+    },
+    {
+      "type": "message",
+      "date": "2026-01-20T19:57:53Z",
+      "from": "ath",
+      "from_id": "user7236189055",
+      "from_username": "athena_markup",
+      "text": "journalists as targets, same pricing or nah?",
+      "id": 261
+    },
+    {
+      "type": "message",
+      "date": "2026-01-21T03:13:45Z",
+      "from": "jian",
+      "from_id": "user7682014550",
+      "from_username": "ares_forge",
+      "text": "after lunch here. running the 2nd pass now",
+      "id": 262
+    },
+    {
+      "type": "message",
+      "date": "2026-01-21T06:04:43Z",
+      "from": "dani",
+      "from_id": "user7520941836",
+      "from_username": "apollo_trace",
+      "text": "rebuilt primary db from scratch. new indexes live. all old bookmarks/paths r dead",
+      "id": 263
+    },
+    {
+      "type": "message",
+      "date": "2026-01-21T09:01:11Z",
+      "from": "Hades Group",
+      "from_id": "channel28740651",
+      "text": "Rules. Have. Not. Changed.",
+      "id": 264
+    },
+    {
+      "type": "message",
+      "date": "2026-01-21T14:21:02Z",
+      "from": "charon",
+      "from_id": "user7341102986",
+      "from_username": "charon_settle",
+      "text": "@kratos_ticket close ur old ticket b4 opening new 1. cant manage 2 threads per person",
+      "id": 265
+    },
+    {
+      "type": "message",
+      "date": "2026-01-21T14:33:32Z",
+      "from": "ath",
+      "from_id": "user7236189055",
+      "from_username": "athena_markup",
+      "text": "journalists same rate. public officials might b higher. ask in dm",
+      "id": 266
+    },
+    {
+      "type": "message",
+      "date": "2026-01-21T14:41:22Z",
+      "from": "Hades Group",
+      "from_id": "channel28740651",
+      "text": "Pinned rules are current.",
+      "id": 267
+    },
+    {
+      "type": "message",
+      "date": "2026-01-21T15:51:41Z",
+      "from": "iris",
+      "from_id": "user7139058844",
+      "from_username": "iris_queue",
+      "text": "@kratos_ticket ull get a notif when ur ord is rdy. queue doesnt skip. b patient",
+      "id": 268
+    },
+    {
+      "type": "service",
+      "date": "2026-01-21T18:40:00Z",
+      "action": "remove_members",
+      "actor": "Hades Group",
+      "actor_id": "channel28740651",
+      "members": [
+        "ody"
+      ],
+      "member_ids": [
+        "user7948814401"
+      ],
+      "id": 269
+    },
+    {
+      "type": "message",
+      "date": "2026-01-21T19:00:38Z",
+      "from": "mason h",
+      "from_id": "user7415839206",
+      "from_username": "hermes_locker",
+      "text": "queue open. taking ords tn: county + fam packs. US only. dm me target info",
+      "id": 270
+    },
+    {
+      "type": "message",
+      "date": "2026-01-21T19:33:41Z",
+      "from": "k",
+      "from_id": "user7543991028",
+      "from_username": "kratos_ticket",
+      "text": "3 days now. no delivery. at what point can i dispute escrw?? @charon_settle",
+      "id": 271
+    },
+    {
+      "type": "message",
+      "date": "2026-01-21T19:53:49Z",
+      "from": "tri",
+      "from_id": "user7741023895",
+      "from_username": "tritonbrief",
+      "text": "@hermes_locker need parent data + employer same target. 1 ord or 2?",
+      "id": 272
+    },
+    {
+      "type": "message",
+      "date": "2026-01-21T21:33:17Z",
+      "from": "sel",
+      "from_id": "user7645510921",
+      "from_username": "selene_packet",
+      "text": "does anyone here offer school enrollment records?? need to know what schools target attended",
+      "id": 273
+    },
+    {
+      "type": "message",
+      "date": "2026-01-21T22:42:57Z",
+      "from": "nyx",
+      "from_id": "user7448021137",
+      "from_username": "nyxrelay",
+      "text": "vouch hermes. friend ordered county-level pack, got it same day. data was current n clean 👍",
+      "id": 274
+    },
+    {
+      "type": "message",
+      "date": "2026-01-21T23:21:34Z",
+      "from": "mason h",
+      "from_id": "user7415839206",
+      "from_username": "hermes_locker",
+      "text": "dm me: target name + state. no essays. no context. no backstory. just the ask",
+      "id": 275
+    },
+    {
+      "type": "message",
+      "date": "2026-01-22T01:15:32Z",
+      "from": "jian",
+      "from_id": "user7682014550",
+      "from_username": "ares_forge",
+      "text": "batch just landed. reviewing data quality b4 pushing out to buyers",
+      "id": 276
+    },
+    {
+      "type": "message",
+      "date": "2026-01-22T02:17:35Z",
+      "from": "dio",
+      "from_id": "user7346615520",
+      "from_username": "dionysusplug",
+      "text": "every wk a new wave of kids shows up asking abt gift cards and free trials. where do they even find us 😂",
+      "id": 277
+    },
+    {
+      "type": "message",
+      "date": "2026-01-22T07:02:52Z",
+      "from": "Hades Group",
+      "from_id": "channel28740651",
+      "text": "If you do not know the local dispatch stack, do not touch the request. I will not say it again.",
+      "id": 278
+    },
+    {
+      "type": "message",
+      "date": "2026-01-22T07:44:29Z",
+      "from": "dani",
+      "from_id": "user7520941836",
+      "from_username": "apollo_trace",
+      "text": "@hephaestus_drop that old path is gone but the mirror still has the data. access path changed. ill dm u the new 1",
+      "id": 279
+    },
+    {
+      "type": "message",
+      "date": "2026-01-22T12:41:15Z",
+      "from": "iris",
+      "from_id": "user7139058844",
+      "from_username": "iris_queue",
+      "text": "@kratos_ticket check ur dms. i already responded to ur ord ticket. look b4 screaming",
+      "id": 280
+    },
+    {
+      "type": "message",
+      "date": "2026-01-22T12:54:23Z",
+      "from": "dani",
+      "from_id": "user7520941836",
+      "from_username": "apollo_trace",
+      "text": "schema changed again on main db. if ur old queries suddenly return nothing thats y",
+      "id": 281
+    },
+    {
+      "type": "message",
+      "date": "2026-01-22T17:54:49Z",
+      "from": "nyx",
+      "from_id": "user7448021137",
+      "from_username": "nyxrelay",
+      "text": "ares batch this wk: clean across the board. 3rd time vouching. consistent af",
+      "id": 282
+    },
+    {
+      "type": "message",
+      "date": "2026-01-22T18:58:22Z",
+      "from": "mason h",
+      "from_id": "user7415839206",
+      "from_username": "hermes_locker",
+      "text": "east coast records current as of today. west coast roughly 5 days behind. updating daily",
+      "id": 283
+    },
+    {
+      "type": "message",
+      "date": "2026-01-22T19:54:42Z",
+      "from": "tri",
+      "from_id": "user7741023895",
+      "from_username": "tritonbrief",
+      "text": "telecom still fully covered. same carrier list. nothing dropped",
+      "id": 284
+    },
+    {
+      "type": "message",
+      "date": "2026-01-22T20:42:44Z",
+      "from": "charon",
+      "from_id": "user7341102986",
+      "from_username": "charon_settle",
+      "text": "@kratos_ticket escrw was released cuz the buyer on THAT ord confirmed. urs is still pending. diff cases",
+      "id": 285
+    },
+    {
+      "type": "message",
+      "date": "2026-01-22T21:32:01Z",
+      "from": "tri",
+      "from_id": "user7741023895",
+      "from_username": "tritonbrief",
+      "text": "landline + mobile r diff pulls from diff srcs. both available",
+      "id": 286
+    },
+    {
+      "type": "message",
+      "date": "2026-01-22T23:10:26Z",
+      "from": "k",
+      "from_id": "user7543991028",
+      "from_username": "kratos_ticket",
+      "text": "i ALREADY PAID. escrw fully funded. 3 days ago. whats the holdup @charon_settle",
+      "id": 287
+    },
+    {
+      "type": "message",
+      "date": "2026-01-23T13:47:30Z",
+      "from": "tri",
+      "from_id": "user7741023895",
+      "from_username": "tritonbrief",
+      "text": "telecom pull: carrier name, billing city, reg date. standard block",
+      "id": 288
+    },
+    {
+      "type": "message",
+      "date": "2026-01-23T14:12:48Z",
+      "from": "Hades Group",
+      "from_id": "channel28740651",
+      "text": "Vouches first. Then you get access to premium services.",
+      "id": 289
+    },
+    {
+      "type": "message",
+      "date": "2026-01-23T17:44:44Z",
+      "from": "iris",
+      "from_id": "user7139058844",
+      "from_username": "iris_queue",
+      "text": "@kratos_ticket 6 ords ahead of u. est completion: sometime tn. stop asking",
+      "id": 290
+    },
+    {
+      "type": "message",
+      "date": "2026-01-23T19:14:44Z",
+      "from": "dio",
+      "from_id": "user7346615520",
+      "from_username": "dionysusplug",
+      "text": "gift card kid is back AGAIN 💀 someone pls just ban him. getting absurd at this point",
+      "id": 291
+    },
+    {
+      "type": "message",
+      "date": "2026-01-24T00:45:58Z",
+      "from": "forgekid",
+      "from_id": "user7844190076",
+      "from_username": "hephaestusjr",
+      "text": "srsly why does a basic pack cost this much?? ur just looking smth up in a db right??",
+      "id": 292
+    },
+    {
+      "type": "message",
+      "date": "2026-01-24T01:24:15Z",
+      "from": "mason h",
+      "from_id": "user7415839206",
+      "from_username": "hermes_locker",
+      "text": "@hephaestusjr metro targets cost more cuz more records to xref. ur paying for accuracy not effort",
+      "id": 293
+    },
+    {
+      "type": "message",
+      "date": "2026-01-24T06:02:47Z",
+      "from": "jian",
+      "from_id": "user7682014550",
+      "from_username": "ares_forge",
+      "text": "rerun after lunch here. might do a third pass if the volume stays high",
+      "id": 294
+    },
+    {
+      "type": "message",
+      "date": "2026-01-24T07:00:00Z",
+      "from": "dani",
+      "from_id": "user7520941836",
+      "from_username": "apollo_trace",
+      "text": "@pan_cache stop sharing raw query results in main. hash the output first or dont share it",
+      "id": 295
+    },
+    {
+      "type": "message",
+      "date": "2026-01-24T09:20:56Z",
+      "from": "dani",
+      "from_id": "user7520941836",
+      "from_username": "apollo_trace",
+      "text": "old db cleaned up. all record conflicts resolved. should pull clean now",
+      "id": 296
+    },
+    {
+      "type": "message",
+      "date": "2026-01-24T13:05:50Z",
+      "from": "pan",
+      "from_id": "user7849230015",
+      "from_username": "pan_cache",
+      "text": "@apollo_trace some queries returning nothing after schema change. known issue??",
+      "id": 297
+    },
+    {
+      "type": "message",
+      "date": "2026-01-24T13:29:38Z",
+      "from": "gai",
+      "from_id": "user7945521033",
+      "from_username": "gaiarefund",
+      "text": "@iris_queue my correction was submitted THREE DAYS ago. for missing fam data. any update at all??",
+      "id": 298
+    },
+    {
+      "type": "message",
+      "date": "2026-01-24T13:34:27Z",
+      "from": "forge",
+      "from_id": "user7041885321",
+      "from_username": "hephaestus_drop",
+      "text": "@pan_cache old US dataset had corrupted records crashing the lookup engine. patched yest",
+      "id": 299
+    },
+    {
+      "type": "message",
+      "date": "2026-01-24T17:19:59Z",
+      "from": "euro",
+      "from_id": "user7241176508",
+      "from_username": "europa_vouch",
+      "text": "@apollo_trace u still maintaining the srcs or did u hand it off?? havent seen u much",
+      "id": 300
+    },
+    {
+      "type": "message",
+      "date": "2026-01-24T19:04:23Z",
+      "from": "k",
+      "from_id": "user7543991028",
+      "from_username": "kratos_ticket",
+      "text": "PLEASE. need a pack done b4 tonight. ill pay premium rush rate. ANYONE",
+      "id": 301
+    },
+    {
+      "type": "message",
+      "date": "2026-01-24T19:33:59Z",
+      "from": "forgekid",
+      "from_id": "user7844190076",
+      "from_username": "hephaestusjr",
+      "text": "its expensive cuz ur paying for CURRENT verified data. not some recycled 2020 breach dump lmao",
+      "id": 302
+    },
+    {
+      "type": "message",
+      "date": "2026-01-24T22:32:14Z",
+      "from": "mason h",
+      "from_id": "user7415839206",
+      "from_username": "hermes_locker",
+      "text": "@tritonbrief household w/o employer: ~1 hr. w employer: add 30 min. dm me",
+      "id": 303
+    },
+    {
+      "type": "message",
+      "date": "2026-01-25T00:41:19Z",
+      "from": "mason h",
+      "from_id": "user7415839206",
+      "from_username": "hermes_locker",
+      "text": "west coast data still holding from yest. no drift no stale entries",
+      "id": 304
+    },
+    {
+      "type": "message",
+      "date": "2026-01-25T05:42:54Z",
+      "from": "jian",
+      "from_id": "user7682014550",
+      "from_username": "ares_forge",
+      "text": "remaining dupes from weekly batch on my list. sorting em next shift",
+      "id": 305
+    },
+    {
+      "type": "message",
+      "date": "2026-01-25T08:39:25Z",
+      "from": "jian",
+      "from_id": "user7682014550",
+      "from_username": "ares_forge",
+      "text": "running 3rd dedup pass rn. should catch last edge cases",
+      "id": 306
+    },
+    {
+      "type": "message",
+      "date": "2026-01-25T09:02:41Z",
+      "from": "dani",
+      "from_id": "user7520941836",
+      "from_username": "apollo_trace",
+      "text": "full dedup sweep across entire db. should b done by eod",
+      "id": 307
+    },
+    {
+      "type": "message",
+      "date": "2026-01-25T11:30:15Z",
+      "from": "iris",
+      "from_id": "user7139058844",
+      "from_username": "iris_queue",
+      "text": "@kratos_ticket ull get a ping when done. queue is queue. nobody skipped",
+      "id": 308
+    },
+    {
+      "type": "message",
+      "date": "2026-01-25T19:56:52Z",
+      "from": "k",
+      "from_id": "user7543991028",
+      "from_username": "kratos_ticket",
+      "text": "NOBODY IS RESPONDING. been waiting since this morning. not once. not a single ack",
+      "id": 309
+    },
+    {
+      "type": "message",
+      "date": "2026-01-26T00:59:05Z",
+      "from": "k",
+      "from_id": "user7543991028",
+      "from_username": "kratos_ticket",
+      "text": "WHERE. IS. MY. ORDER. this is the FOURTH time asking. F-O-U-R-T-H",
+      "id": 310
+    },
+    {
+      "type": "message",
+      "date": "2026-01-26T01:08:38Z",
+      "from": "jian",
+      "from_id": "user7682014550",
+      "from_username": "ares_forge",
+      "text": "shift ending. batch keeps processing overnight. results by morning",
+      "id": 311
+    },
+    {
+      "type": "message",
+      "date": "2026-01-26T01:33:16Z",
+      "from": "orion",
+      "from_id": "user7045529812",
+      "from_username": "orionview",
+      "text": "@hermes_locker u still clearing last wks backlog? starting to think my ord fell thru",
+      "id": 312
+    },
+    {
+      "type": "message",
+      "date": "2026-01-26T05:34:49Z",
+      "from": "jian",
+      "from_id": "user7682014550",
+      "from_username": "ares_forge",
+      "text": "weekly batch dupes will b cleaned next shift. its on my list",
+      "id": 313
+    },
+    {
+      "type": "message",
+      "date": "2026-01-26T11:21:35Z",
+      "from": "forge",
+      "from_id": "user7041885321",
+      "from_username": "hephaestus_drop",
+      "text": "@apollo_trace updated US records need to go in shared src. u have upload access or should i ask someone else?",
+      "id": 314
+    },
+    {
+      "type": "message",
+      "date": "2026-01-26T11:52:54Z",
+      "from": "pan",
+      "from_id": "user7849230015",
+      "from_username": "pan_cache",
+      "text": "12 dupe entries in last batch. same person appearing under completely diff record ids smh",
+      "id": 315
+    },
+    {
+      "type": "message",
+      "date": "2026-01-26T13:41:12Z",
+      "from": "ath",
+      "from_id": "user7236189055",
+      "from_username": "athena_markup",
+      "text": "school enrollment data, any plans to update?? its from early last yr and basically worthless",
+      "id": 316
+    },
+    {
+      "type": "message",
+      "date": "2026-01-26T18:03:47Z",
+      "from": "forge",
+      "from_id": "user7041885321",
+      "from_username": "hephaestus_drop",
+      "text": "DO NOT post raw data in main. hash it. next person who does = mute request to admin",
+      "id": 317
+    },
+    {
+      "type": "message",
+      "date": "2026-01-26T18:13:57Z",
+      "from": "mason h",
+      "from_id": "user7415839206",
+      "from_username": "hermes_locker",
+      "text": "west coast: not tn. tn is east coast only. west opens tmrw morning",
+      "id": 318
+    },
+    {
+      "type": "message",
+      "date": "2026-01-26T19:23:41Z",
+      "from": "pan",
+      "from_id": "user7849230015",
+      "from_username": "pan_cache",
+      "text": "@apollo_trace db config updated for new schema. everyone test ur queries b4 running full batches",
+      "id": 319
+    },
+    {
+      "type": "message",
+      "date": "2026-01-26T21:14:44Z",
+      "from": "dio",
+      "from_id": "user7346615520",
+      "from_username": "dionysusplug",
+      "text": "3 new handles hit my DMs in the last hr and every single one asked about gift cards. incredible",
+      "id": 320
+    },
+    {
+      "type": "message",
+      "date": "2026-01-26T23:32:14Z",
+      "from": "gai",
+      "from_id": "user7945521033",
+      "from_username": "gaiarefund",
+      "text": "@iris_queue correction pending FOUR days. paid for full fam data. where is it",
+      "id": 321
+    },
+    {
+      "type": "message",
+      "date": "2026-01-27T01:02:54Z",
+      "from": "gai",
+      "from_id": "user7945521033",
+      "from_username": "gaiarefund",
+      "text": "paid full price. received basic tier lookup w half fields blank. @iris_queue this is unacceptable",
+      "id": 322
+    },
+    {
+      "type": "message",
+      "date": "2026-01-27T01:46:30Z",
+      "from": "jian",
+      "from_id": "user7682014550",
+      "from_username": "ares_forge",
+      "text": "starting morning batch now. will have results after lunch here",
+      "id": 323
+    },
+    {
+      "type": "message",
+      "date": "2026-01-27T03:35:20Z",
+      "from": "jian",
+      "from_id": "user7682014550",
+      "from_username": "ares_forge",
+      "text": "cleaning dupes b4 noon here. bigger batch than usual today",
+      "id": 324
+    },
+    {
+      "type": "message",
+      "date": "2026-01-27T05:12:17Z",
+      "from": "morph",
+      "from_id": "user7540997715",
+      "from_username": "morpheus_lag",
+      "text": "my tz makes catching the queue literally impossible. always closed by the time i see it fml",
+      "id": 325
+    },
+    {
+      "type": "message",
+      "date": "2026-01-27T08:58:09Z",
+      "from": "Hades Group",
+      "from_id": "channel28740651",
+      "text": "Escrow decides. Not the seller. Not the buyer. Escrow.",
+      "id": 326
+    },
+    {
+      "type": "message",
+      "date": "2026-01-27T09:38:54Z",
+      "from": "Hades Group",
+      "from_id": "channel28740651",
+      "text": "Fresh accounts stay quiet until vouched. Non-negotiable.",
+      "id": 327
+    },
+    {
+      "type": "message",
+      "date": "2026-01-27T11:55:20Z",
+      "from": "dani",
+      "from_id": "user7520941836",
+      "from_username": "apollo_trace",
+      "text": "db back online after rebuild. new indexes live. check ur paths",
+      "id": 328
+    },
+    {
+      "type": "message",
+      "date": "2026-01-27T12:15:31Z",
+      "from": "dani",
+      "from_id": "user7520941836",
+      "from_username": "apollo_trace",
+      "text": "schema changed again. 3rd time this month lol. if ur queries broke update format from pinned",
+      "id": 329
+    },
+    {
+      "type": "message",
+      "date": "2026-01-27T13:58:04Z",
+      "from": "charon",
+      "from_id": "user7341102986",
+      "from_username": "charon_settle",
+      "text": "@kratos_ticket seller has 24h from acceptance. pinging charon doesnt make clock go faster",
+      "id": 330
+    },
+    {
+      "type": "message",
+      "date": "2026-01-27T15:50:31Z",
+      "from": "tri",
+      "from_id": "user7741023895",
+      "from_username": "tritonbrief",
+      "text": "telecom pull, does it show who pays the phone bill or just registered owner name?",
+      "id": 331
+    },
+    {
+      "type": "message",
+      "date": "2026-01-27T18:21:34Z",
+      "from": "mason h",
+      "from_id": "user7415839206",
+      "from_username": "hermes_locker",
+      "text": "west coast data still clean from yest. no drift detected",
+      "id": 332
+    },
+    {
+      "type": "message",
+      "date": "2026-01-28T08:24:41Z",
+      "from": "dani",
+      "from_id": "user7520941836",
+      "from_username": "apollo_trace",
+      "text": "pinned src is the canonical 1. everything else is outdated as of today",
+      "id": 333
+    },
+    {
+      "type": "message",
+      "date": "2026-01-28T08:59:38Z",
+      "from": "dani",
+      "from_id": "user7520941836",
+      "from_username": "apollo_trace",
+      "text": "rebuilt entire db from scratch. old links n refs all dead",
+      "id": 334
+    },
+    {
+      "type": "message",
+      "date": "2026-01-28T21:18:59Z",
+      "from": "ath",
+      "from_id": "user7236189055",
+      "from_username": "athena_markup",
+      "text": "school data, how old is it actually?? im pulling enrollment records from 2 yrs ago lol",
+      "id": 335
+    },
+    {
+      "type": "message",
+      "date": "2026-01-28T22:28:16Z",
+      "from": "ZEUS",
+      "from_id": "user7644400289",
+      "from_username": "lilzeus1337",
+      "text": "why is this so expensive?? other groups charge half",
+      "id": 336
+    },
+    {
+      "type": "message",
+      "date": "2026-01-28T23:07:08Z",
+      "from": "orion",
+      "from_id": "user7045529812",
+      "from_username": "orionview",
+      "text": "@lilzeus1337 those other groups sell u recycled 2020 breach dumps lmao. we sell current verified data. u get what u pay for",
+      "id": 337
+    },
+    {
+      "type": "message",
+      "date": "2026-01-29T05:11:08Z",
+      "from": "jian",
+      "from_id": "user7682014550",
+      "from_username": "ares_forge",
+      "text": "cleaning dupes b4 noon here. bigger batch than normal today",
+      "id": 338
+    },
+    {
+      "type": "message",
+      "date": "2026-01-29T09:15:02Z",
+      "from": "forge",
+      "from_id": "user7041885321",
+      "from_username": "hephaestus_drop",
+      "text": "@apollo_trace records from src 2 showing conflicting phone #s. 1 shows landline other shows mobile. which is current??",
+      "id": 339
+    },
+    {
+      "type": "service",
+      "date": "2026-01-29T10:27:39Z",
+      "action": "invite_members",
+      "actor": "Hades Group",
+      "actor_id": "channel28740651",
+      "members": [
+        "perse"
+      ],
+      "member_ids": [
+        "user7050022893"
+      ],
+      "id": 340
+    },
+    {
+      "type": "message",
+      "date": "2026-01-29T15:27:39Z",
+      "from": "perse",
+      "from_id": "user7050022893",
+      "from_username": "persephone_new",
+      "text": "hey just joined. still taking journalist targets? i have a specific name",
+      "id": 341
+    },
+    {
+      "type": "message",
+      "date": "2026-01-29T16:44:02Z",
+      "from": "nyx",
+      "from_id": "user7448021137",
+      "from_username": "nyxrelay",
+      "text": "vouch apollo. pulled from his src yest, data was current n verified. clean 👍",
+      "id": 342
+    },
+    {
+      "type": "service",
+      "date": "2026-01-29T17:30:00Z",
+      "action": "pin_message",
+      "text": "Pinned message update",
+      "id": 343,
+      "actor": "Hades Group",
+      "actor_id": "channel28740651"
+    },
+    {
+      "type": "message",
+      "date": "2026-01-29T18:55:42Z",
+      "from": "euro",
+      "from_id": "user7241176508",
+      "from_username": "europa_vouch",
+      "text": "looking to place a big ord this wk. vouches for hermes or ares?? need someone reliable",
+      "id": 344
+    },
+    {
+      "type": "message",
+      "date": "2026-01-29T19:16:36Z",
+      "from": "sel",
+      "from_id": "user7645510921",
+      "from_username": "selene_packet",
+      "text": "@iris_queue school enrollment records, does ANYONE offer this?? 5th time asking. genuinely need this",
+      "id": 345
+    },
+    {
+      "type": "message",
+      "date": "2026-01-29T20:28:12Z",
+      "from": "ath",
+      "from_id": "user7236189055",
+      "from_username": "athena_markup",
+      "text": "@selene_packet minors r excluded from all packs. hard rule. no exceptions. do not ask again",
+      "id": 346
+    },
+    {
+      "type": "message",
+      "date": "2026-01-29T22:45:40Z",
+      "from": "nyx",
+      "from_id": "user7448021137",
+      "from_username": "nyxrelay",
+      "text": "shoutout ares. cleaned massive batch of dupes same day. didnt even have to ask 2x",
+      "id": 347
+    },
+    {
+      "type": "message",
+      "date": "2026-01-30T00:57:24Z",
+      "from": "sel",
+      "from_id": "user7645510921",
+      "from_username": "selene_packet",
+      "text": "school records too stale to b useful. known issue. nobodys gonna fix it soon sry",
+      "id": 348
+    },
+    {
+      "type": "message",
+      "date": "2026-01-30T09:29:56Z",
+      "from": "iris",
+      "from_id": "user7139058844",
+      "from_username": "iris_queue",
+      "text": "@gaiarefund send screenshot of the blank fields so i can see what went wrong",
+      "id": 349
+    },
+    {
+      "type": "message",
+      "date": "2026-01-30T10:55:46Z",
+      "from": "dani",
+      "from_id": "user7520941836",
+      "from_username": "apollo_trace",
+      "text": "old records cleaned up + migrated. current format is live as of today",
+      "id": 350
+    },
+    {
+      "type": "message",
+      "date": "2026-01-30T12:42:13Z",
+      "from": "iris",
+      "from_id": "user7139058844",
+      "from_username": "iris_queue",
+      "text": "@gaiarefund 1 correction per ord. thats policy. arguing in main wont change it",
+      "id": 351
+    },
+    {
+      "type": "message",
+      "date": "2026-01-30T13:45:53Z",
+      "from": "Hades Group",
+      "from_id": "channel28740651",
+      "text": "No fresh handles get priority. You wait like everyone else.",
+      "id": 352
+    },
+    {
+      "type": "message",
+      "date": "2026-01-30T14:18:41Z",
+      "from": "perse",
+      "from_id": "user7050022893",
+      "from_username": "persephone_new",
+      "text": "havent rly used this yet. is this group still active?",
+      "id": 353
+    },
+    {
+      "type": "message",
+      "date": "2026-01-30T14:30:48Z",
+      "from": "gai",
+      "from_id": "user7945521033",
+      "from_username": "gaiarefund",
+      "text": "@iris_queue pack missing mothers addr + phone #. correction filed. when am i getting updated version",
+      "id": 354
+    },
+    {
+      "type": "message",
+      "date": "2026-01-30T15:25:27Z",
+      "from": "Hades Group",
+      "from_id": "channel28740651",
+      "text": "Queue is closed for tonight. Back tomorrow.",
+      "id": 355
+    },
+    {
+      "type": "message",
+      "date": "2026-01-30T16:44:42Z",
+      "from": "orion",
+      "from_id": "user7045529812",
+      "from_username": "orionview",
+      "text": "@persephone_new queue just closed. check back tmrw or read pin for hrs",
+      "id": 356
+    },
+    {
+      "type": "message",
+      "date": "2026-01-30T17:04:44Z",
+      "from": "iris",
+      "from_id": "user7139058844",
+      "from_username": "iris_queue",
+      "text": "@gaiarefund screenshot the blank fields n dm em to me. ill look into it",
+      "id": 357
+    },
+    {
+      "type": "message",
+      "date": "2026-01-30T20:01:47Z",
+      "from": "charon",
+      "from_id": "user7341102986",
+      "from_username": "charon_settle",
+      "text": "@gaiarefund close old ticket b4 opening new 1. cant manage 2 threads per person",
+      "id": 358
+    },
+    {
+      "type": "message",
+      "date": "2026-01-30T20:09:58Z",
+      "from": "nyx",
+      "from_id": "user7448021137",
+      "from_username": "nyxrelay",
+      "text": "ares batch from last wk still holding. 0 corrections filed by any buyer. clean work 💪",
+      "id": 359
+    },
+    {
+      "type": "message",
+      "date": "2026-01-30T21:09:08Z",
+      "from": "mason h",
+      "from_id": "user7415839206",
+      "from_username": "hermes_locker",
+      "text": "taking bookings for tmrw. send details now, fulfillment when queue reopens",
+      "id": 360
+    },
+    {
+      "type": "message",
+      "date": "2026-01-30T22:01:56Z",
+      "from": "hes",
+      "from_id": "user7146032211",
+      "from_username": "hestiaasks",
+      "text": "ok genuine q: whats the diff btwn \"pack\" and \"full dox\"?? same thing or diff tiers",
+      "id": 361
+    },
+    {
+      "type": "message",
+      "date": "2026-01-31T06:25:46Z",
+      "from": "morph",
+      "from_id": "user7540997715",
+      "from_username": "morpheus_lag",
+      "text": "anyone around?? i only ever catch this group during dead hrs lol",
+      "id": 362
+    },
+    {
+      "type": "message",
+      "date": "2026-01-31T10:45:36Z",
+      "from": "charon",
+      "from_id": "user7341102986",
+      "from_username": "charon_settle",
+      "text": "@hephaestusjr no partial payments. full escrw upfront. been the rule since day 1",
+      "id": 363
+    },
+    {
+      "type": "message",
+      "date": "2026-01-31T11:55:05Z",
+      "from": "forge",
+      "from_id": "user7041885321",
+      "from_username": "hephaestus_drop",
+      "text": "@apollo_trace old US dataset had corrupted records crashing lookups. patched yest. should b stable",
+      "id": 364
+    },
+    {
+      "type": "message",
+      "date": "2026-01-31T16:04:15Z",
+      "from": "orion",
+      "from_id": "user7045529812",
+      "from_username": "orionview",
+      "text": "r prices going up? someone in another group said u guys raised rates",
+      "id": 365
+    },
+    {
+      "type": "message",
+      "date": "2026-01-31T17:12:11Z",
+      "from": "orion",
+      "from_id": "user7045529812",
+      "from_username": "orionview",
+      "text": "any updates on tn queue?",
+      "id": 366
+    },
+    {
+      "type": "message",
+      "date": "2026-01-31T18:21:55Z",
+      "from": "charon",
+      "from_id": "user7341102986",
+      "from_username": "charon_settle",
+      "text": "@orionview seller has 24h. ur msgs dont speed things up. they make me want to deprioritize u lol",
+      "id": 367
+    },
+    {
+      "type": "message",
+      "date": "2026-01-31T22:38:00Z",
+      "from": "mason h",
+      "from_id": "user7415839206",
+      "from_username": "hermes_locker",
+      "text": "county + fam pack. tn only. east coast US. dm me the name",
+      "id": 368
+    },
+    {
+      "type": "message",
+      "date": "2026-01-31T23:36:37Z",
+      "from": "orion",
+      "from_id": "user7045529812",
+      "from_username": "orionview",
+      "text": "prices exactly the same. ppl in other groups love spreading rumors. check pinned",
+      "id": 369
+    },
+    {
+      "type": "message",
+      "date": "2026-02-01T00:40:18Z",
+      "from": "mason h",
+      "from_id": "user7415839206",
+      "from_username": "hermes_locker",
+      "text": "fresh batch of eastern US records just landed. clean verified data. open for ords 📬",
+      "id": 370
+    },
+    {
+      "type": "message",
+      "date": "2026-02-01T07:00:57Z",
+      "from": "dani",
+      "from_id": "user7520941836",
+      "from_username": "apollo_trace",
+      "text": "@persephone_new pinned src is current version. anything else floating around is outdated",
+      "id": 371
+    },
+    {
+      "type": "message",
+      "date": "2026-02-01T09:25:47Z",
+      "from": "dani",
+      "from_id": "user7520941836",
+      "from_username": "apollo_trace",
+      "text": "if ur pulling from a src thats not pinned ur data is stale. update ur refs",
+      "id": 372
+    },
+    {
+      "type": "message",
+      "date": "2026-02-01T14:16:27Z",
+      "from": "euro",
+      "from_id": "user7241176508",
+      "from_username": "europa_vouch",
+      "text": "@apollo_trace u still around? keep seeing ur name in vouches but no direct posts lately",
+      "id": 373
+    },
+    {
+      "type": "message",
+      "date": "2026-02-01T15:58:59Z",
+      "from": "euro",
+      "from_id": "user7241176508",
+      "from_username": "europa_vouch",
+      "text": "@hermes_locker @ares_forge looking to place big ord. either of u available this wk? need vouches",
+      "id": 374
+    },
+    {
+      "type": "message",
+      "date": "2026-02-01T17:14:13Z",
+      "from": "tri",
+      "from_id": "user7741023895",
+      "from_username": "tritonbrief",
+      "text": "telecom still fully operational. carrier + billing city + reg date. same coverage",
+      "id": 375
+    },
+    {
+      "type": "message",
+      "date": "2026-02-01T17:57:47Z",
+      "from": "sel",
+      "from_id": "user7645510921",
+      "from_username": "selene_packet",
+      "text": "@hestiaasks employer extra. fam included in base pack. pinned msg explains all of this. PLS read it",
+      "id": 376
+    },
+    {
+      "type": "message",
+      "date": "2026-02-01T21:41:14Z",
+      "from": "perse",
+      "from_id": "user7050022893",
+      "from_username": "persephone_new",
+      "text": "havent rly used this yet. is this group still active?",
+      "id": 377
+    },
+    {
+      "type": "message",
+      "date": "2026-02-01T23:02:09Z",
+      "from": "hes",
+      "from_id": "user7146032211",
+      "from_username": "hestiaasks",
+      "text": "when u say \"family\" in the pack does that include extended fam like cousins or just immediate",
+      "id": 378
+    },
+    {
+      "type": "message",
+      "date": "2026-02-02T00:29:24Z",
+      "from": "orion",
+      "from_id": "user7045529812",
+      "from_username": "orionview",
+      "text": "@persephone_new prices n services all in pinned. havent changed in wks",
+      "id": 379
+    },
+    {
+      "type": "message",
+      "date": "2026-02-02T00:44:56Z",
+      "from": "k",
+      "from_id": "user7543991028",
+      "from_username": "kratos_ticket",
+      "text": "@charon_settle already paid. escrw funded. when exactly do i get my delivery",
+      "id": 380
+    },
+    {
+      "type": "message",
+      "date": "2026-02-02T02:37:29Z",
+      "from": "k",
+      "from_id": "user7543991028",
+      "from_username": "kratos_ticket",
+      "text": "i submitted first today. pretty sure i should b next in line. @iris_queue",
+      "id": 381
+    },
+    {
+      "type": "message",
+      "date": "2026-02-02T10:10:06Z",
+      "from": "Hades Group",
+      "from_id": "channel28740651",
+      "text": "Technical discussion goes to DM. Not main. Final reminder.",
+      "id": 382
+    },
+    {
+      "type": "message",
+      "date": "2026-02-02T11:30:00Z",
+      "from": "dani",
+      "from_id": "user7520941836",
+      "from_username": "apollo_trace",
+      "text": "schema migration fallout is mostly cleaned up. if ur queries still fail update format from pinned",
+      "id": 383
+    },
+    {
+      "type": "message",
+      "date": "2026-02-02T12:21:33Z",
+      "from": "Hades Group",
+      "from_id": "channel28740651",
+      "text": "Next person who posts methods or target names in main gets removed.",
+      "id": 384
+    },
+    {
+      "type": "message",
+      "date": "2026-02-02T13:54:20Z",
+      "from": "gai",
+      "from_id": "user7945521033",
+      "from_username": "gaiarefund",
+      "text": "@iris_queue correction request is FOUR DAYS old. actually getting ridiculous",
+      "id": 385
+    },
+    {
+      "type": "message",
+      "date": "2026-02-02T20:01:55Z",
+      "from": "nyx",
+      "from_id": "user7448021137",
+      "from_username": "nyxrelay",
+      "text": "vouch apollo. src pull was clean n fast. no complaints 👍",
+      "id": 386
+    },
+    {
+      "type": "message",
+      "date": "2026-02-02T23:28:00Z",
+      "from": "euro",
+      "from_id": "user7241176508",
+      "from_username": "europa_vouch",
+      "text": "@hermes_locker want proof of delivery, screenshot of src date, b4 i release escrw. non-negotiable",
+      "id": 387
+    },
+    {
+      "type": "message",
+      "date": "2026-02-03T09:15:01Z",
+      "from": "Hades Group",
+      "from_id": "channel28740651",
+      "text": "Pinned rules are current. Read them.",
+      "id": 388
+    },
+    {
+      "type": "message",
+      "date": "2026-02-03T09:28:34Z",
+      "from": "iris",
+      "from_id": "user7139058844",
+      "from_username": "iris_queue",
+      "text": "@gaiarefund 1 correction per ord. final. end of discussion",
+      "id": 389
+    },
+    {
+      "type": "service",
+      "date": "2026-02-03T09:30:00Z",
+      "action": "pin_message",
+      "text": "Final pin of cycle",
+      "id": 390,
+      "actor": "Hades Group",
+      "actor_id": "channel28740651"
+    },
+    {
+      "type": "message",
+      "date": "2026-02-03T10:45:00Z",
+      "from": "dani",
+      "from_id": "user7520941836",
+      "from_username": "apollo_trace",
+      "text": "running final integrity check on all srcs. everything looks stable",
+      "id": 391
+    },
+    {
+      "type": "message",
+      "date": "2026-02-03T12:46:12Z",
+      "from": "Hades Group",
+      "from_id": "channel28740651",
+      "text": "No live method discussion in main. Next violation is a removal.",
+      "id": 392
+    },
+    {
+      "type": "message",
+      "date": "2026-02-03T12:56:41Z",
+      "from": "nyx",
+      "from_id": "user7448021137",
+      "from_username": "nyxrelay",
+      "text": "relaying from hermes: hes taking ords tn. east coast priority. dm him directly. dont ask in main",
+      "id": 393
+    },
+    {
+      "type": "message",
+      "date": "2026-02-03T13:55:56Z",
+      "from": "charon",
+      "from_id": "user7341102986",
+      "from_username": "charon_settle",
+      "text": "@hephaestusjr no partial payments. full escrw or no service. genuinely dont understand y this is still a q lol",
+      "id": 394
+    },
+    {
+      "type": "message",
+      "date": "2026-02-03T14:08:37Z",
+      "from": "nyx",
+      "from_id": "user7448021137",
+      "from_username": "nyxrelay",
+      "text": "ares batch from this cycle: clean. not a single complaint from any buyer. vouching again 💪",
+      "id": 395
+    },
+    {
+      "type": "message",
+      "date": "2026-02-03T14:10:00Z",
+      "from": "Hades Group",
+      "from_id": "channel28740651",
+      "text": "Tonight's queue is closed. Rules did not change.",
+      "id": 396
+    },
+    {
+      "type": "message",
+      "date": "2026-02-03T16:00:37Z",
+      "from": "orion",
+      "from_id": "user7045529812",
+      "from_username": "orionview",
+      "text": "wait is queue open tn or did it just close?? just saw the msg",
+      "id": 397
+    },
+    {
+      "type": "message",
+      "date": "2026-02-03T20:27:07Z",
+      "from": "nyx",
+      "from_id": "user7448021137",
+      "from_username": "nyxrelay",
+      "text": "ares delivered again. fast turnaround clean data 0 dupes. most consistent person here fr",
+      "id": 398
+    },
+    {
+      "type": "message",
+      "date": "2026-02-04T01:22:55Z",
+      "from": "forgekid",
+      "from_id": "user7844190076",
+      "from_username": "hephaestusjr",
+      "text": "still figuring this out. what exactly is a \"full pack\"?? the pin doesnt rly explain",
+      "id": 399
+    },
+    {
+      "type": "message",
+      "date": "2026-02-04T03:11:07Z",
+      "from": "forgekid",
+      "from_id": "user7844190076",
+      "from_username": "hephaestusjr",
+      "text": "also what does \"escrow\" mean lol. like the money is held by someone til the ord is done??",
+      "id": 400
+    }
+  ]
+}

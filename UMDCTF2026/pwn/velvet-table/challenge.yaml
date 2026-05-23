@@ -1,0 +1,28 @@
+id: velvet-table
+name: velvet-table
+author: NyxIsBad
+
+description: |-
+  the house tightened the rules 
+
+  `{{ nc }}`
+
+flag: UMDCTF{smallbins_still_love_the_stack_when_the_house_sets_the_table}
+
+provide:
+  - dist/velvet-table
+
+containers:
+  main:
+    build: .
+    privileged: true
+    ports:
+      - 1450
+
+expose:
+  main:
+    - target: 1450
+      tcp: 30304
+
+visible: true
+deployed: true

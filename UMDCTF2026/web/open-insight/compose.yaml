@@ -1,0 +1,31 @@
+services:
+  web:
+    build: ./web
+    container_name: openinsight-web
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./web/data:/app/data
+    environment:
+      SESSION_SECRET: 6dd86042b01bf9b8d2cacfbfc34e90b63fc60b8a59cac71a31be4be8d43863e2
+      FLAG: UMDCTF{r0ll_y0ur_0wn_s4nit1zat1on}
+      ADMIN_USERNAME: admin_alice
+      ADMIN_PASSWORD: tXQ9KlCJPWCvV4o7jZ5bJge6YQ4awv5r
+      BOB_PASSWORD: JPqUjSp7s6HfkNCqoItjoUHMkOptxLPn
+      BEN_PASSWORD: YwVyDTDfTVFiAVZQM6XEzNwAenzlk8Ob
+      HANNAH_PASSWORD: iEGkaKydrGnwn6CJgkM7tQGGT1cvyzlD
+      POLIT_PASSWORD: 0qwBqaE7OrZm61AQ92R5ppnV657pr204
+    restart: unless-stopped
+
+  bot:
+    build: ./bot
+    container_name: openinsight-bot
+    ports:
+      - "3001:3001"
+    environment:
+      WEB_URL: http://web:3000
+      ADMIN_USERNAME: admin_alice
+      ADMIN_PASSWORD: tXQ9KlCJPWCvV4o7jZ5bJge6YQ4awv5r
+    depends_on:
+      - web
+    restart: unless-stopped

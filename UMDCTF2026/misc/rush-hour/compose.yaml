@@ -1,0 +1,8 @@
+services:
+  app:
+    build:
+      context: .
+    container_name: rush-hour
+    ports:
+      - "8080:80"
+    restart: unless-stopped

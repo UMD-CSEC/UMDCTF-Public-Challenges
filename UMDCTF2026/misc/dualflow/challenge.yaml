@@ -1,0 +1,32 @@
+name: dualflow
+author: segal
+
+description: |-
+  my trading model has two flows now! double the flows means double the robustness right?
+
+  `{{ nc }}`
+
+flag: UMDCTF{a_little_gram_schmidt_never_hurt_anybody}
+
+provide:
+  - dist/calibration.npz
+  - dist/flow_0.pt
+  - dist/flow_1.pt
+  - dist/reference_window.npy
+  - challenge.py
+  - flow.py
+
+containers:
+  main:
+    build: .
+    privileged: true
+    ports:
+      - 7276
+
+expose:
+  main:
+    - target: 7276
+      tcp: 30303
+
+visible: true
+deployed: true

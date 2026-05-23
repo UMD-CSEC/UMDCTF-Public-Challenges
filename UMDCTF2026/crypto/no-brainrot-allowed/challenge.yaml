@@ -1,0 +1,45 @@
+name: no-brainrot-allowed
+author: aparker 
+
+description: |-
+  Unfortunately, our insider trading anonymous tip line has been spammed by people who preferred last year's theme. 
+  As a result, our encrypted line now checks to make sure you are of sound mind.
+
+  `{{ nc }}`
+
+flag: "UMDCTF{thank_you_for_helping_the_Counter-Brainrot_Terrorism_Unit_(or_CBT_Unit_for_short)_with_their_operations}"
+
+
+# remove this if your challenge has no distributed files
+# these files are taken from the same directory as the challenge.yaml
+provide:
+  - server.py
+
+# remove this if your challenge has no online component
+# this default config will build the container using the
+# Dockerfile in the current directory
+#
+# also: see example Dockerfile in chall-template
+# feel free to replace with your own, but if making a simple challenge
+# w/ nc connetion it's a good start
+containers:
+  main:
+    build: .
+    privileged: true
+    ports:
+      - 1447 
+
+# remove this if your challenge has no online component
+# use either tcp/http
+# this uses container name from above
+expose: 
+  main:
+    - target: 1447
+      tcp: 32767
+
+# set these to true when your challenge is ready
+# if you want to test your challenge, set deployed: true only, but
+# be fast since your challenge is technically accessible by others
+# if they guess url/port
+visible: true
+deployed: true

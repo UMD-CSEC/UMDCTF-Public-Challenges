@@ -1,0 +1,8 @@
+name: umdmarket
+author: tahmid-23
+description: |-
+  Predicting the future is now legal in all 50 states.
+
+  [umdmarket.challs.umdctf.io](https://umdmarket.challs.umdctf.io)
+flag: UMDCTF{fu7ur3_j4n3_s7r33t_h1r3}
+visible: true

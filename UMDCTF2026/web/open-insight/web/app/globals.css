@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+/*
+ * OpenInsight — terminal-editorial.
+ * Dark, paper-warm foreground, a single aggressive amber accent,
+ * hairline rules, tabular numerics. Think financial broadsheet meets
+ * Bloomberg terminal.
+ */
+
+@theme {
+  --font-display: "Fraunces", "Times New Roman", serif;
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+
+  --color-bg: #0b0c0e;
+  --color-bg-soft: #111214;
+  --color-bg-elevated: #16181b;
+  --color-paper: #e8e4d9;
+  --color-paper-dim: #b7b1a2;
+  --color-paper-faint: #6e6a5f;
+
+  --color-rule: #23252a;
+  --color-rule-strong: #3a3d43;
+
+  --color-signal: #ffb020;
+  --color-signal-dim: #5a3f0b;
+  --color-up: #8bb36b;
+  --color-down: #d45a4a;
+}
+
+html,
+body {
+  background: var(--color-bg);
+  color: var(--color-paper);
+  font-family: var(--font-sans);
+  font-feature-settings: "ss01", "cv02", "cv11";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background-image:
+    radial-gradient(
+      ellipse at top,
+      rgba(255, 176, 32, 0.045),
+      transparent 55%
+    ),
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.91  0 0 0 0 0.89  0 0 0 0 0.85  0 0 0 0.035 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  background-size: auto, 160px 160px;
+}
+
+::selection {
+  background: var(--color-signal);
+  color: #0b0c0e;
+}
+
+/* utility: small caps labels */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-paper-faint);
+}
+
+/* utility: broadsheet headline */
+.display {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+  font-variation-settings: "opsz" 144, "SOFT" 50;
+  letter-spacing: -0.02em;
+  line-height: 0.95;
+}
+
+/* hairline rules */
+.rule {
+  height: 1px;
+  background: var(--color-rule);
+}
+.rule-strong {
+  height: 1px;
+  background: var(--color-rule-strong);
+}
+
+/* form inputs */
+input[type="text"],
+input[type="password"],
+input[name] {
+  font-family: var(--font-mono);
+  font-size: 13px;
+}
+
+/* buttons — default reset so our utility classes take over */
+button {
+  font-family: inherit;
+}
+
+/* tabular numerics helper */
+.tnum {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes blink {
+  50% { opacity: 0.3; }
+}
+
+.blink {
+  animation: blink 1.2s ease-in-out infinite;
+}
+
+.crosshair {
+  cursor: crosshair;
+}

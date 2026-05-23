@@ -1,0 +1,15 @@
+node_modules
+dist
+.venv
+__pycache__
+*.pyc
+.git
+.gitignore
+.vscode
+.idea
+solve_attack.npz
+handout
+Dockerfile
+compose.yaml
+challenge.yaml
+README.md

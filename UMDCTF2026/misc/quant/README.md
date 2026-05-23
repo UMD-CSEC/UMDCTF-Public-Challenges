@@ -1,0 +1,26 @@
+# quant?
+
+## Description
+
+it's all math anyways. I heard predicting the future has been in vogue recently, so I hid the flag in a black-box oracle.
+
+Connect to the service and submit one OpenQASM-like circuit ending with `END`.
+
+The circuit has 16 input qubits `q[0]` through `q[15]`, one ancilla qubit `q[16]`, and a 16-bit classical register `c[0]` through `c[15]`.
+
+Supported instructions:
+- `h q[i];`
+- `x q[i];`
+- `z q[i];`
+- `mcx q[i],...,q[j];`
+- `oracle q[0],q[1],q[2],q[3],q[4],q[5],q[6],q[7],q[8],q[9],q[10],q[11],q[12],q[13],q[14],q[15],q[16];`
+- `diffuse q[0],q[1],q[2],q[3],q[4],q[5],q[6],q[7],q[8],q[9],q[10],q[11],q[12],q[13],q[14],q[15];`
+- `measure q[i] -> c[i];`
+
+You may include the usual `OPENQASM 2.0;`, `include "qelib1.inc";`, `qreg q[17];`, and `creg c[16];` lines. Measure every input qubit as `q[i] -> c[i]`.
+
+Limits: at most 250 oracle calls, 200000 bytes of input, and 512 shots. If your circuit places enough probability mass on the hidden marked state, the service prints the flag.
+
+## Flag
+
+`UMDCTF{0110010101111010}`

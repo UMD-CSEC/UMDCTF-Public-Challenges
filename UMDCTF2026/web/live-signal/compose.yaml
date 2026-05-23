@@ -1,0 +1,16 @@
+services:
+  web:
+    build: ./web
+    container_name: livesignal-web
+    ports:
+      - "3000:3000"
+    environment:
+      DATABASE_URL: file:/app/data/signal.db
+      FLAG: UMDCTF{z0d_1s_f0r_sc4r3dy_c4ts}
+      HMAC_SECRET: 652daf13bbe9081e473d5e50e176cb651af9b9f3df66008e3592e69400a7f789
+    volumes:
+      - dbdata:/app/data
+    restart: unless-stopped
+
+volumes:
+  dbdata:

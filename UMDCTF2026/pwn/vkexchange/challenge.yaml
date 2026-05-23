@@ -1,0 +1,30 @@
+name: vkexchange
+author: segal
+
+description: |-
+  i built a stock market exchange using vulkan! but somethings wrong, i can feel it.
+
+  `{{ nc }}`
+
+flag: UMDCTF{yeah_im_sorry_for_making_this_i_know_its_really_annoying_but_at_least_maybe_you_learned_vulkan}
+
+provide:
+  - vkexchange.c
+  - settlement.comp
+  - Makefile
+  - Dockerfile
+
+containers:
+  main:
+    build: .
+    privileged: true
+    ports:
+      - 1451
+
+expose: 
+  main:
+    - target: 1451
+      tcp: 30305
+
+visible: true
+deployed: true

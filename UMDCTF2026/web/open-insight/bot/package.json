@@ -1,0 +1,14 @@
+{
+  "name": "openinsight-bot",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^5.0.0",
+    "puppeteer": "^23.0.0"
+  }
+}

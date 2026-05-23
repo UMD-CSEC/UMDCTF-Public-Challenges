@@ -1,0 +1,13 @@
+name: sanity check
+author: umdctf
+
+description: |-
+  I love prediction markets.
+
+  I love gambling.
+
+  `UMDCTF{challenge_based_futures_market}`
+
+flag: UMDCTF{challenge_based_futures_market}
+
+visible: true

@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", "Menlo", monospace;
+
+  --color-canvas: #eff1f4;
+  --color-card: #ffffff;
+  --color-ink: #222b36;
+  --color-ash: #7b8591;
+  --color-rule: #e1e4e8;
+
+  --color-teal: #1f7a8c;
+  --color-teal-dark: #154f5d;
+  --color-teal-pale: #d5e7ec;
+
+  --color-bid: #2ca05a;
+  --color-bid-dark: #1f7a44;
+  --color-ask: #d64a4a;
+  --color-ask-dark: #a63636;
+  --color-hold: #e8a93c;
+  --color-hold-dark: #b07c1f;
+}
+
+html, body, #root { height: 100%; }
+
+body {
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-feature-settings: "kern", "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-up { animation: fade-up 320ms cubic-bezier(0.22, 1, 0.36, 1) both; }
+
+@keyframes timebar-deplete {
+  from { transform: scaleX(1); }
+  to   { transform: scaleX(0); }
+}
+.timebar-fill {
+  transform-origin: right center;
+  animation-name: timebar-deplete;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  will-change: transform;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.35; }
+}
+.pulse-dot { animation: pulse-dot 1.2s ease-in-out infinite; }
+
+.keepalive-live { animation: pulse-dot 1.6s ease-in-out infinite; }

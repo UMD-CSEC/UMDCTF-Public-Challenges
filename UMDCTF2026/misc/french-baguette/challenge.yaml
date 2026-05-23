@@ -1,0 +1,14 @@
+name: french-baguette
+author: segal
+
+description: |-
+  some french guy made this weird program. it takes an image as input and returns some file. i inputted the flag into the program. you can have the output :)
+
+flag: UMDCTF{la_pente_died_a_painful}
+
+provide:
+  - french-baguette
+  - model.dat
+  - grad.dat
+
+visible: true

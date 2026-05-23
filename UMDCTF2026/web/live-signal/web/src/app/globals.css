@@ -1,0 +1,159 @@
+@import "tailwindcss";
+
+/*
+ * LiveSignal — vaporwave trading arcade.
+ * Deep indigo field, chunky geometric display, neon cyan/magenta/lime accents.
+ * Discord-pump-group meets arcade cabinet meets prediction-market chyron.
+ */
+
+@theme {
+  --font-display: "Space Grotesk", "Archivo", ui-sans-serif, sans-serif;
+  --font-body: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+
+  --color-void: #0a0325;
+  --color-void-deep: #050118;
+  --color-plasma: #1a0a45;
+  --color-neon-cyan: #22e1ff;
+  --color-neon-magenta: #ff3fa4;
+  --color-neon-lime: #c6ff3f;
+  --color-neon-orange: #ffb547;
+  --color-chalk: #f2ecff;
+  --color-chalk-dim: #a89bd4;
+  --color-chalk-faint: #6b5f96;
+
+  --color-diamond: #9fe7ff;
+  --color-gold: #ffd35a;
+  --color-bronze: #e08a4f;
+
+  --animate-blip: blip 1.2s ease-in-out infinite;
+  --animate-crt: crt 8s linear infinite;
+  --animate-tick: tick 0.6s ease-out;
+
+  @keyframes blip {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.15); }
+  }
+  @keyframes crt {
+    0% { background-position: 0 0; }
+    100% { background-position: 0 8px; }
+  }
+  @keyframes tick {
+    0% { transform: translateY(-4px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+}
+
+:root { color-scheme: dark; }
+
+html, body {
+  background: var(--color-void-deep);
+  color: var(--color-chalk);
+  font-family: var(--font-body);
+  font-feature-settings: "ss01", "cv01";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  min-height: 100vh;
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(34, 225, 255, 0.18), transparent 70%),
+    radial-gradient(ellipse 60% 40% at 10% 100%, rgba(255, 63, 164, 0.14), transparent 70%),
+    radial-gradient(ellipse 50% 35% at 95% 110%, rgba(198, 255, 63, 0.08), transparent 70%),
+    linear-gradient(180deg, var(--color-void-deep), var(--color-void));
+}
+
+/* CRT scanline overlay */
+.crt-surface {
+  position: relative;
+}
+.crt-surface::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.04) 0,
+    rgba(255, 255, 255, 0.04) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  mix-blend-mode: overlay;
+  opacity: 0.5;
+}
+
+/* Pixel grid background */
+.pixel-grid {
+  background-image:
+    linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.neon-cyan { color: var(--color-neon-cyan); text-shadow: 0 0 12px rgba(34,225,255,0.6), 0 0 32px rgba(34,225,255,0.35); }
+.neon-magenta { color: var(--color-neon-magenta); text-shadow: 0 0 12px rgba(255,63,164,0.6), 0 0 32px rgba(255,63,164,0.35); }
+.neon-lime { color: var(--color-neon-lime); text-shadow: 0 0 12px rgba(198,255,63,0.6), 0 0 24px rgba(198,255,63,0.3); }
+.neon-orange { color: var(--color-neon-orange); text-shadow: 0 0 10px rgba(255,181,71,0.5); }
+
+.tabular { font-variant-numeric: tabular-nums; }
+
+/* Chunky display text */
+.display {
+  font-family: var(--font-display);
+  letter-spacing: -0.04em;
+  font-weight: 700;
+  line-height: 0.9;
+}
+
+/* Marquee */
+.marquee {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 38s linear infinite;
+  white-space: nowrap;
+}
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Pump badge — used for scammy decorative copy */
+.stamp {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.1rem 0.5rem;
+  border: 1px solid currentColor;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  transform: rotate(-2deg);
+}
+
+/* Cabinet border — thick neon frame with double outline */
+.cabinet {
+  border: 2px solid var(--color-neon-cyan);
+  box-shadow:
+    0 0 0 1px var(--color-void-deep),
+    0 0 0 3px rgba(34, 225, 255, 0.25),
+    0 0 42px rgba(34, 225, 255, 0.15);
+}
+.cabinet-magenta {
+  border: 2px solid var(--color-neon-magenta);
+  box-shadow:
+    0 0 0 1px var(--color-void-deep),
+    0 0 0 3px rgba(255, 63, 164, 0.25),
+    0 0 42px rgba(255, 63, 164, 0.18);
+}
+.cabinet-lime {
+  border: 2px solid var(--color-neon-lime);
+  box-shadow:
+    0 0 0 1px var(--color-void-deep),
+    0 0 0 3px rgba(198, 255, 63, 0.2),
+    0 0 42px rgba(198, 255, 63, 0.12);
+}
+
+/* Sharp corners — no rounded anything except tokens */
